@@ -1,0 +1,185 @@
+{
+  "source": {
+    "title": "MIET Jammu LLB (Hons.) semester-wise course summary",
+    "institution": "Model Institute of Engineering and Technology (MIET), Jammu — School of Law (as stated in supplied text)",
+    "program": "3-year LLB (Hons.)",
+    "batch": null,
+    "source_type": "User-provided AI Mode conversation text; not independently verified against an official syllabus",
+    "status": "unverified_summary",
+    "verification_note": "Course codes and titles below are transcribed from the user-provided text. The text claims alignment with the University of Jammu CBCS syllabus and newer criminal laws, but this has not been independently verified. Confirm course codes and titles with the official MIET School of Law or University of Jammu syllabus before relying on them.",
+    "notes": [
+      "Only Semesters I–VI are included because the supplied text lists a three-year LLB program with six semesters.",
+      "The supplied text skips some course numbers; they have not been filled in.",
+      "Elective alternatives are preserved as provided."
+    ]
+  },
+  "programName": "LLB (Hons.)",
+  "duration": "3 years",
+  "semesters": [
+    {
+      "semester": 1,
+      "subjects": [
+        {
+          "code": "LLB 101",
+          "name": "Constitutional Law-I"
+        },
+        {
+          "code": "LLB 102",
+          "name": "Law of Torts (Consumer Protection Laws & Motor Vehicle Act)"
+        },
+        {
+          "code": "LLB 103",
+          "name": "Law of Crimes-I (Bharatiya Nyaya Sanhita, 2023)"
+        },
+        {
+          "code": "LLB 104",
+          "name": "Family Law-I"
+        },
+        {
+          "code": "LLB 106",
+          "name": "Legal Methods & Clinical Legal Education-I"
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "subjects": [
+        {
+          "code": "LLB 151",
+          "name": "Constitutional Law-II"
+        },
+        {
+          "code": "LLB 152",
+          "name": "Contract-I"
+        },
+        {
+          "code": "LLB 153",
+          "name": "Law of Crimes-II (Bharatiya Nagarik Suraksha Sanhita)"
+        },
+        {
+          "code": "LLB 154",
+          "name": "Family Law-II"
+        },
+        {
+          "code": "LLB 156",
+          "name": "Clinical Legal Education-II (Professional Ethics & Bar-Bench Relations)"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "subjects": [
+        {
+          "code": "LLB 201",
+          "name": "Property Law and Easement"
+        },
+        {
+          "code": "LLB 202",
+          "name": "Contract-II (Special Contracts)"
+        },
+        {
+          "code": "LLB 203",
+          "name": "Public International Law"
+        },
+        {
+          "code": "LLB 204",
+          "name": "Company Law"
+        },
+        {
+          "code": "LLB 206",
+          "name": "Clinical Course-III (Alternate Dispute Resolution)"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "subjects": [
+        {
+          "code": "LLB 251",
+          "name": "Labour and Industrial Law-I"
+        },
+        {
+          "code": "LLB 252",
+          "name": "Environmental Law"
+        },
+        {
+          "code": "LLB 253",
+          "name": "Jurisprudence"
+        },
+        {
+          "code": "LLB 254",
+          "name": "Law of Evidence (Bharatiya Sakshya Adhiniyam, 2023)"
+        },
+        {
+          "code": "LLB 256",
+          "name": "Clinical Course-IV (Moot Court Exercise and Internship)"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "subjects": [
+        {
+          "code": "LLB 301",
+          "name": "Labour and Industrial Law-II"
+        },
+        {
+          "code": "LLB 302",
+          "name": "Administrative Law"
+        },
+        {
+          "code": "LLB 303",
+          "name": "Principles of Taxation Law"
+        },
+        {
+          "code": "LLB 304 / 305",
+          "name": "Elective Paper-I",
+          "options": [
+            "Criminology and Penology",
+            "Intellectual Property Rights"
+          ]
+        },
+        {
+          "code": "LLB 306",
+          "name": "Clinical Course-V (Drafting, Pleading and Conveyancing)"
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "subjects": [
+        {
+          "code": "LLB 351",
+          "name": "Civil Procedure Code and Limitation Act"
+        },
+        {
+          "code": "LLB 352",
+          "name": "Land Laws (including local J&K laws)"
+        },
+        {
+          "code": "LLB 353 / 354",
+          "name": "Elective Paper-II",
+          "options": [
+            "Gender Justice",
+            "Cyber Laws"
+          ]
+        },
+        {
+          "code": "LLB 355",
+          "name": "Interpretation of Statute"
+        }
+      ]
+    }
+  ],
+  "availability": {
+    "availableSemesters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "note": "The supplied text provides course details for all six semesters of the 3-year LLB program. No additional courses have been inferred."
+  }
+}

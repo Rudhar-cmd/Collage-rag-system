@@ -1,0 +1,313 @@
+{
+  "source": {
+    "title": "B.Tech CSE curriculum summary (user-provided semester-wise text)",
+    "institution": null,
+    "program": "B.Tech Computer Science & Engineering (CSE)",
+    "batch": null,
+    "source_type": "User-provided curriculum summary; not independently verified",
+    "status": "unverified_summary",
+    "verification_note": "This JSON preserves the semester-wise subjects, codes, alternatives, and notes from the user-provided text. The institution, batch, and official status were not specified, so do not present it as a verified MIET Jammu syllabus.",
+    "notes": [
+      "All eight semesters are represented separately.",
+      "Subject names containing alternatives are preserved as written.",
+      "Codes containing X are placeholders from the source, not confirmed official course codes."
+    ]
+  },
+  "programName": "B.Tech Computer Science & Engineering (CSE)",
+  "semesters": [
+    {
+      "semester": 1,
+      "theme": "Foundation & Basics",
+      "subjects": [
+        {
+          "code": "BSC-101",
+          "name": "Engineering Mathematics-I"
+        },
+        {
+          "code": "ESC-101",
+          "name": "Basic Electrical and Electronics Engineering"
+        },
+        {
+          "code": "COM-101",
+          "name": "Introduction to C Programming"
+        },
+        {
+          "code": "HSMC-101",
+          "name": "Technical Communication"
+        },
+        {
+          "code": "MCC-102",
+          "name": "Indian Constitution"
+        },
+        {
+          "code": "ESC-111",
+          "name": "Basic Electrical and Electronics Engineering Lab"
+        },
+        {
+          "code": "COM-111",
+          "name": "C Programming Lab"
+        },
+        {
+          "code": null,
+          "name": "Induction Training",
+          "category": "Mandatory"
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "theme": "Data & Applied Science Foundation",
+      "subjects": [
+        {
+          "code": "BSC-102",
+          "name": "Engineering Mathematics-II"
+        },
+        {
+          "code": "COM-102",
+          "name": "Data Structures using C"
+        },
+        {
+          "code": "BSC-103",
+          "name": "Engineering Physics"
+        },
+        {
+          "code": "ESC-102",
+          "name": "Design Thinking"
+        },
+        {
+          "code": "COM-112",
+          "name": "Data Structures Lab"
+        },
+        {
+          "code": "BSC-111",
+          "name": "Physics Lab"
+        },
+        {
+          "code": null,
+          "name": "Environment & Sustainability / Robotic Process Automation (RPA) Basics",
+          "category": "Mandatory"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "theme": "Core Computing Systems",
+      "subjects": [
+        {
+          "code": "COM-301",
+          "name": "Object-Oriented Programming using C++ / Java"
+        },
+        {
+          "code": "COM-302",
+          "name": "Computer Organization and Architecture"
+        },
+        {
+          "code": "COM-303",
+          "name": "Relational Database Management Systems (RDBMS)"
+        },
+        {
+          "code": "COM-304",
+          "name": "Digital Electronics"
+        },
+        {
+          "code": "BSC-301",
+          "name": "Discrete Mathematics"
+        },
+        {
+          "code": "COM-311",
+          "name": "Object-Oriented Programming Lab"
+        },
+        {
+          "code": "COM-312",
+          "name": "RDBMS Lab"
+        },
+        {
+          "code": "HSMC-301",
+          "name": "Corporate Etiquette and Personality Development"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "theme": "Algorithms & Systems Architecture",
+      "subjects": [
+        {
+          "code": "COM-401",
+          "name": "Design and Analysis of Algorithms"
+        },
+        {
+          "code": "COM-402",
+          "name": "Operating Systems"
+        },
+        {
+          "code": "HSMC-401",
+          "name": "Principles of Management"
+        },
+        {
+          "code": "COM-411",
+          "name": "Design and Analysis of Algorithms Lab"
+        },
+        {
+          "code": "COM-412",
+          "name": "Operating Systems Lab"
+        },
+        {
+          "code": "PROJ-401",
+          "name": "Project-Based Learning Block-I / Mini Project"
+        },
+        {
+          "code": "HSMC-402",
+          "name": "Placement Overview and Career Planning"
+        },
+        {
+          "code": "MOOC-401",
+          "name": "Mandatory Online MOOC Course Setup"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "theme": "Advanced Domain Software & Systems",
+      "subjects": [
+        {
+          "code": "COM-501",
+          "name": "Python Programming-I"
+        },
+        {
+          "code": "COM-502",
+          "name": "Microprocessors and Interfacing"
+        },
+        {
+          "code": "COM-503",
+          "name": "Software Engineering & Agile Methodology"
+        },
+        {
+          "code": "COM-511",
+          "name": "Python Programming Lab"
+        },
+        {
+          "code": "COM-512",
+          "name": "Microprocessor Lab"
+        },
+        {
+          "code": "OEC-501",
+          "name": "Open Elective-I (Interdisciplinary course)"
+        },
+        {
+          "code": "COM-52X",
+          "name": "Specialization Track Module-I",
+          "options": [
+            "AI/ML",
+            "Cyber Security",
+            "Cloud Computing"
+          ],
+          "note": "AI/ML, Cyber Security, or Cloud Computing pathways"
+        },
+        {
+          "code": "HSMC-501",
+          "name": "Placement Preparation-I"
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "theme": "Networks & Advanced Theory",
+      "subjects": [
+        {
+          "code": "COM-601",
+          "name": "Computer Networks"
+        },
+        {
+          "code": "COM-602",
+          "name": "Theory of Computation"
+        },
+        {
+          "code": "COM-603",
+          "name": "Artificial Intelligence with Computer Vision"
+        },
+        {
+          "code": "COM-611",
+          "name": "Computer Networks Lab"
+        },
+        {
+          "code": "COM-612",
+          "name": "Artificial Intelligence with Computer Vision Lab"
+        },
+        {
+          "code": "PROJ-601",
+          "name": "Project-Based Learning Block-II / Design Sprints"
+        },
+        {
+          "code": "COM-62X",
+          "name": "Specialization Track Module-II",
+          "note": "Advanced Domain Pathway"
+        },
+        {
+          "code": "HSMC-601",
+          "name": "Placement Preparation-II"
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "theme": "Advanced Electives & Final Preparations",
+      "subjects": [
+        {
+          "code": "PEC-701",
+          "name": "Professional Elective-I"
+        },
+        {
+          "code": "PEC-702",
+          "name": "Professional Elective-II"
+        },
+        {
+          "code": "COM-711",
+          "name": "Minor Project / Pre-Capstone Module"
+        },
+        {
+          "code": "COM-712",
+          "name": "Professional Industrial Training / Summer Internship Evaluation"
+        },
+        {
+          "code": "BSC-701",
+          "name": "SWAYAM / NPTEL Online Certification Course"
+        },
+        {
+          "code": "HSMC-701",
+          "name": "Indian Knowledge and Tradition (IKT)"
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "theme": "Industry Immersion",
+      "subjects": [
+        {
+          "code": "COM-801",
+          "name": "Seminar & Thesis Presentation"
+        },
+        {
+          "code": "COM-802",
+          "name": "Major Capstone Project Completion"
+        },
+        {
+          "code": "INT-801",
+          "name": "Semester-long Corporate / Industrial Research Internship"
+        }
+      ]
+    }
+  ],
+  "availability": {
+    "availableSemesters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "note": "All eight semesters are listed individually based on the user-provided summary. The curriculum has not been independently verified."
+  }
+}

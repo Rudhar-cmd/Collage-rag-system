@@ -1,0 +1,2601 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap");
+
+/* =========================================================
+   1. DESIGN TOKENS
+   Change a colour here and it changes everywhere.
+   Dark mode only swaps these tokens; no per-component overrides.
+========================================================= */
+
+:root {
+    --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-display: "Bricolage Grotesque", "Figtree", system-ui, sans-serif;
+
+    /* Type scale */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.8125rem;
+    --fs-base: 0.9375rem;
+    --fs-lg: 1.0625rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: clamp(1.9rem, 1.4rem + 1.6vw, 2.5rem);
+
+    /* Colour: light */
+    --bg: #fbfbfd;
+    --surface: #ffffff;
+    --sidebar: #f3f4f8;
+    --sunken: #eceef4;
+    --hover: #e9ecf3;
+    --border: #e1e4ec;
+    --border-strong: #ccd2de;
+
+    --text: #151b2b;
+    --text-soft: #475064;
+    --muted: #687185;
+
+    --accent: #2b4fd8;
+    --accent-hover: #2142bd;
+    --on-accent: #ffffff;
+    --accent-soft: #e8edfd;
+    --accent-ink: #1d3aa5;
+
+    --danger: #c23030;
+    --danger-soft: #fdeeee;
+    --ok: #1f9d63;
+    --sun: #d98a00;
+
+    --icon-tile: #eef0f5;
+
+    /* Radius follows hierarchy: small controls < cards < panels */
+    --r-sm: 8px;
+    --r-md: 12px;
+    --r-lg: 18px;
+
+    --shadow-sm: 0 1px 2px rgba(21, 27, 43, 0.06);
+    --shadow-md: 0 8px 28px rgba(21, 27, 43, 0.09);
+
+    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+    --sidebar-w: 280px;
+
+    color-scheme: light;
+}
+
+.dark-mode {
+    --bg: #12141a;
+    --surface: #1a1d25;
+    --sidebar: #161920;
+    --sunken: #222631;
+    --hover: #262b37;
+    --border: #2a2f3b;
+    --border-strong: #3b4150;
+
+    --text: #eceef3;
+    --text-soft: #b6bcc9;
+    --muted: #8d95a6;
+
+    --accent: #8ea6ff;
+    --accent-hover: #a5b8ff;
+    --on-accent: #0e1220;
+    --accent-soft: #232b4a;
+    --accent-ink: #bccaff;
+
+    --danger: #ff8f8f;
+    --danger-soft: #3a2326;
+    --ok: #4cd18c;
+    --sun: #f2b84b;
+
+    --icon-tile: #e6e9f1;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.45);
+
+    color-scheme: dark;
+}
+
+/* =========================================================
+   2. BASE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Thin, themed scrollbars */
+.conversation,
+.message-text pre,
+.message-text table {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+}
+
+.conversation::-webkit-scrollbar {
+    width: 8px;
+}
+
+.conversation::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 20px;
+}
+
+/* =========================================================
+   3. APP LAYOUT
+========================================================= */
+
+.chat-app {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.main {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+}
+
+.conversation {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* Welcome screen is centred without transform hacks.
+   margin:auto keeps it scrollable on short screens. */
+.conversation.empty {
+    display: flex;
+}
+
+.conversation.empty .welcome {
+    margin: auto;
+}
+
+/* =========================================================
+   4. SIDEBAR
+========================================================= */
+
+.sidebar {
+    width: var(--sidebar-w);
+    height: 100%;
+    flex: 0 0 var(--sidebar-w);
+    display: flex;
+    flex-direction: column;
+    background: var(--sidebar);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+}
+
+.sidebar-top {
+    padding: 22px 16px 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 6px 20px;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    object-fit: cover;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.brand-name {
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+    color: var(--text);
+}
+
+.brand-subtitle {
+    margin-top: 2px;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+}
+
+.new-chat {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+    border-radius: var(--r-md);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.new-chat:hover {
+    background: var(--accent-hover);
+}
+
+.plus-icon {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.sidebar-section {
+    padding: 14px 12px 2px;
+}
+
+.sidebar-label {
+    padding: 0 12px 8px;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.sidebar-item {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: transparent;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    text-align: left;
+}
+
+button.sidebar-item {
+    cursor: pointer;
+}
+
+/* Hover only on things you can actually click */
+button.sidebar-item:hover {
+    background: var(--hover);
+    color: var(--text);
+}
+
+.sidebar-item.active {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    font-weight: 600;
+}
+
+.sidebar-icon {
+    width: 20px;
+    flex: 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.sidebar-item.active .sidebar-icon {
+    color: var(--accent-ink);
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding: 14px 16px 16px;
+    border-top: 1px solid var(--border);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 2px 12px;
+}
+
+.profile-avatar {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+.profile-info {
+    min-width: 0;
+}
+
+.profile-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.profile-email {
+    max-width: 190px;
+    margin-top: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.logout-button {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-sm);
+    background: transparent;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease), color 0.18s var(--ease),
+        border-color 0.18s var(--ease);
+}
+
+.logout-button:hover {
+    background: var(--danger-soft);
+    border-color: transparent;
+    color: var(--danger);
+}
+
+.logout-button span {
+    font-size: 15px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--ok);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 18%, transparent);
+}
+
+.powered {
+    margin-top: 6px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.6875rem;
+    opacity: 0.8;
+}
+
+/* =========================================================
+   5. TOP BAR
+========================================================= */
+
+.topbar {
+    position: relative;
+    z-index: 5;
+    height: 60px;
+    flex: 0 0 60px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+}
+
+.mobile-brand {
+    display: none;
+    grid-column: 1;
+}
+
+.model-selector {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+/* Not a dropdown, so the arrow only misleads */
+.model-arrow {
+    display: none;
+}
+
+/* Theme toggle: a pill with a sliding knob */
+.theme-toggle {
+    grid-column: 3;
+    justify-self: end;
+    position: relative;
+    width: 56px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    background: var(--sunken);
+    cursor: pointer;
+    transition: background 0.2s var(--ease);
+}
+
+.theme-toggle:hover {
+    background: var(--hover);
+}
+
+.theme-toggle-track {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.theme-toggle-icon {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+    color: var(--sun);
+    font-size: 13px;
+    line-height: 1;
+    transition: transform 0.22s var(--ease);
+}
+
+.theme-toggle.dark .theme-toggle-icon {
+    transform: translateX(26px);
+    color: var(--accent);
+}
+
+/* =========================================================
+   6. WELCOME
+========================================================= */
+
+.welcome {
+    width: min(820px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 40px 0 150px;
+    text-align: center;
+}
+
+.welcome-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.welcome-badge {
+    width: fit-content;
+    margin: 14px auto 0;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text-soft);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+}
+
+.welcome h1 {
+    margin: 18px 0 10px;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.welcome>p {
+    max-width: 52ch;
+    margin: 0 auto;
+    color: var(--text-soft);
+    font-size: var(--fs-base);
+    line-height: 1.65;
+}
+
+.suggestion-grid {
+    max-width: 700px;
+    margin: 32px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.suggestion-card {
+    position: relative;
+    min-height: 92px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.suggestion-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+}
+
+/* Icon tile: light in both themes so any PNG stays visible */
+.suggestion-icon {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: var(--r-sm);
+    background: var(--icon-tile);
+}
+
+.suggestion-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.2s var(--ease);
+}
+
+.suggestion-card:hover .suggestion-icon img {
+    transform: scale(1.1);
+}
+
+.suggestion-content {
+    min-width: 0;
+    padding-right: 22px;
+}
+
+.suggestion-title {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+.suggestion-text {
+    display: block;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+}
+
+.suggestion-arrow {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    color: var(--muted);
+    font-size: 16px;
+    transition: transform 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.suggestion-card:hover .suggestion-arrow {
+    color: var(--accent);
+    transform: translateX(3px);
+}
+
+.grounded-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.grounded-note span {
+    color: var(--accent);
+}
+
+/* =========================================================
+   7. CHAT MESSAGES
+========================================================= */
+
+.messages {
+    width: min(860px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 36px 0 170px;
+}
+
+.message-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.message-row.user {
+    justify-content: flex-end;
+}
+
+.message-content {
+    min-width: 0;
+    max-width: min(100%, 700px);
+    overflow-wrap: anywhere;
+}
+
+.message-row.user .message-content {
+    max-width: min(100%, 560px);
+}
+
+.message-name {
+    margin-bottom: 6px;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+}
+
+.message-row.user .message-name {
+    text-align: right;
+}
+
+.message-text {
+    color: var(--text);
+    font-size: var(--fs-base);
+    line-height: 1.75;
+}
+
+/* Only user text needs pre-wrap. On assistant text it would double
+   every blank line that ReactMarkdown already renders. */
+.message-row.user .message-text {
+    white-space: pre-wrap;
+    padding: 11px 16px;
+    border-radius: var(--r-lg) var(--r-lg) 4px var(--r-lg);
+    background: var(--accent-soft);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.avatar {
+    flex: 0 0 auto;
+}
+
+.assistant-avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.assistant-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-avatar {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+}
+
+.error-message {
+    padding: 12px 14px;
+    border: 1px solid color-mix(in srgb, var(--danger) 35%, transparent);
+    border-radius: var(--r-sm);
+    background: var(--danger-soft);
+    color: var(--danger);
+    font-size: var(--fs-sm);
+    line-height: 1.55;
+}
+
+/* ---- Markdown inside assistant replies ---- */
+
+.message-text> :first-child {
+    margin-top: 0;
+}
+
+.message-text> :last-child {
+    margin-bottom: 0;
+}
+
+.message-text p {
+    margin: 0.7em 0;
+}
+
+.message-text h1,
+.message-text h2,
+.message-text h3,
+.message-text h4 {
+    margin: 1.4em 0 0.5em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--text);
+}
+
+.message-text h1 {
+    font-size: 1.3rem;
+}
+
+.message-text h2 {
+    font-size: 1.15rem;
+}
+
+.message-text h3,
+.message-text h4 {
+    font-size: 1.05rem;
+}
+
+.message-text ul,
+.message-text ol {
+    margin: 0.7em 0;
+    padding-left: 1.4em;
+}
+
+.message-text li {
+    margin: 0.3em 0;
+}
+
+.message-text li::marker {
+    color: var(--muted);
+}
+
+.message-text strong {
+    font-weight: 650;
+}
+
+.message-text a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+}
+
+.message-text blockquote {
+    margin: 0.9em 0;
+    padding: 2px 0 2px 14px;
+    border-left: 3px solid var(--border-strong);
+    color: var(--text-soft);
+}
+
+.message-text hr {
+    margin: 1.2em 0;
+    border: 0;
+    border-top: 1px solid var(--border);
+}
+
+.message-text code {
+    padding: 0.15em 0.4em;
+    border-radius: 5px;
+    background: var(--sunken);
+    font-size: 0.88em;
+}
+
+.message-text pre {
+    margin: 0.9em 0;
+    padding: 14px 16px;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    background: var(--sunken);
+}
+
+.message-text pre code {
+    padding: 0;
+    background: transparent;
+}
+
+/* remark-gfm tables: scroll sideways instead of breaking the layout */
+.message-text table {
+    display: block;
+    max-width: 100%;
+    margin: 0.9em 0;
+    overflow-x: auto;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+}
+
+.message-text th,
+.message-text td {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.message-text th {
+    background: var(--sunken);
+    font-weight: 650;
+}
+
+/* =========================================================
+   8. SOURCES
+========================================================= */
+
+.sources {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+}
+
+.sources-title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+    color: var(--text-soft);
+    font-size: var(--fs-xs);
+    font-weight: 650;
+}
+
+.sources-title span {
+    color: var(--accent);
+}
+
+.source-list {
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.source {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+}
+
+.source-info {
+    min-width: 0;
+}
+
+.source-file {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+}
+
+.source-page {
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.source-score {
+    flex: 0 0 auto;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--sunken);
+    color: var(--text-soft);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================
+   9. TYPING INDICATOR
+========================================================= */
+
+.typing {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--surface);
+}
+
+.typing span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--muted);
+    animation: typing 1.3s infinite ease-in-out;
+}
+
+.typing span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.typing span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes typing {
+
+    0%,
+    60%,
+    100% {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+}
+
+/* =========================================================
+   10. COMPOSER
+========================================================= */
+
+.composer-area {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 28px 24px 14px;
+    background: linear-gradient(to bottom, transparent, var(--bg) 40%);
+    /* Let clicks and the scrollbar through the fade; re-enabled below */
+    pointer-events: none;
+}
+
+.composer,
+.composer-note {
+    pointer-events: auto;
+}
+
+.composer {
+    width: min(820px, 100%);
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    padding: 8px 8px 8px 18px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.composer:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent),
+        var(--shadow-md);
+}
+
+.composer textarea {
+    flex: 1;
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    max-height: 160px;
+    margin: 0;
+    padding: 9px 0;
+    resize: none;
+    overflow-y: auto;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: var(--fs-base);
+    line-height: 22px;
+}
+
+/* Grows with the text where the browser supports it (Chrome, Edge, Safari 26+) */
+@supports (field-sizing: content) {
+    .composer textarea {
+        field-sizing: content;
+        height: auto;
+    }
+}
+
+.composer textarea::placeholder {
+    color: var(--muted);
+}
+
+.composer textarea:disabled {
+    opacity: 0.6;
+}
+
+.send-button {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 12px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.18s var(--ease), opacity 0.18s var(--ease);
+}
+
+.send-button:hover:not(:disabled) {
+    background: var(--accent-hover);
+}
+
+/* Still reads as a button when empty, just clearly inactive */
+.send-button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.composer-note {
+    width: min(820px, 100%);
+    margin: 8px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+/* =========================================================
+   11. CHAT HISTORY
+========================================================= */
+
+.history-page {
+    width: min(900px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 40px 0 80px;
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.history-title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.history-title-icon {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--r-md);
+    background: var(--sunken);
+}
+
+.history-header h1 {
+    margin: 0;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.history-header p {
+    margin: 3px 0 0;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+}
+
+.history-new-button {
+    height: 38px;
+    padding: 0 16px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    color: var(--text);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.history-new-button:hover {
+    background: var(--hover);
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-item {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.history-item:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-sm);
+}
+
+.history-chat-button {
+    flex: 1;
+    min-width: 0;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.history-chat-button:hover {
+    background: var(--hover);
+}
+
+.history-item-icon {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--r-sm);
+    background: var(--sunken);
+}
+
+.history-content {
+    min-width: 0;
+    flex: 1;
+}
+
+.history-question {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text);
+    font-size: var(--fs-base);
+    font-weight: 600;
+}
+
+.history-date {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.history-arrow {
+    flex: 0 0 auto;
+    color: var(--muted);
+    font-size: 16px;
+    transition: transform 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.history-chat-button:hover .history-arrow {
+    color: var(--accent);
+    transform: translateX(3px);
+}
+
+.history-delete-button {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.history-delete-button:hover {
+    background: var(--danger-soft);
+}
+
+.delete-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    opacity: 0.6;
+    transition: opacity 0.18s var(--ease);
+}
+
+.history-delete-button:hover .delete-icon {
+    opacity: 1;
+}
+
+/* Icons used across the app */
+.history-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+    opacity: 0.75;
+}
+
+.sidebar-item.active .history-icon {
+    opacity: 1;
+}
+
+.history-title-icon .history-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.empty-history-icon .history-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* If your PNG icons are dark, this makes them white in dark mode.
+   Delete these two rules if they are already light. */
+.dark-mode .history-icon,
+.dark-mode .delete-icon {
+    filter: brightness(0) invert(1);
+}
+
+.empty-history {
+    max-width: 480px;
+    margin: 64px auto;
+    padding: 40px 24px;
+    text-align: center;
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+}
+
+.empty-history-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--r-md);
+    background: var(--sunken);
+}
+
+.empty-history h2 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+}
+
+.empty-history p {
+    max-width: 34ch;
+    margin: 0 auto 20px;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    line-height: 1.65;
+}
+
+.empty-history button {
+    height: 40px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.empty-history button:hover {
+    background: var(--accent-hover);
+}
+
+/* =========================================================
+   12. SYLLABUS
+========================================================= */
+
+.syllabus-page {
+    width: min(1040px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 36px 0 70px;
+    color: var(--text);
+}
+
+.syllabus-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.syllabus-eyebrow {
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.syllabus-header h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--fs-2xl);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.syllabus-header p {
+    max-width: 52ch;
+    margin: 10px 0 0;
+    color: var(--text-soft);
+    font-size: var(--fs-base);
+    line-height: 1.65;
+}
+
+.syllabus-back-button,
+.syllabus-error button {
+    flex-shrink: 0;
+    padding: 9px 14px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    color: var(--text);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.syllabus-back-button:hover,
+.syllabus-error button:hover {
+    background: var(--hover);
+}
+
+.syllabus-source-note {
+    max-width: 78ch;
+    margin-bottom: 24px;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.syllabus-source-note strong {
+    color: var(--text);
+}
+
+.syllabus-source-note p {
+    margin: 5px 0 0;
+}
+
+.semester-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 8px;
+    padding: 4px;
+    border-radius: var(--r-md);
+    background: var(--sunken);
+}
+
+.semester-tab {
+    padding: 9px 16px;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: transparent;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.semester-tab:hover:not(.active) {
+    color: var(--text);
+}
+
+.semester-tab.active {
+    background: var(--surface);
+    color: var(--accent-ink);
+    box-shadow: var(--shadow-sm);
+}
+
+.syllabus-subject-count {
+    margin: 18px 0 12px;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+}
+
+.syllabus-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.syllabus-subject-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.syllabus-subject-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+}
+
+.syllabus-subject-top,
+.syllabus-subject-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.syllabus-code {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.syllabus-card-arrow {
+    color: var(--muted);
+    font-size: 17px;
+    transition: transform 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.syllabus-subject-card:hover .syllabus-card-arrow {
+    color: var(--accent);
+    transform: translateX(3px);
+}
+
+.syllabus-subject-card h3 {
+    flex: 1;
+    margin: 14px 0;
+    color: var(--text);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.syllabus-subject-footer {
+    flex-wrap: wrap;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.syllabus-subject-footer span:first-child {
+    color: var(--text-soft);
+    font-weight: 600;
+}
+
+.syllabus-detail {
+    margin-top: 24px;
+}
+
+.syllabus-detail-heading {
+    margin-bottom: 24px;
+}
+
+.syllabus-detail-heading h2 {
+    margin: 12px 0 6px;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.syllabus-detail-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+}
+
+/* Capped width keeps long syllabus text readable */
+.syllabus-units {
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.syllabus-unit {
+    padding: 20px 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--surface);
+}
+
+.syllabus-unit h3 {
+    margin: 0 0 10px;
+    color: var(--accent-ink);
+    font-size: var(--fs-base);
+    font-weight: 700;
+}
+
+.syllabus-unit p {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: var(--fs-base);
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.syllabus-empty-details,
+.syllabus-message {
+    max-width: 780px;
+    padding: 26px 22px;
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    color: var(--text-soft);
+    font-size: var(--fs-base);
+    line-height: 1.7;
+}
+
+.syllabus-message {
+    border-style: solid;
+}
+
+.syllabus-empty-details h3 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: var(--fs-lg);
+}
+
+.syllabus-empty-details p {
+    margin: 0 0 8px;
+}
+
+.syllabus-error {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px 0;
+    padding: 14px 16px;
+    border: 1px solid color-mix(in srgb, var(--danger) 35%, transparent);
+    border-radius: var(--r-sm);
+    background: var(--danger-soft);
+    color: var(--danger);
+    font-size: var(--fs-sm);
+    line-height: 1.6;
+}
+
+/* =========================================================
+   13. AUTH PAGES (Login / Register)
+========================================================= */
+
+.auth-page {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    background:
+        radial-gradient(900px 420px at 50% -10%, var(--accent-soft), transparent 70%),
+        var(--bg);
+}
+
+.auth-card {
+    width: min(400px, 100%);
+    padding: 36px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+}
+
+.auth-logo {
+    width: 68px;
+    height: 68px;
+    display: block;
+    margin: 0 auto 18px;
+    object-fit: contain;
+}
+
+.auth-card h1 {
+    margin: 0;
+    text-align: center;
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.auth-subtitle {
+    margin: 8px 0 26px;
+    text-align: center;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card label {
+    margin-bottom: 6px;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.auth-card input {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 14px;
+    padding: 0 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-sm);
+    outline: none;
+    background: var(--surface);
+    color: var(--text);
+    font-size: var(--fs-base);
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.auth-card input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.auth-button {
+    width: 100%;
+    height: 44px;
+    margin-top: 6px;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.auth-button:hover:not(:disabled) {
+    background: var(--accent-hover);
+}
+
+.auth-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-error {
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    border: 1px solid color-mix(in srgb, var(--danger) 35%, transparent);
+    border-radius: var(--r-sm);
+    background: var(--danger-soft);
+    color: var(--danger);
+    font-size: var(--fs-sm);
+}
+
+.auth-divider {
+    margin: 20px 0 12px;
+    text-align: center;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.switch-auth {
+    width: 100%;
+    height: 42px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-sm);
+    background: transparent;
+    color: var(--text);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s var(--ease);
+}
+
+.switch-auth:hover {
+    background: var(--hover);
+}
+
+/* =========================================================
+   14. RESPONSIVE
+========================================================= */
+
+/* Tablet */
+@media (max-width: 1000px) {
+    :root {
+        --sidebar-w: 240px;
+    }
+
+    .messages,
+    .history-page,
+    .syllabus-page {
+        width: calc(100% - 36px);
+    }
+
+    .welcome {
+        width: calc(100% - 32px);
+    }
+}
+
+/* Phone: the sidebar becomes a bottom navigation bar.
+   Without this the history, syllabus and logout buttons
+   were unreachable on small screens. */
+@media (max-width: 700px) {
+    .chat-app {
+        flex-direction: column-reverse;
+    }
+
+    .main {
+        width: 100%;
+        flex: 1;
+        min-height: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: stretch;
+        overflow: visible;
+        border-right: 0;
+        border-top: 1px solid var(--border);
+        padding-bottom: env(safe-area-inset-bottom, 0);
+        background: var(--surface);
+    }
+
+    .sidebar-top,
+    .sidebar-section,
+    .sidebar-bottom {
+        display: contents;
+    }
+
+    /* Hide everything that doesn't belong in a tab bar */
+    .brand,
+    .sidebar-label,
+    div.sidebar-item,
+    .user-profile,
+    .status,
+    .powered {
+        display: none;
+    }
+
+    .sidebar .new-chat,
+    .sidebar button.sidebar-item,
+    .sidebar .logout-button {
+        flex: 1;
+        width: auto;
+        min-width: 0;
+        height: auto;
+        min-height: 58px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+        padding: 8px 4px;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        color: var(--text-soft);
+        font-size: var(--fs-xs);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .sidebar .new-chat:hover,
+    .sidebar .logout-button:hover {
+        background: var(--hover);
+        color: var(--text);
+    }
+
+    .sidebar .new-chat {
+        color: var(--accent);
+    }
+
+    .sidebar .sidebar-item.active {
+        background: transparent;
+        color: var(--accent-ink);
+        box-shadow: inset 0 2px 0 var(--accent);
+    }
+
+    .sidebar .sidebar-icon {
+        width: auto;
+        flex: 0 0 auto;
+    }
+
+    /* Top bar */
+    .topbar {
+        height: 54px;
+        flex-basis: 54px;
+        padding: 0 12px;
+    }
+
+    .mobile-brand {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--text);
+        font-family: var(--font-display);
+        font-size: var(--fs-sm);
+        font-weight: 700;
+    }
+
+    .mobile-logo {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .model-selector {
+        font-size: var(--fs-base);
+    }
+
+    .theme-toggle {
+        width: 50px;
+        height: 28px;
+    }
+
+    .theme-toggle-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .theme-toggle.dark .theme-toggle-icon {
+        transform: translateX(22px);
+    }
+
+    /* Welcome */
+    .welcome {
+        width: calc(100% - 28px);
+        padding: 28px 0 130px;
+    }
+
+    .welcome-logo {
+        width: 62px;
+        height: 62px;
+    }
+
+    .suggestion-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .suggestion-card {
+        min-height: 80px;
+        padding: 14px;
+    }
+
+    /* Messages */
+    .messages {
+        width: calc(100% - 24px);
+        padding: 24px 0 140px;
+    }
+
+    .message-row {
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    .message-content,
+    .message-row.user .message-content {
+        max-width: calc(100% - 46px);
+    }
+
+    .assistant-avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .source-list {
+        max-width: 100%;
+    }
+
+    /* Composer */
+    .composer-area {
+        padding: 22px 10px 8px;
+    }
+
+    .composer {
+        min-height: 52px;
+        padding: 6px 6px 6px 12px;
+        border-radius: var(--r-md);
+    }
+
+    .send-button {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+    }
+
+    .composer-note {
+        padding: 0 8px;
+        font-size: 0.6875rem;
+        line-height: 1.35;
+    }
+
+    /* History */
+    .history-page,
+    .syllabus-page {
+        width: calc(100% - 24px);
+        padding: 26px 0 50px;
+    }
+
+    .history-new-button {
+        display: none;
+    }
+
+    .history-chat-button {
+        padding: 12px 10px 12px 12px;
+        gap: 10px;
+    }
+
+    .history-delete-button {
+        margin-right: 4px;
+    }
+
+    /* Syllabus */
+    .syllabus-subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .syllabus-header {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .syllabus-unit {
+        padding: 16px;
+    }
+
+    /* Auth */
+    .auth-card {
+        padding: 28px 22px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+    .mobile-brand span {
+        display: none;
+    }
+
+    .welcome>p {
+        font-size: var(--fs-sm);
+    }
+
+    .history-arrow,
+    .source-score {
+        display: none;
+    }
+
+    .syllabus-error {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Short landscape screens */
+@media (max-height: 520px) and (orientation: landscape) {
+    .welcome {
+        padding-top: 16px;
+    }
+
+    .welcome-logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .welcome>p,
+    .welcome-badge,
+    .grounded-note {
+        display: none;
+    }
+
+    .welcome h1 {
+        margin: 10px 0 0;
+        font-size: 1.5rem;
+    }
+
+    .suggestion-grid {
+        margin-top: 14px;
+    }
+
+    .suggestion-card {
+        min-height: 64px;
+    }
+}
+
+/* =========================================================
+   15. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* Restore Delete button in Chat History */
+.history-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.history-chat-button {
+    flex: 1;
+    min-width: 0;
+}
+
+.history-delete-button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px 0 0;
+    padding: 8px;
+    border: 1px solid #e5baba;
+    border-radius: 10px;
+    background: #fff5f5;
+    cursor: pointer;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 2;
+}
+
+.history-delete-button .delete-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    opacity: 1;
+}
+
+.history-delete-button:hover {
+    background: #ffe2e2;
+    border-color: #e57373;
+}
+
+.dark-mode .history-delete-button {
+    background: #3a2527;
+    border-color: #704044;
+}
+
+.dark-mode .history-delete-button:hover {
+    background: #513034;
+}
+/* =========================================
+   SYLLABUS PROGRAM & BRANCH SELECTOR
+========================================= */
+
+.syllabus-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 28px 100px;
+    box-sizing: border-box;
+}
+
+.syllabus-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.syllabus-header h1 {
+    margin: 8px 0;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 750;
+    letter-spacing: -1px;
+    color: var(--text-primary, #172033);
+}
+
+.syllabus-header p {
+    margin: 0;
+    color: var(--text-secondary, #6b7280);
+    line-height: 1.7;
+}
+
+.syllabus-eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    color: #6478e8;
+}
+
+/* Program and branch headings */
+
+.syllabus-section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 18px;
+}
+
+.syllabus-section-heading h2 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 750;
+    color: var(--text-primary, #172033);
+}
+
+.syllabus-section-heading p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary, #6b7280);
+}
+
+/* Program cards grid */
+
+.syllabus-program-grid,
+.syllabus-branch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 22px 0 30px;
+}
+
+/* Individual program and branch card */
+
+.syllabus-program-card,
+.syllabus-branch-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    min-width: 0;
+    min-height: 170px;
+    padding: 22px;
+    text-align: left;
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 18px;
+    background: var(--card-bg, #ffffff);
+    color: var(--text-primary, #172033);
+    cursor: pointer;
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        background 180ms ease;
+}
+
+.syllabus-program-card:hover,
+.syllabus-branch-card:hover {
+    transform: translateY(-3px);
+    border-color: #8796f2;
+    box-shadow: 0 12px 28px rgba(60, 75, 150, 0.10);
+}
+
+.syllabus-program-card:focus-visible,
+.syllabus-branch-card:focus-visible {
+    outline: 3px solid rgba(99, 102, 241, 0.35);
+    outline-offset: 3px;
+}
+
+.syllabus-program-icon,
+.syllabus-branch-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #eef0ff;
+    color: #5969dc;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.syllabus-program-card h3,
+.syllabus-branch-card h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+.syllabus-program-card p,
+.syllabus-branch-card p {
+    margin: 6px 0 0;
+    color: var(--text-secondary, #6b7280);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.syllabus-card-arrow {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    color: #7b83a1;
+    font-size: 22px;
+    transition: transform 180ms ease;
+}
+
+.syllabus-program-card:hover .syllabus-card-arrow,
+.syllabus-branch-card:hover .syllabus-card-arrow {
+    transform: translateX(4px);
+}
+
+/* Breadcrumb / Back navigation */
+
+.syllabus-navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 0 0 22px;
+    color: var(--text-secondary, #6b7280);
+    font-size: 13px;
+}
+
+.syllabus-breadcrumb {
+    padding: 6px 0;
+    border: 0;
+    background: transparent;
+    color: #6478e8;
+    font: inherit;
+    cursor: pointer;
+}
+
+.syllabus-breadcrumb:hover {
+    text-decoration: underline;
+}
+
+.syllabus-back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 10px;
+    background: var(--card-bg, #ffffff);
+    color: var(--text-primary, #172033);
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background 180ms ease;
+}
+
+.syllabus-back-button:hover {
+    background: var(--hover-bg, #f5f6fa);
+}
+
+/* Semester selector */
+
+.semester-selector {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 24px 0;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.semester-tab {
+    flex-shrink: 0;
+    padding: 11px 18px;
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 11px;
+    background: var(--card-bg, #ffffff);
+    color: var(--text-secondary, #6b7280);
+    font-size: 13px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: all 180ms ease;
+}
+
+.semester-tab:hover {
+    border-color: #8796f2;
+    color: #5969dc;
+}
+
+.semester-tab.active {
+    border-color: #6676e8;
+    background: #6676e8;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(102, 118, 232, 0.2);
+}
+
+/* Subject cards */
+
+.syllabus-subject-count {
+    margin: 8px 0 16px;
+    color: var(--text-secondary, #6b7280);
+    font-size: 13px;
+}
+
+.syllabus-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.syllabus-subject-card {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 15px;
+    background: var(--card-bg, #ffffff);
+    color: var(--text-primary, #172033);
+    text-align: left;
+    cursor: pointer;
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.syllabus-subject-card:hover {
+    transform: translateY(-2px);
+    border-color: #8796f2;
+    box-shadow: 0 8px 22px rgba(60, 75, 150, 0.08);
+}
+
+.syllabus-subject-top,
+.syllabus-subject-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.syllabus-code {
+    color: #6676e8;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.syllabus-subject-card h3 {
+    margin: 16px 0;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.syllabus-subject-footer {
+    flex-wrap: wrap;
+    color: var(--text-secondary, #6b7280);
+    font-size: 12px;
+}
+
+/* Dark mode */
+
+.dark-mode .syllabus-program-card,
+.dark-mode .syllabus-branch-card,
+.dark-mode .syllabus-subject-card,
+.dark-mode .semester-tab,
+.dark-mode .syllabus-back-button {
+    background: var(--card-bg, #1f2937);
+    color: var(--text-primary, #f3f4f6);
+    border-color: var(--border-color, #374151);
+}
+
+.dark-mode .syllabus-program-icon,
+.dark-mode .syllabus-branch-icon {
+    background: #30375e;
+    color: #b8c2ff;
+}
+
+.dark-mode .semester-tab.active {
+    background: #6676e8;
+    border-color: #6676e8;
+    color: #ffffff;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+
+    .syllabus-program-grid,
+    .syllabus-branch-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .syllabus-page {
+        padding: 26px 20px 90px;
+    }
+}
+
+@media (max-width: 560px) {
+    .syllabus-page {
+        padding: 20px 14px 90px;
+    }
+
+    .syllabus-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .syllabus-program-grid,
+    .syllabus-branch-grid,
+    .syllabus-subject-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .syllabus-program-card,
+    .syllabus-branch-card {
+        min-height: 140px;
+        padding: 18px;
+    }
+
+    .syllabus-section-heading h2 {
+        font-size: 20px;
+    }
+
+    .semester-tab {
+        padding: 10px 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .syllabus-program-card,
+    .syllabus-branch-card,
+    .syllabus-subject-card,
+    .semester-tab {
+        transition: none;
+    }
+}
+.source-distance-text {
+    margin-top: 2px;
+    color: #9ca3af;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.source-explanation {
+    margin: 10px 0 0;
+    color: #9ca3af;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* Prevent the old right-side badge from appearing */
+.source-card>.source-distance {
+    display: none;
+}

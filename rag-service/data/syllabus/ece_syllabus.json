@@ -1,0 +1,1109 @@
+{
+  "source": {
+    "institution": "MIET (Autonomous), Jammu",
+    "program": "B.Tech Electronics & Communication Engineering (ECE)",
+    "batch": "2023-27 / 2024-28 (see per-semester basis)",
+    "sourceDocument": "Semesters 1-4 from your screenshots; Semesters 5-8 from MIET Board of Studies (ECE & EE) minutes",
+    "documents": [
+      {
+        "label": "BoS Meeting 2, 08 Sep 2022 (ECE Sem 5-6 scheme, 2020-24 batch and beyond)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1768805704.pdf"
+      },
+      {
+        "label": "BoS Meeting 3, 22 Sep 2023 (ECE Sem 7-8 scheme)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1768806017.pdf"
+      },
+      {
+        "label": "BoS Meeting 4, 11 Oct 2024 (changes to ECE Sem 3-6)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1768805856.pdf"
+      }
+    ],
+    "coverage": "Course names, categories and codes; unit details not included.",
+    "notes": [
+      "Sem 1-2 screenshots show duplicated rows (Design Thinking and Induction Training twice in Sem 1; Induction Training under Sem 2 mandatory courses). Duplicates are removed; Sem 2 keeps only Environment and Sustainability as its mandatory course.",
+      "Sem 1-4 credits are not shown in the screenshots and are left out rather than copied from the EE tables.",
+      "Sem 5-6: the minutes list the changes made in 2024, but the full ECE Sem 5-6 table (Annexure IV) is not published online. Credits are from the 2022 scheme where the course was not changed.",
+      "ECE B.Tech minutes for Sem 7-8 apply to '2020-24 batch and beyond'."
+    ]
+  },
+  "selectedProgram": "ece",
+  "programName": "B.Tech Electronics & Communication Engineering",
+  "batch": null,
+  "semesters": [
+    {
+      "semester": 1,
+      "status": "screenshot_transcribed",
+      "subjects": [
+        {
+          "code": "BSC-101",
+          "name": "Engineering Mathematics-I",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "BSC-102",
+          "name": "Engineering Physics",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-101",
+          "name": "Introduction to C Programming",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-101",
+          "name": "Design Thinking",
+          "category": "HSMC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "BSC-112",
+          "name": "Engineering Physics Lab",
+          "category": "Basic Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-111",
+          "name": "C Programming Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ESC-112",
+          "name": "Electrical and Electronics Workshop",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "NCC-101",
+          "name": "Induction Training",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "grading": "Satisfactory / Not Satisfactory"
+        },
+        {
+          "code": "MCC-102",
+          "name": "Indian Constitution",
+          "category": "MCC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "status": "screenshot_transcribed",
+      "subjects": [
+        {
+          "code": "BSC-201",
+          "name": "Engineering Mathematics-II",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ECE-201",
+          "name": "Basic Electrical and Electronics Engineering",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ESC-202",
+          "name": "Introduction to Programming with Python",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-201",
+          "name": "Technical Communication",
+          "category": "HSMC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ECE-211",
+          "name": "Basic Electrical and Electronics Engineering Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ESC-212",
+          "name": "Python Programming Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-212",
+          "name": "Business Process Automation with RPA Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "NCC-201",
+          "name": "Environment and Sustainability",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "grading": "Satisfactory / Not Satisfactory"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "status": "screenshot_transcribed",
+      "subjects": [
+        {
+          "code": null,
+          "name": "Professional Industrial Training / Internship",
+          "category": "Internship",
+          "kind": "internship",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "note": "Summer internship; credits/marks added to the Sem 3 marksheet."
+        },
+        {
+          "code": null,
+          "name": "Mathematics-III",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ECE-301",
+          "name": "Electronic Devices and Circuits",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Digital Electronics",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Network Analysis and Synthesis",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Electronic Devices and Circuits Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Digital Electronics Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Electronic Measurement and Instrumentation Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Core Elective",
+          "category": "Professional Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 2,
+          "note": "2-credit MOOC delivered through SWAYAM/NPTEL (BoS Meeting 4, 11 Oct 2024)."
+        },
+        {
+          "code": null,
+          "name": "Placement Overview and Career Planning",
+          "category": "Mandatory / Non-credit",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "note": "Audit course since BoS Meeting 4 (11 Oct 2024)."
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS/I4-301",
+          "name": "Minor Degree MOOC (specialization track)",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "options": [
+            "Artificial Intelligence and Machine Learning",
+            "Cyber Security",
+            "IoT",
+            "Data Science",
+            "Cloud Computing",
+            "Industry 4.0"
+          ],
+          "note": "Pick one track. Industry 4.0 track course in Sem 3: Factory Automation. 5 credits per semester (BoS Meeting 4).",
+          "credits": 5
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "status": "screenshot_transcribed",
+      "subjects": [
+        {
+          "code": "ECE-401",
+          "name": "Microcontroller and Applications",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ECE-402",
+          "name": "Analog and Digital Communication",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Microcontroller Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Analog and Digital Communication Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ECE-403",
+          "name": "Automation with PLC and SCADA",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "note": "Renamed 'Introduction to PLC and SCADA' in BoS Meeting 4 (11 Oct 2024); your screenshot still shows the old name."
+        },
+        {
+          "code": "ECE-413",
+          "name": "PLC and SCADA Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Entrepreneurship and Business Strategies",
+          "category": "HSMC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": null,
+          "name": "Open Elective",
+          "category": "Open Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 2,
+          "note": "2-credit MOOC delivered through SWAYAM/NPTEL (BoS Meeting 4)."
+        },
+        {
+          "code": null,
+          "name": "Corporate Etiquette and Personality Development",
+          "category": "Mandatory / Non-credit",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "note": "Audit course since BoS Meeting 4."
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS/I4-401",
+          "name": "Minor Degree MOOC (specialization track)",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "options": [
+            "Artificial Intelligence and Machine Learning",
+            "Cyber Security",
+            "IoT",
+            "Data Science",
+            "Cloud Computing",
+            "Industry 4.0"
+          ],
+          "note": "Pick one track. Industry 4.0 track course in Sem 4: IoT & AI.",
+          "credits": 5
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "status": "partially_verified",
+      "verificationNote": "BoS Meeting 2 (2022) scheme with the 2024 changes from Meeting 4. Original total was 24 credits and 900 marks including the internship.",
+      "subjects": [
+        {
+          "code": "ECE-501",
+          "name": "Internet of Things",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 4,
+          "marks": 150,
+          "note": "From the 2022 scheme. The 2024 minutes added a 3-credit Core Elective 'in place of the existing course' without naming it, so confirm IoT is still offered."
+        },
+        {
+          "code": "ECE-502",
+          "name": "Digital Signal Processing",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 4,
+          "marks": 150
+        },
+        {
+          "code": "ECE-503",
+          "name": "Microwave Devices and Systems",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 4,
+          "marks": 150
+        },
+        {
+          "code": "HSMC-501",
+          "name": "Open Elective-I",
+          "category": "Open Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 150
+        },
+        {
+          "code": null,
+          "name": "Core Elective",
+          "category": "Professional Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "note": "New in 2024; delivered through SWAYAM/NPTEL."
+        },
+        {
+          "code": null,
+          "name": "Seminar",
+          "category": "Professional Core",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 2,
+          "note": "New 2-credit course (BoS Meeting 4)."
+        },
+        {
+          "code": "ECE-511",
+          "name": "Internet of Things Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 2,
+          "marks": 50
+        },
+        {
+          "code": "ECE-512",
+          "name": "Digital Signal Processing Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 1,
+          "marks": 50
+        },
+        {
+          "code": "ECE-513",
+          "name": "Microwave Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 1,
+          "marks": 50
+        },
+        {
+          "code": null,
+          "name": "Professional Industrial Training / Internship",
+          "category": "Internship",
+          "kind": "internship",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "note": "30-day internship after Sem 4 (BoS Meeting 2, 2022)."
+        },
+        {
+          "code": null,
+          "name": "Placement Preparation-I",
+          "category": "Mandatory / Non-credit",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "note": "Audit course since BoS Meeting 4."
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS/I4-501",
+          "name": "Minor Degree MOOC (specialization track)",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "options": [
+            "Artificial Intelligence and Machine Learning",
+            "Cyber Security",
+            "IoT",
+            "Data Science",
+            "Cloud Computing",
+            "Industry 4.0"
+          ],
+          "note": "Pick one track. Industry 4.0 track course in Sem 5: VLSI.",
+          "credits": 5,
+          "marks": 150
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "status": "partially_verified",
+      "verificationNote": "BoS Meeting 2 (2022) scheme with the 2024 changes from Meeting 4. Original total was 21 credits and 800 marks.",
+      "subjects": [
+        {
+          "code": "ECE-601",
+          "name": "Wireless and Mobile Communication",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 4,
+          "marks": 150
+        },
+        {
+          "code": "ECE-602",
+          "name": "VLSI Circuit Design",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 4,
+          "marks": 150
+        },
+        {
+          "code": "ECE-603",
+          "name": "Computer Networks",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 4,
+          "marks": 150
+        },
+        {
+          "code": "ECE-604",
+          "name": "Control Systems",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 150
+        },
+        {
+          "code": "ECE-611",
+          "name": "PCB Design Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 1,
+          "marks": 50,
+          "note": "From the 2022 scheme; not re-listed in the 2024 minutes."
+        },
+        {
+          "code": "ECE-612",
+          "name": "Verilog HDL Programming Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 1,
+          "marks": 50,
+          "note": "From the 2022 scheme; not re-listed in the 2024 minutes."
+        },
+        {
+          "code": "ECE-613",
+          "name": "Computer Networks Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 2,
+          "marks": 50,
+          "note": "From the 2022 scheme; not re-listed in the 2024 minutes."
+        },
+        {
+          "code": null,
+          "name": "Core Elective",
+          "category": "Professional Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 2,
+          "note": "New in 2024; 2-credit MOOC via SWAYAM/NPTEL, in place of an unnamed existing course."
+        },
+        {
+          "code": "NCC-601",
+          "name": "MOOC (non-credit)",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "grading": "Satisfactory / Not Satisfactory"
+        },
+        {
+          "code": null,
+          "name": "Placement Preparation-II",
+          "category": "Mandatory / Non-credit",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "note": "Audit course since BoS Meeting 4."
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS/I4-601",
+          "name": "Minor Degree MOOC (specialization track)",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "options": [
+            "Artificial Intelligence and Machine Learning",
+            "Cyber Security",
+            "IoT",
+            "Data Science",
+            "Cloud Computing",
+            "Industry 4.0"
+          ],
+          "note": "Pick one track. Industry 4.0 track course in Sem 6: Advanced Manufacturing Technology.",
+          "credits": 5,
+          "marks": 150
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "status": "verified_scheme",
+      "verificationNote": "BoS Meeting 3 (22 Sep 2023), Table 1.",
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "totalCredits": 21,
+          "totalMarks": 1050,
+          "subjects": [
+            {
+              "code": "ECE-704",
+              "name": "Professional Industrial Training / Internship",
+              "category": "Internship",
+              "kind": "internship",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 4,
+              "marks": 150,
+              "note": "Summer internship; credits/marks added to Sem 7 marksheet."
+            },
+            {
+              "code": "ECE-701",
+              "name": "Professional Elective 1",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Wireless Sensor Networks",
+                "Advanced Mobile Technologies",
+                "Optical Fiber Communication"
+              ]
+            },
+            {
+              "code": "ECE-702",
+              "name": "Professional Elective 2",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Introduction to AI with Machine Learning",
+                "Introduction to Cyber Security",
+                "Fundamentals of Blockchain Technology"
+              ]
+            },
+            {
+              "code": "ECE-703",
+              "name": "Professional Elective 3 (SWAYAM/NPTEL MOOC / other platform)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "OEC-701",
+              "name": "Open Elective",
+              "category": "Open Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Strategic Management",
+                "Marketing Management",
+                "Managerial Economics"
+              ]
+            },
+            {
+              "code": "ECE-705",
+              "name": "Seminar",
+              "category": "Professional Elective",
+              "kind": "activity",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 2,
+              "marks": 100
+            },
+            {
+              "code": "ECE-711",
+              "name": "Minor Project",
+              "category": "Project",
+              "kind": "project",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 250
+            },
+            {
+              "code": "NCC-701",
+              "name": "Essence of Indian Knowledge and Tradition",
+              "category": "NCC",
+              "kind": "activity",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 0,
+              "grading": "Satisfactory / Not Satisfactory"
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "totalCredits": 21,
+          "totalMarks": 1050,
+          "subjects": [
+            {
+              "code": "PII-701",
+              "name": "Industry Internship-I / Startup Scheme-I",
+              "category": "Internship",
+              "kind": "internship",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 15,
+              "marks": 850
+            },
+            {
+              "code": "ECE-703",
+              "name": "Professional Elective 3 (MOOC)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "ECE-706",
+              "name": "Professional Elective 4 (MOOC)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 100
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "code": "ECE-704",
+          "name": "Professional Industrial Training / Internship",
+          "category": "Internship",
+          "kind": "internship",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 4,
+          "marks": 150,
+          "note": "Summer internship; credits/marks added to Sem 7 marksheet.",
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-701",
+          "name": "Professional Elective 1",
+          "category": "Professional Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Wireless Sensor Networks",
+            "Advanced Mobile Technologies",
+            "Optical Fiber Communication"
+          ],
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-702",
+          "name": "Professional Elective 2",
+          "category": "Professional Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Introduction to AI with Machine Learning",
+            "Introduction to Cyber Security",
+            "Fundamentals of Blockchain Technology"
+          ],
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-703",
+          "name": "Professional Elective 3 (SWAYAM/NPTEL MOOC / other platform)",
+          "category": "MCC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 100,
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "OEC-701",
+          "name": "Open Elective",
+          "category": "Open Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Strategic Management",
+            "Marketing Management",
+            "Managerial Economics"
+          ],
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-705",
+          "name": "Seminar",
+          "category": "Professional Elective",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 2,
+          "marks": 100,
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-711",
+          "name": "Minor Project",
+          "category": "Project",
+          "kind": "project",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 250,
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "NCC-701",
+          "name": "Essence of Indian Knowledge and Tradition",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 0,
+          "grading": "Satisfactory / Not Satisfactory",
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "PII-701",
+          "name": "Industry Internship-I / Startup Scheme-I",
+          "category": "Internship",
+          "kind": "internship",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 15,
+          "marks": 850,
+          "schemeName": "Scheme-2"
+        },
+        {
+          "code": "ECE-703",
+          "name": "Professional Elective 3 (MOOC)",
+          "category": "MCC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 100,
+          "schemeName": "Scheme-2"
+        },
+        {
+          "code": "ECE-706",
+          "name": "Professional Elective 4 (MOOC)",
+          "category": "MCC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 100,
+          "schemeName": "Scheme-2"
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "status": "verified_scheme",
+      "verificationNote": "BoS Meeting 3 (22 Sep 2023), Table 2.",
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "totalCredits": 15,
+          "totalMarks": 900,
+          "subjects": [
+            {
+              "code": "ECE-801",
+              "name": "Professional Elective 1",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Instrumentation and Biomedical Engineering",
+                "Digital Image Processing",
+                "Advanced Digital Signal Processing"
+              ]
+            },
+            {
+              "code": "ECE-802",
+              "name": "Professional Elective 2",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "UAVs and Drone Technology",
+                "Hybrid and Electric Vehicles",
+                "Foundations of Internet of Things and Industry 4.0"
+              ]
+            },
+            {
+              "code": "ECE-803",
+              "name": "Professional Elective 3 (SWAYAM/NPTEL MOOC / other platform)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "ECE-811",
+              "name": "Major Project",
+              "category": "Project",
+              "kind": "project",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 6,
+              "marks": 500
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "totalCredits": 15,
+          "totalMarks": 900,
+          "subjects": [
+            {
+              "code": "PII-801",
+              "name": "Industry Internship-II / Startup Scheme-II",
+              "category": "Internship",
+              "kind": "internship",
+              "units": [],
+              "unitDetailsAvailable": false,
+              "credits": 15,
+              "marks": 900
+            }
+          ]
+        }
+      ],
+      "subjects": [
+        {
+          "code": "ECE-801",
+          "name": "Professional Elective 1",
+          "category": "Professional Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Instrumentation and Biomedical Engineering",
+            "Digital Image Processing",
+            "Advanced Digital Signal Processing"
+          ],
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-802",
+          "name": "Professional Elective 2",
+          "category": "Professional Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "UAVs and Drone Technology",
+            "Hybrid and Electric Vehicles",
+            "Foundations of Internet of Things and Industry 4.0"
+          ],
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-803",
+          "name": "Professional Elective 3 (SWAYAM/NPTEL MOOC / other platform)",
+          "category": "MCC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 3,
+          "marks": 100,
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "ECE-811",
+          "name": "Major Project",
+          "category": "Project",
+          "kind": "project",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 6,
+          "marks": 500,
+          "schemeName": "Scheme-1"
+        },
+        {
+          "code": "PII-801",
+          "name": "Industry Internship-II / Startup Scheme-II",
+          "category": "Internship",
+          "kind": "internship",
+          "units": [],
+          "unitDetailsAvailable": false,
+          "credits": 15,
+          "marks": 900,
+          "schemeName": "Scheme-2"
+        }
+      ]
+    }
+  ],
+  "availability": {
+    "availableSemesters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "note": "Sem 5-6 need confirmation of the exact ECE table for your batch."
+  }
+}

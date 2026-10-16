@@ -1,0 +1,621 @@
+{
+  "source": {
+    "institution": "MIET (Autonomous), Jammu",
+    "program": "B.E. Computer Science and Engineering",
+    "batch": "2023 onwards",
+    "sourceDocument": "Curriculum CSE 1st to 8th semesters 2023.pdf",
+    "sourceType": "Uploaded official syllabus PDF",
+    "coverage": "Semester overview, course codes and names; detailed units not copied into this dataset",
+    "notes": [
+      "Semesters 7 and 8 have alternative Scheme-1 and Scheme-2 pathways.",
+      "Honours/minor MOOC lists are choices; students enroll in one course as described by the source PDF.",
+      "Unit details are intentionally empty in this overview dataset; use detailed source PDF pages for course unit content."
+    ]
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "subjects": [
+        {
+          "code": "BSC-101",
+          "name": "Engineering Mathematics-I",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "BSC-102",
+          "name": "Engineering Physics",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "COM-101",
+          "name": "Introduction to C Programming",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "HSMC-101",
+          "name": "Design Thinking",
+          "category": "HSMC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "BSC-112",
+          "name": "Engineering Physics Lab",
+          "category": "Basic Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "COM-111",
+          "name": "C Programming Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "NCC-101",
+          "name": "Induction Training",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "MCC-102",
+          "name": "Indian Constitution",
+          "category": "MCC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "subjects": [
+        {
+          "code": "BSC-201",
+          "name": "Engineering Mathematics-II",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "COM-201",
+          "name": "Data Structures using C",
+          "category": "Professional Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "ESC-201",
+          "name": "Basic Electrical and Electronics Engineering",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "HSMC-201",
+          "name": "Technical Communication",
+          "category": "HSMC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "COM-211",
+          "name": "Data Structures using C Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "ESC-211",
+          "name": "Basic Electrical and Electronics Engineering Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "COM-212",
+          "name": "Business Process Automation with RPA Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": true
+        },
+        {
+          "code": "NCC-201",
+          "name": "Environment and Sustainability",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": true
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "subjects": [
+        {
+          "code": "COM-301",
+          "name": "Design and Analysis of Algorithms",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ESC-301",
+          "name": "Digital Electronics",
+          "category": "Engineering Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-302",
+          "name": "Operating Systems",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "BSC-301",
+          "name": "Discrete Mathematics",
+          "category": "Basic Science",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-301",
+          "name": "Principles of Management",
+          "category": "HSMC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "ESC-311",
+          "name": "Digital Electronics Lab",
+          "category": "Engineering Science",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-312",
+          "name": "Operating Systems Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-312",
+          "name": "Placement Overview and Career Planning",
+          "category": "HSMC",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "MNC-XXX",
+          "name": "MOOC",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS-301",
+          "name": "Honours/Minor MOOC: AI & ML, Cyber Security, IoT, Data Science, or Cloud Computing",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "subjects": [
+        {
+          "code": "COM-401",
+          "name": "Object Oriented Programming using C++",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-402",
+          "name": "Relational Database Management System",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-403",
+          "name": "Computer Organization and Architecture",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-401",
+          "name": "Entrepreneurship and Business Strategies",
+          "category": "HSMC",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-411",
+          "name": "Object Oriented Programming using C++ Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-412",
+          "name": "Relational Database Management System Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-412",
+          "name": "Corporate Etiquette and Personality Development",
+          "category": "HSMC",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS-401",
+          "name": "Honours/Minor MOOC: AI & ML, Cyber Security, IoT, Data Science, or Cloud Computing",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "subjects": [
+        {
+          "code": "COM-501",
+          "name": "Python Programming-I",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-502",
+          "name": "Computer Networks",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-503",
+          "name": "Microprocessors",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-501",
+          "name": "Open Elective 1",
+          "category": "Open Elective",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-511",
+          "name": "Python Programming Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-512",
+          "name": "Computer Networks Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-513",
+          "name": "Microprocessor Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-511",
+          "name": "Placement Preparation-I",
+          "category": "HSMC",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS-501",
+          "name": "Honours/Minor MOOC: AI & ML, Cyber Security, IoT, Data Science, or Cloud Computing",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "subjects": [
+        {
+          "code": "COM-601",
+          "name": "Artificial Intelligence with Computer Vision",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-602",
+          "name": "Fundamentals of Blockchain Technology",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-603",
+          "name": "Software Engineering",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-604",
+          "name": "Theory of Computation",
+          "category": "Core",
+          "kind": "theory",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-611",
+          "name": "Artificial Intelligence with Computer Vision Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "COM-612",
+          "name": "Mini Project Lab",
+          "category": "Professional Core",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "HSMC-611",
+          "name": "Placement Preparation-II",
+          "category": "HSMC",
+          "kind": "lab",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "NCC-601",
+          "name": "MOOC",
+          "category": "NCC",
+          "kind": "activity",
+          "units": [],
+          "unitDetailsAvailable": false
+        },
+        {
+          "code": "MDC-AI/CS/CC/IoT/DS-601",
+          "name": "Honours/Minor MOOC: AI & ML, Cyber Security, IoT, Data Science, or Cloud Computing",
+          "category": "MOOC",
+          "kind": "elective",
+          "units": [],
+          "unitDetailsAvailable": false
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "subjects": [
+            {
+              "code": "COM-704",
+              "name": "Professional Industrial Training / Internship",
+              "category": "Internship",
+              "kind": "internship",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-701",
+              "name": "Professional Elective 1",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-702",
+              "name": "Professional Elective 2",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-703",
+              "name": "Professional Elective 3 (SWAYAM/NPTEL/other MOOC)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "OEC-701",
+              "name": "Open Elective",
+              "category": "Open Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-705",
+              "name": "Seminar",
+              "category": "Professional Elective",
+              "kind": "activity",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-711",
+              "name": "Minor Project",
+              "category": "Project",
+              "kind": "project",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "NCC-701",
+              "name": "Essence of Indian Knowledge and Tradition",
+              "category": "NCC",
+              "kind": "activity",
+              "units": [],
+              "unitDetailsAvailable": false
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "subjects": [
+            {
+              "code": "PII-701",
+              "name": "Industry Internship-I",
+              "category": "Internship",
+              "kind": "internship",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-703",
+              "name": "Professional Elective 3 (MOOC)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-706",
+              "name": "Professional Elective 4 (MOOC)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "subjects": [
+            {
+              "code": "COM-801",
+              "name": "Professional Elective 1",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-802",
+              "name": "Professional Elective 2",
+              "category": "Professional Elective",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-803",
+              "name": "Professional Elective 3 (MOOC)",
+              "category": "MCC",
+              "kind": "elective",
+              "units": [],
+              "unitDetailsAvailable": false
+            },
+            {
+              "code": "COM-811",
+              "name": "Major Project",
+              "category": "Project",
+              "kind": "project",
+              "units": [],
+              "unitDetailsAvailable": false
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "subjects": [
+            {
+              "code": "PII-801",
+              "name": "Industry Internship-II",
+              "category": "Internship",
+              "kind": "internship",
+              "units": [],
+              "unitDetailsAvailable": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

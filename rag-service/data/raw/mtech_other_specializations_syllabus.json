@@ -1,0 +1,103 @@
+{
+  "source": {
+    "status": "Semesters 3-4 verified from MIET Board of Studies minutes. Semesters 1-2 course names come from the screenshot transcription you provided; they are not published on the MIET site.",
+    "institute": "Model Institute of Engineering & Technology (Autonomous), Kot Bhalwal, Jammu",
+    "programmePage": "https://mietjmu.in/mtech/",
+    "documents": [
+      {
+        "label": "BoS Meeting No. 6, 04 Jun 2026 (M.Tech CSE Sem 3-4, batch 2025-27 and onwards)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1785916026.pdf"
+      }
+    ],
+    "note": "MIET's detailed M.Tech syllabus is a Canva link on the programme page, which blocks automated access, and the minutes for Sem 1-2 are not published. Sem 1-2 therefore have names and categories only, with no codes or credits. The Sem 3-4 scheme was endorsed to the Academic Council on 04 Jun 2026; confirm final approval."
+  },
+  "selectedProgram": "mtech_cse",
+  "programName": "M.Tech Computer Science & Engineering",
+  "duration": "2 years",
+  "batch": null,
+  "availability": {
+    "status": "partial_verified",
+    "note": "MIET offers no other M.Tech specialization, so this is the only M.Tech file. Sem 3 in your screenshot lists Professional Elective Labs and a different elective layout than the 04 Jun 2026 minutes, so the screenshot is probably an earlier batch's scheme."
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "status": "screenshot_transcribed",
+      "applicableBatch": "as per your screenshot (batch not shown)",
+      "verificationNote": "Names and categories from your screenshot. Codes, credits and units not available.",
+      "subjects": [
+        { "name": "Advanced Simulation Tools and Techniques", "category": "Professional Core Course" },
+        { "name": "Quantum Computing Fundamentals", "category": "Professional Core Course" },
+        { "name": "Research Methodology and Scholarly Practices", "category": "Professional Core Course" },
+        { "name": "Seminar: Emerging Domains in Computer Science", "category": "Professional Core Course" },
+        { "name": "Simulation Techniques and Tools Lab", "category": "Professional Core Course" },
+        { "name": "Professional Elective", "category": "Professional Elective Course" },
+        { "name": "Professional Elective Lab", "category": "Professional Elective Course" }
+      ]
+    },
+    {
+      "semester": 2,
+      "status": "screenshot_transcribed",
+      "applicableBatch": "as per your screenshot (batch not shown)",
+      "verificationNote": "Names and categories from your screenshot. Codes, credits and units not available.",
+      "subjects": [
+        { "name": "Large Language Models", "category": "Professional Core Course" },
+        { "name": "Advanced Distributed Computing", "category": "Professional Core Course" },
+        { "name": "Scientific Writing and Communication", "category": "Professional Core Course" },
+        { "name": "Large Language Models Lab", "category": "Professional Core Course" },
+        { "name": "Cyber Physical Lab", "category": "Professional Core Course" },
+        { "name": "Professional Elective", "category": "Professional Elective Course" },
+        { "name": "Professional Elective Lab", "category": "Professional Elective Course" }
+      ]
+    },
+    {
+      "semester": 3,
+      "status": "verified_scheme",
+      "applicableBatch": "2025-27 and onwards",
+      "scheme": "Scheme 1 (default)",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 5(a). Total 20 credits, 500 marks. Professional Electives are delivered as MOOCs on SWAYAM/NPTEL/Coursera.",
+      "subjects": [
+        { "code": "MCSE301", "name": "Professional Industry Training / Internship", "type": "Summer Internship", "credits": 4, "lecture": 0, "tutorial": 0, "practical": 8, "marks": 100 },
+        {
+          "code": "MCSE302",
+          "name": "Open Elective Course",
+          "type": "OEC",
+          "credits": 3,
+          "lecture": 3,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100,
+          "options": ["Design Thinking", "Entrepreneurship and Business Strategies", "Innovation Management"]
+        },
+        { "code": "MCSE303", "name": "Professional Elective 1", "type": "PEC", "credits": 4, "lecture": 4, "tutorial": 0, "practical": 0, "marks": 100 },
+        { "code": "MCSE304", "name": "Professional Elective 2", "type": "PEC", "credits": 4, "lecture": 4, "tutorial": 0, "practical": 0, "marks": 100 },
+        { "code": "MCSE311", "name": "Minor Project", "type": "PCC", "credits": 5, "lecture": 0, "tutorial": 0, "practical": 10, "marks": 100 }
+      ],
+      "alternateScheme": {
+        "name": "Scheme 2 (industry internship)",
+        "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 5(b). Total 20 credits, 500 marks.",
+        "subjects": [
+          { "code": "PII-301", "name": "Professional Internship-I", "type": "Professional Industry Internship", "credits": 16, "lecture": 0, "tutorial": 0, "practical": 32, "marks": 400 },
+          { "code": "MCSE-303", "name": "Professional Elective 1", "type": "PEC", "credits": 4, "lecture": 4, "tutorial": 0, "practical": 0, "marks": 100 }
+        ]
+      }
+    },
+    {
+      "semester": 4,
+      "status": "verified_scheme",
+      "applicableBatch": "2025-27 and onwards",
+      "scheme": "Scheme 1 (default)",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 6(a). Total 20 credits, 400 marks.",
+      "subjects": [
+        { "code": "MCSE401", "name": "Dissertation", "type": "PCC", "credits": 20, "lecture": 0, "tutorial": 0, "practical": 40, "marks": 400 }
+      ],
+      "alternateScheme": {
+        "name": "Scheme 2 (industry internship)",
+        "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 6(b). Total 20 credits, 400 marks.",
+        "subjects": [
+          { "code": "PII 401", "name": "Professional Internship-II", "type": "Professional Industry Internship", "credits": 20, "lecture": 0, "tutorial": 0, "practical": 40, "marks": 400 }
+        ]
+      }
+    }
+  ]
+}

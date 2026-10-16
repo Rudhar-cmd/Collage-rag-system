@@ -1,0 +1,2155 @@
+
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       1      
+ 
+ 
+ 
+ 
+(AUTONOMOUS) 
+NAAC ‘A’ GRADE 
+ 
+ 
+ 
+ 
+ 
+SYLLABUS FOR B.E. AIML & Cyber 
+Security  
+Batch 2024 onwards 
+ 
+
+
+--- PAGE 2 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       2      
+Semester 1 
+S. No. 
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional Final Exam Total 
+1 
+BSC-101 
+Engineering Mathematics-I 
+BSC 
+5 
+4 
+1 
+0 
+50 
+100 
+150 
+2 
+ESC-101 Basic Electrical and Electronics 
+Engineering 
+ESC 
+4 
+3 
+1 
+0 
+50 
+100 
+150 
+3 
+COM-101 Introduction to C Programming 
+ESC 
+5 
+4 
+1 
+0 
+50 
+100 
+150 
+4 
+HSMC-101 
+Technical Communication 
+HSMC 
+4 
+4 
+0 
+0 
+50 
+100 
+150 
+5 
+ESC-111 Basic Electrical and Electronics 
+Engineering Lab 
+ESC 
+1 
+0 
+0 
+2 
+50 
+0 
+50 
+6 
+COM-111 
+C Programming Lab 
+ESC 
+2 
+0 
+0 
+4 
+50 
+0 
+50 
+7 
+NCC-101 
+Induction Training 
+NCC 
+0 
+0 
+0 
+4 
+- 
+- 
+S/NS* 
+8 
+MCC-102 
+Indian Constitution 
+MCC 
+1 
+1 
+0 
+0 
+50 
+- 
+50 
+Total 22 
+29 
+ 
+ 
+750 
+*Note: S=Satisfactory, NS=Not Satisfactory 
+Semester 2 
+S. No. 
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional Final Exam Total 
+1 
+BSC-201 
+Engineering Mathematics-II 
+BSC 
+5 
+3 
+2 
+0 
+50 
+100 
+150 
+2 
+COM-201 
+Data Structures using C 
+PCC 
+4 
+3 
+1 
+0 
+50 
+100 
+150 
+3 
+BSC-202 
+Engineering Physics 
+BSC 
+5 
+4 
+1 
+0 
+50 
+100 
+150 
+4 
+HSMC-201 
+Design Thinking 
+HSMC 
+3 
+2 
+1 
+0 
+50 
+100 
+150 
+5 
+COM-211 
+Data Structures using C Lab 
+PCC 
+2 
+0 
+0 
+4 
+50 
+0 
+50 
+6 
+BSC-212 
+Engineering Physics Lab 
+BSC 
+1 
+0 
+0 
+2 
+50 
+0 
+50 
+7 
+COM-212 
+Business Process Automation 
+with RPA Lab 
+ESC 
+2 
+0 
+0 
+4 
+50 
+0 
+50 
+8 
+NCC-201 
+Environment and 
+Sustainability 
+NCC 
+0 
+2 
+0 
+0 
+- 
+- 
+S/NS* 
+Total 22 
+29 
+ 
+ 
+750 
+*Note: S=Satisfactory, NS=Not Satisfactory. 
+ 
+ 
+
+
+--- PAGE 3 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       3      
+ 
+Semester 1 
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+BSC-101 
+Engineering Mathematics-I 
+BSC 
+5 
+4 
+1 
+0 
+50 
+100 
+150 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Apply the knowledge of calculus to plot graphs of functions and solve the problem of maxima and minima. 
+CO2 
+Determine the convergence/divergence of infinite series, approximation of functions using power and 
+Taylor’s series expansion and error estimation. 
+CO3 
+Apply the concept of definite integrals to calculate area under the curves. 
+CO4 
+Understand and apply the concepts of matrices 
+CO5 
+Demonstrate knowledge of vector space by solving associated problems 
+ 
+Detailed Syllabus 
+Section-A 
+ 
+Unit 1: Differential Calculus I: Leibnitz theorem (without proof), Partial differentiation, Euler’s theorem on 
+homogeneous functions, Asymptotes, Double points, curvature, Curve tracing in Cartesian, polar and parametric forms. 
+(11 Hrs) 
+Unit 2: Differential Calculus II: Rolle’s Theorem, Mean value Theorem, Taylor’s and Maclaurin’s series with remainder, 
+indeterminate forms, Taylor series in two variables, Maxima and Minima of functions of two variables, method of 
+Lagrange’s multipliers. 
+(11 Hrs) 
+Unit 3: Integral Calculus: Definite integrals with important properties, differentiation under the integral sign, Gamma, 
+Beta and error functions with simple problems, applications of definite integrals to find length, area, volume and surface 
+area of revolutions, transformation of coordinates, double and triple integrals with simple problems. 
+(10 Hrs) 
+Section-B 
+Unit 4: Matrices- Matrices, vectors: addition and scalar multiplication, matrix multiplication, Linear systems of 
+equations, linear Independence, rank of a matrix, determinants, Cramer’s Rule, inverse of a matrix, Gauss elimination 
+and Gauss-Jordan elimination.  
+(15 Hrs) 
+Unit 5: Vector Space, linear dependence of vectors, basis, dimension, Linear transformations, range and kernel of a 
+linear map, rank and nullity, Inverse of a linear transformation, rank nullity theorem, composition of linear maps, Eigen 
+values, eigenvectors, symmetric, skew-symmetric, and orthogonal matrices, Eigen bases.                       (10 Hrs) 
+ 
+Text Books 
+ 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Engineering Mathematics 
+B.S. Grewal 
+Khanna Publications, New 
+Delhi 
+44th (2018) 
+2 
+Calculus and Analytic Geometry 
+Thomas and Finney Addison Wesley, Narosa. 
+1st (2010) 
+Reference Books 
+ 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition (Pub. Yr.) 
+1 
+Advanced Engineering Mathematics V. P. Mishra, Jyoti 
+Sharma, Pratibha 
+Mishra 
+Bhavya Books 
+2nd (2019) 
+2 
+Integral Calculus 
+S. Narayan 
+S. Chand, New Delhi 
+35th (2005) 
+3 
+Engineering Mathematics 
+N.P Bali 
+Laxmi Publications 
+13th (2016) 
+
+
+--- PAGE 4 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       4      
+Course 
+Code 
+Course Name 
+Course 
+Type 
+C
+d 
+L T P 
+Marks 
+Sessional 
+Final 
+Exam 
+Total 
+ESC-101 
+Basic Electrical and Electronics 
+Engineering 
+ESC 
+4 
+3 
+1 
+0 
+50 
+100 
+150 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Learn about applications of network laws and theorems to design electric circuits. 
+CO2 
+Examine Sinusoidal waveforms and classify measuring instruments 
+CO3 
+Explain the construction and principle of operation of single-phase transformers and DC Machines. 
+CO4 
+Understand the characteristics of semiconductor devices and rectifier circuits 
+CO5 
+Interpret the principle of various transistor configurations and characteristics. 
+Detailed Syllabus 
+Section-A 
+Unit 1: Elementary Concepts of DC and AC Circuits: Recent advancements in Electrical Engineering, DC Circuit 
+elements (R, L and C), Voltage and Current sources, Kirchhoff’s Current and Voltage laws, mesh and nodal analysis. 
+Superposition, Maximum power transfer, Thevenin and Norton theorems. 
+(8 Hrs) 
+Unit 2: Representation of Sinusoidal Waveforms: Peak and RMS values, Phasor representation, Real power, Reactive 
+power, apparent power, power factor.  Analysis of single-phase AC circuits. Classification of Instruments: Operating 
+principle of Measuring Instruments. 
+ 
+ 
+ 
+ 
+ 
+                                   (8 Hrs) 
+Unit 3: Single phase Transformers and Machines: Principle of operation, ideal and practical transformer, equivalent 
+circuit, losses in transformers, transformer testing, regulation and efficiency, Principle of operation of DC and AC 
+machines. 
+(6 Hrs) 
+Section-B 
+Unit 4: Semiconductor Devices and Applications: Evolution in Electronics (vacuum tubes to nano-electronics), Types 
+and specifications of Resistor, Inductor, Capacitor and Color coding, PN junction and Zener diode characteristics, Types 
+of diodes (Tunnel diode, Schottky diode, LED, photodiode, Varactor diode), Voltage Regulators, Wave Shaping Circuits 
+(rectifiers, filters, clippers and clampers).                                                                                                                (8 Hrs) 
+Unit 5: Transistors and Biasing Circuits: BJT: Principle and operation of NPN transistor, configuration and 
+characteristics (CB, CE, and CC), types of biasing circuit. Hybrid Parameters Introduction. Two port networks, hybrid 
+model for CE, CC, CB configuration and their analysis using h-parameters, Miller theorem. FET: Principle of Operation 
+and characteristics of JFET, biasing of FET, MOSFET and CMOS.                                                                      (10 Hrs) 
+Text Books 
+S. No. 
+Name of the Books 
+Author 
+Publisher 
+Edition (Pub. Yr.) 
+1 
+Basic Electrical Engineering 
+D. P. Kothari and l. J. Nagrath 
+Tata McGrawHill 
+4th (2019) 
+2 
+Integrated Electronics 
+Millman and Halkias 
+Tata McGraw Hill 
+4th (2015) 
+Reference Books 
+S. No. 
+Name of the Books 
+Author 
+Publisher 
+Edition (Pub. 
+Yr.) 
+1 
+Basic Electrical Engineering 
+A. E. Fitzgerald, David E 
+Higginbotham and Arvin Grabel 
+Tata McGraw Hill 
+5th (2009) 
+2 
+Electronic Devices and Circuit 
+Theory 
+Boylstead 
+Pearson 
+11th (2015) 
+
+
+--- PAGE 5 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       5      
+3 
+Electronic Principles 
+Malvino Leach 
+Tata McGraw Hill 
+7th (2017) 
+ 
+ 
+
+
+--- PAGE 6 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       6      
+ 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Design flowcharts, algorithms and pseudocode for solving problems. 
+CO2 
+Understand the syntax and semantics of C programs and use them to translate the algorithms into programs. 
+CO3 
+Decompose a problem into functions and synthesize a complete program using divide and conquer approach. 
+CO4 
+Debug and test programs to evaluate program correctness. 
+CO5 
+Implement derived and user-defined data types and files in C programming for a given application. 
+Detailed Syllabus 
+Section-A 
+Unit 1: Introduction to Programming: Evolution of programming languages, Structured Programming, Compilation 
+process, object code, source code, executable code, Operating systems, Fundamentals of algorithms, flow charts and 
+pseudocodes.                                                                                                                                                             (6 Hrs) 
+ 
+Unit 2: Introduction to C: Introduction, Importance of C, Sample C programs, Basic structure of C programs, Executing 
+a C program, Character set, Keywords, Identifiers, Constant and Variables, Data types, Operators, Precedence of 
+operators, Statements, Expressions, Input-output functions. 
+(8 Hrs) 
+Unit 3: Control Statements, Storage Classes, Library Functions: Control Structures: Decision making and Branching, 
+Control Structures: Decision making and looping, Storage Classes: Types of storage class, Scoping rules, Standard 
+Library Functions, advantages and their use (I/O functions, String, Character, Mathematics, Time and Date functions). 
+(12 Hrs) 
+Section-B 
+Unit 4: User-Defined Functions, Arrays, Recursion, Handling of character strings, Structures, Unions, User defined and 
+standard functions, Formal and Actual arguments, Functions category, function prototypes, parameter passing, Call-by-
+value, Call-by-reference, Nested Functions, Recursion, One dimensional Array, Multidimensional Array declaration and 
+their applications, Passing array to a function, String Manipulation, Declaration of structures, declaration of unions, 
+pointer to structure and unions. 
+(12 Hrs) 
+Unit 5: Pointers, Dynamic memory allocation, File management in C, Pointer variable and its importance, Pointer 
+Arithmetic, passing parameters by reference, pointer to pointer, pointer to functions, Dangling pointer, Dynamic memory 
+allocation, Console input output functions, Disk input output functions, opening closing and creating Data files. 
+(10 Hrs) 
+Text Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Programming with C 
+E. Balaguruswamy 
+McGraw Hill 
+Education 
+7th (2017) 
+2 
+Programming with C 
+Byron Gottfried 
+McGraw Hill 
+Education 
+4th (2018) 
+3 
+C Programming Language 
+Brian W. Kernighan, Dennis M. 
+Ritchie 
+Pearson 
+2nd (2015) 
+Reference Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+C The Complete Reference 
+Herbert Schildt 
+McGraw Hill 
+Education 
+4th (2017) 
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+COM-101 Introduction to C Programming 
+ESC 
+5 
+4 
+1 
+0 
+50 
+100 
+150 
+
+
+--- PAGE 7 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       7      
+2 
+C How to Program 
+Paul J. Deitel 
+Pearson 
+8th (2015) 
+ 
+ 
+
+
+--- PAGE 8 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       8      
+ 
+ 
+Course Code 
+ 
+Course Name 
+ 
+Course Type 
+ 
+Cd 
+ 
+L 
+ 
+T 
+ 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+HSMC-101 Technical Communication 
+HSMC 
+4 
+4 
+0 
+0 
+50 
+100 
+150 
+COURSE OUTCOME 
+At the end of the course the student will be able to 
+CO1 Understand the constructs of written communication. 
+CO2 Develop competence in writing technical papers, research articles, proposals and reports. 
+CO3 Understand different aspects of verbal and non-verbal communication. 
+CO4 Gain effective communication skills and professional etiquettes for the workplace. 
+CO5 Demonstrate linguistic competence for public speaking and group discussion. 
+Detailed Syllabus 
+Section-A 
+UNIT 1: Basic Writing Skills: Sentence, Creating Coherence, Use of Phrases and Clauses in Sentences, Organizing 
+Principles of Paragraphs in Documents, Techniques for Writing Precisely. Identifying Common Errors in Writing: 
+Subject–Verb Agreement, Noun–Pronoun Agreement, Misplaced Modifiers, Redundancies, Clichés. The e-English: E-
+Mail Communication, Internet Abbreviations, Blogging, Challenges of English Language Online. 
+(7 Hrs) 
+UNIT 2: Technical Writing Skills: Letter Writing, Letter of Application Content, Format, Report Writing – Types, 
+Structures, Data Collection, Content, Form, Writing a Proposal, Recommendations, Instructions, Business 
+Communication. Creative Writing Skills: Free Writing, Biographical Writing, Autobiographical Writing, Process 
+Description, Bar Charts and Flowcharts, Descriptive Writing, Argumentative Writing, Essay Writing, Précis Writing, 
+Paraphrasing, Poster Making. 
+(7 Hrs) 
+UNIT 3: Reading and Listening: Improving Reading Skills: Skimming and Scanning, Reading and Note-Making, 
+Intensive Reading and Predicting Content, Reading and Interpretation, Reading – Critical Reading, Hints Development. 
+Listening Skills: Listening Comprehension, Difference between Listening and Hearing, Types of Listening, Types of 
+Listening Intensity, Effective Listening, Ways to Improve Listening Skills, Listening and Note-Taking, Barriers to 
+Effective Listening. 
+(7 Hrs) 
+Section-B 
+UNIT 4: Verbal Communication 
+Process of Communication and Effective Speaking: Communication Process, Barriers to Effective Communication, 
+Flow of Organizational Communication, Language as a Tool of Communication, Pronunciation, Intonation, Stress and 
+Rhythm, Introduction to Phonetics,  
+(5 Hrs) 
+ 
+UNIT 5: Non-Verbal Communication:  Oral Communication, Communication at Workplace, Public Speaking, 
+Persuasive Speaking, Impromptu Speaking - Extempore, Just a Minute, Debate, Conversations and Dialogues, 
+Conversation over Telephone. Professional Etiquettes Meaning and Type, Seminar on a given topic. 
+(4 Hrs) 
+Text Books 
+ 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Technical Communication 
+Wiley Editorial 
+Wiley 
+1st (2019) 
+2 
+Technical Communication: Principles and 
+Practice 
+Meenakshi Raman, 
+Sangeeta Sharma 
+Oxford 
+2nd (2011) 
+
+
+--- PAGE 9 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       9      
+3 
+Technical Communication: A Reader-
+Centered Approach 
+Anderson 
+Cengage Learning 6th (2007) 
+ 
+ 
+
+
+--- PAGE 10 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       10      
+ 
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+ESC-111 Basic Electrical and Electronics 
+Engineering Lab 
+ESC 
+1 
+0 
+0 
+2 
+50 
+0 
+50 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 Apply fundamental concepts to solve simple DC and AC electric circuits. 
+CO2 Verify the basic characteristics of transformers and electrical machines. 
+CO3 Design diode and rectifier circuits and analyze their characteristics. 
+CO4 Design and evaluate various transistor biasing configurations and circuits. 
+CO5 Design different voltage regulators 
+  
+List of Activities for Electrical and Electronics Lab 
+S. No. Activities 
+1 
+Verify Characteristics of passive circuit elements (R, L, C). 
+2 
+Examine Time and frequency responses of RC, RL and RLC circuits. 
+3 
+Verify and analyze of network theorems. 
+4 
+Analyze single-phase transformers. 
+5 
+Perform the polarity test of the single phase transformer. 
+6 
+To perform open and short circuit tests on single phase transformers. 
+7 
+Measure three phase power using two Wattmeter methods. 
+8 
+Verify and Plot V-I characteristics of p-n junction and Zener diodes. 
+9 
+Verify and Plot Input and Output characteristics of BJT (CE). 
+10 
+Implement half wave and full wave rectifiers. 
+11 
+Design voltage regulator using series pass transistor. 
+ 
+ 
+ 
+ 
+
+
+--- PAGE 11 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       11      
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+COM-111 
+C Programming Lab 
+ESC 
+2 
+0 
+0 
+4 
+50 
+0 
+50 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Demonstrate an understanding of the overall syntax and semantics of C programs. 
+CO2 
+Break problems into smaller solvable problem statements and integrate to create a complete solution. 
+CO3 
+Develop readable, modular and reusable C programs using built-in and user-defined functions. 
+CO4 
+Debug and test programs to determine that the program performs as expected. 
+CO5 
+Develop programs that perform operations using derived data types and files. 
+List of Activities for C Programming Lab 
+S. No. Activities 
+1 
+Familiarization with the Lab Environment. 
+Program to print “Hello World”. 
+2 
+Program for arithmetic operations like addition, subtraction, multiplication and remainder. 
+Program to calculate area and perimeter of circle, square and rectangle. 
+Program to find the Euclidean distance between two points in a plane. 
+3 
+Program to check if a number is even or odd. 
+Program to check whether the alphabet is a vowel or consonant. 
+Program to calculate area and perimeter of circle, square and rectangle based on user’s choice. 
+4 
+Program to calculate factorial of a number using a for loop. 
+Program to print the Fibonacci sequence using for loop. 
+Program to find maximum of n numbers using for loop. 
+5 
+Program to check if a number is prime or not using a while loop. 
+Program to calculate sum of digits of a number using a while loop. 
+Program to check if a number is Armstrong or not using a while loop. 
+6 
+Program to find the maximum element and index in the array. 
+Program to sort an array using bubble sort. 
+Program to search an element in an array using linear search. 
+7 
+Program to read and print elements in two dimensional arrays. 
+Program to perform matrix multiplication. 
+8 
+Program to demonstrate the use of various string operations. 
+Program to check whether a given string is a palindrome. 
+9 
+Program to create Simple Calculator using switch case and function for every operation. 
+Program to print the Fibonacci sequence using recursion. 
+Program to calculate factorial of a number using recursion. 
+11 
+Program to differentiate pass by value and pass by reference by swapping two numbers using function. 
+12 
+Program to demonstrate the use of malloc(), calloc(), realloc() and free() functions. 
+13 
+Program to store the information of student marks using structures and find total marks of individual student. 
+Program to store information of a student using union. 
+Program to implement an array of structures for student marks for each student and pass it to function for 
+various operations. 
+14 
+Program to read and write in a file. 
+Program for reading and writing the student marks data to files. 
+15 
+ Mini Project: Student Information System. 
+ 
+ 
+ 
+
+
+--- PAGE 12 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       12      
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional Final Exam 
+Total 
+NCC-101 
+Induction Training 
+NCC 
+0 
+0 
+0 
+4 
+- 
+- 
+S/NS* 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Understand the key initiatives undertaken by the Institute and perceive the benefits of enrolling into the 
+program. 
+CO2 
+Develop ICT skills through modern tool usage. 
+CO3 
+Develop understanding regarding different career paths and options. 
+CO4 
+Explore self-learning opportunities through MOOCs, Digital Library and online digital resources. 
+CO5 
+Leverage self-development opportunities available on campus. 
+List of Activities for Induction Training 
+S. No. Activities 
+1 
+Orientation Session on Institution. 
+2 
+Address by the Director of the Institution. 
+3 
+Mantra to Success using ICT Tools at MIET: Deep Dive into Official Email Id, Google Drive, Google 
+Classroom and Google Meeting. 
+4 
+Introduction to Google CS First. 
+5 
+Personality Development workshop. 
+6 
+Hands-On session on ERP system. 
+7 
+Project Showcasing Session: AI, Computer Vision and RPA. 
+8 
+E-Learning Resources at MIET (MOOC Platforms). 
+9 
+PI 360 Training session. 
+10 
+Student Clubs at MIET (Ureka, Literary). 
+11 
+Orientation session on the Library. 
+12 
+Extra-Curricular Activities in College. 
+13 
+Orientation session on Other Committees (NSS and Cultural). 
+14 
+Familiarization to Dept./Branch. 
+15 
+Orientation on Mentor Mentee Program. 
+ 
+ 
+
+
+--- PAGE 13 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       13      
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+MCC-102 
+Indian Constitution 
+MCC 
+1 
+1 
+0 
+1 
+50 
+- 
+50 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Understand the emergence, evolution, structure and composition of Indian Constitution. 
+CO2 
+Understand and analyze federalism in the Indian context. 
+CO3 
+Understand and analyze Panchayati Raj institutions as a medium of decentralization and the three organs of 
+the state in the contemporary scenario. 
+CO4 
+Understand and analyze the Indian Political scenario amidst the emerging challenges. 
+CO5 
+Evaluate Indian foreign relations under the cold war and post cold war era. 
+Detailed Syllabus 
+Section-A 
+Unit 1: Introduction to Indian Constitution: Historical Background of the Constituent Assembly, Government of India 
+Act of 1935 and Indian Independence Act of 1947, Composition of the Constituent Assembly, Functions of the 
+Constituent Assembly, Various Committees of the Constituent Assembly, Enforcement of the Constitution, Indian 
+Constitution and its Salient Features. 
+(5 Hrs) 
+Unit 2: The role of B R Ambedkar in the making of the Indian Constitution, The Preamble of the Constitution, 
+Fundamental Rights, Fundamental Duties, Directive Principles of State Policy, Gandhian Principles, Liberal Principles, 
+Socialistic Principles. 
+(5 Hrs) 
+Unit 3: Indian Federalism: Meaning and Definition of Federalism, Structure and Features of Indian Federalism, 
+Difference between Indian and Federation of other states, Difference between federal and unitary features, Critical 
+Evaluation of the Indian Federal System, Decentralisation of Powers, Centre-State Relations, 73rd Amendment, 
+Panchayath Raj Institutions. 
+(5 Hrs) 
+Unit 4: Union Government: Powers of Indian Parliament, Functions of Rajya Sabha, Functions of Lok Sabha, Powers 
+and Functions of the President, Comparison of powers of Indian President with the United States, Powers and Functions 
+of the Prime Minister. 
+(5 Hrs) 
+Unit 5: India's External Relations - Cold War and Post-Cold War era: What is Foreign Policy? Basic Determinants of 
+Foreign Policy, Indian and its Neighbours, India's Extended Neighbourhood in West Asia and South-East Asia, India's 
+relations with the United States and Russia, India and the World Organisations, India in the 21st century. 
+(5 Hrs) 
+Text Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Working of a Democratic Constitution of 
+India 
+G. Austin 
+New Delhi: Oxford 
+University Press 
+1st (2003) 
+2 
+Introduction to the Constitution of India 
+D. D. Basu 
+Lexis Nexis 
+24th (2019) 
+Reference Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition (Pub. Yr.) 
+1 
+Contemporary India: Economy, Society, 
+Politics 
+N. Chandhoke 
+and 
+Priyadarshini 
+Pearson Education India 
+1st (2009) 
+2 
+Understanding Contemporary India: Critical 
+Perspectives 
+A. Vanaik and 
+R. Bharghava 
+Orient Blackswan  
+1st (2010) 
+
+
+--- PAGE 14 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       14      
+SEMESTER 2 
+Course Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final 
+Exam 
+Total 
+BSC-201 
+Engineering Mathematics-II 
+BSC 
+5 
+3 
+2 
+0 
+50 
+100 
+150 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 To understand probability and random variables and various discrete and continuous probability distributions 
+and their properties 
+CO2 Calculate probabilities, and derive the marginal and conditional distributions of bivariate random variables 
+CO3 Analyse statistical data using measures of central tendency, dispersion and location 
+CO4 Understand and discuss the issues surrounding sampling and significance 
+CO5 Develop analytical skills in structuring and interpreting the business problems statistically 
+ Detailed Syllabus 
+Section-A 
+Unit 1: Probability spaces, conditional probability, independence; Discrete random variables, Independent random 
+variables, the multinomial distribution, Poisson approximation to the binomial distribution, infinite sequences of 
+Bernoulli trials, sums of independent random variables; Expectation of Discrete Random Variables, Moments, Variance 
+of a sum, Correlation coefficient, Chebyshev's Inequality.                                                                                       (9 Hrs) 
+ 
+Unit 2: Continuous random variables and their properties, distribution functions and densities, normal, exponential and 
+gamma densities. Bivariate distributions and their properties, distribution of sums and quotients, conditional 
+densities, Bayes' rule.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    (12 Hrs) 
+Unit 3: Measures of Central tendency: Moments, skewness and Kurtosis - Probability distributions. Binomial, Poisson 
+and Normal - evaluation of statistical parameters for these three distributions, Correlation and regression – Rank 
+correlation  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(10 Hrs) 
+Section-B 
+Unit 4: Hypothesis – Introduction, Format and Types; Procedure of Hypothesis Testing; Errors in Hypothesis; Two-
+tail and One-tail Test of Hypothesis; Tests of Significance for Attributes; Tests of Significance for Variables; Tests of 
+Significance for Small Samples; t-distribution and its application 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(11 Hrs) 
+Unit 5: Difference of means and correlation coefficients, test for ratio of variances - Chi-square test for goodness of fit 
+and independence of attributes  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                                                                                                                                             (10 Hrs) 
+Text Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Advanced Engineering Mathematics 
+Erwin Kreyszig 
+Wiley 
+10th (2015) 
+2 
+A First Course in Probability 
+S. Ross 
+Pearson Education India 6th (2002) 
+3 
+“Introduction to Probability and Statistics 
+for Engineers and Scientists 
+Sheldon M. Ross 
+Academic Press 
+5th (2009) 
+Reference Books 
+S.No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Advanced Engineering Mathematics 
+R.K. Jain, S. R. K. 
+Iyenger 
+Narosa Publishing House 
+Pvt. Ltd. 
+5th (2016) 
+2 
+Higher Engineering Mathematics 
+Dr. B. S. Grewal 
+Khanna Publications 
+43rd (2017) 
+3 
+Engineering Mathematics 
+N.P Bali 
+Laxmi publications 
+13th (2009) 
+ 
+
+
+--- PAGE 15 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       15      
+ 
+Course Code 
+Course Name 
+Course Type 
+Cd L T P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+COM-201 
+Data Structures using C 
+PCC 
+4 
+3 
+1 0 
+50 
+100 
+150 
+ 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Understand the basics of data types and data structures. 
+CO2 
+Compare different data structures in context of their properties. 
+CO3 
+Identify the use of appropriate data structures to solve a given problem. 
+CO4 
+Apply different data structures to solve different sorting and searching problems. 
+CO5 
+Appreciate applicability of advanced data structures to model and solve real world problems. 
+Detailed Syllabus 
+Section-A 
+Unit 1: Introduction to data structures: Binary and Decimal Integers, Real Numbers, Character Strings, Abstract Data 
+Types, Sequences as Value Definitions, Data Types in C, Pointers in C, Data Structures and C, Representation of Arrays, 
+Structures in C. 
+(3 Hrs) 
+Unit 2: Stacks: Concept of Stacks, Operation on Stacks, Representing Stacks in C, Implementing the pop Operation, 
+Testing for Exceptional Conditions, Implementing the Push Operation, Multiple stacks, Application of stacks in Infix, 
+Postfix, and Prefix, Recursion.  
+Queues: Concept of Queues, Operation on Queues, Representing Stacks in C, Multiple Queues, Priority Queues, Circular 
+Queues. 
+(10 Hrs) 
+Unit 3: Linked Lists: Concept of Linked Lists, Representing Linked Lists in C, Insertion, Deletion and Traversal on 
+Linear Linked Lists, Doubly Linked List, Circular Linked List, Linked List as Data Structure, Header nodes, 
+Implementation of Stacks and Queues using linked list, Dynamic memory management, Garbage Collection. 
+(10 Hrs) 
+Section-B 
+Unit 4: Trees: Binary trees and its representation using Linked list, Operations on Binary Trees, Traversal Algorithms, 
+Applications, Threaded Binary Trees and its Traversal algorithms, Heterogeneous Binary Trees, List representation using 
+Binary Trees, Optimum Search Trees, AVL trees. 
+Graphs: Representation of Graphs, Traversal methods, Applications Undirected Graphs, Directed Graph and Traversal, 
+Depth First Search, Breadth First Search 
+(18 Hrs) 
+Unit 5: Sorting and Searching: Exchange Sort (Bubble, Quicksort) Selection and Tree Sorting Insertion sort, Shell Sort, 
+Address Calculation Sort, Merge and Radix Sort, Sequential Searching, searching an Ordered Table, Index sequential 
+search, Binary search, Interpolation search, Tree searching. 
+(5 Hrs) 
+Text Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition (Pub. Yr.) 
+1 
+Data Structure using C 
+Langsam, Yedidyah, Moshe J. 
+Augenstein, and Aaron M. Tenenbaum 
+Pearson 
+Education 
+1st (2019) 
+2 
+Data Structures and Program 
+Design in C 
+Robert L. Kruse and Bruce P. Leung 
+Pearson 
+Education 
+2nd (2006) 
+Reference Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition (Pub. Yr.) 
+1 
+Fundamentals of Data Structures Horowiz E. and Sahni S. 
+Universities 
+Press 
+2nd (2008) 
+
+
+--- PAGE 16 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       16      
+2 
+An Introduction to Data 
+Structures with Application 
+Jean-Paul Tremblay and Paul Sorenson McGraw Hill 
+Education 
+2nd (2017) 
+ 
+ 
+
+
+--- PAGE 17 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       17      
+ 
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+BSC-202 
+Engineering Physics 
+BSC 
+5 
+4 
+1 
+0 
+50 
+100 
+150 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Apply the concept of gradient, divergence, and curl to understand advance physics. 
+CO2 
+ Use Maxwell’s equations to describe propagation of electromagnetic waves in a medium. 
+CO3 
+ Apply the concept of wave function to solve problems related to particle confined in a box. 
+CO4 
+ Understand the concept of interference, diffraction, and polarization of light. 
+CO5 
+ Understand and articulate the working principle of lasers and optical fibres   
+ 
+Detailed Syllabus 
+Section A 
+Unit 1: Mathematical Physics: Concepts of Del Operator; Gradient of scalar, divergence and Curl of vector, Gauss 
+divergence theorem and Stokes theorem                                                                                                                 (10 Hrs) 
+Unit 2: Electromagnetic Theory: Displacement Current, Maxwell’s equations in vacuum and non-conducting medium, 
+Electromagnetic wave propagation in free space (EM wave equations for electric and magnetic fields for free space) and 
+their solutions (plane wave solution), Velocity of electromagnetic waves.                                                            (10 Hrs) 
+ 
+Unit 3: Quantum Mechanics: Inadequacies of Classical Mechanics, de-Broglie’s concept of matter waves, Wave-packet 
+(Wave-group), Phase and Group velocity, Heisenberg’s uncertainty Principle, Experimental illustration of Uncertainty 
+principle using single slit. Wave function: Definition, Interpretation and its significance, Schrodinger’s Wave equation 
+(Steady state and time dependent) for one dimension case, Concept of Operators and expectation Values, Applications 
+of Schrodinger’s equation (Time Independent) to: a) Particle in a One-Dimensional Box of infinite height, b) Single Step 
+Potential Barrier.                                                                                                                                                     (16 Hrs) 
+Section B 
+Unit 4: Applied Optics: Interference in thin films (by reflection and transmission of light), Theory of Newton’s rings by 
+reflected light, Determination of wavelength and refractive index of monochromatic light by Newton’s rings theory, 
+Fraunhofer and Fresnel’s diffractions, Fraunhofer diffraction due to a single slit, Plane diffraction grating and its theory 
+for secondary maxima and minima, Unpolarised and polarized light, Double refraction phenomenon, Nicol Prism, 
+Mathematical representation of elliptically and circularly polarized light, Quarter and Half wave plates, Numerical 
+problems.                                                                                                                                                                   (15 Hrs) 
+ 
+Unit 5: Principal of Laser action, Einstein’s coefficients, Ruby Lasers, Propagation of Light in Optical fibres, Acceptance 
+angle and acceptance cone, Numerical Aperture, Single mode and Multimode fibres, Characteristics and General 
+applications of Lasers and Optical fibres, Numerical problems.                                                                              (5 Hrs) 
+ 
+Text Books 
+S. No. 
+Name of the Books 
+Author 
+Publisher 
+Edition (Pub. 
+Yr.) 
+1 
+Vector Analysis 
+Murray R. Spiegel  
+McGraw Hill 
+Education 
+2nd (2017) 
+2 
+Fundamentals of Physics 
+Robert Resnick Jearl Walker, David Halliday 
+Wiley 
+10th (2015) 
+3 
+Concepts of Modern 
+Physics 
+Arthur Beiser, Shobhit Mahajan, S. Rai 
+Choudhury 
+McGraw Hill 
+Education 
+7th (2017) 
+Reference Books 
+S. No. 
+Name of the Books 
+Author 
+Publisher 
+Edition (Pub. 
+Yr.) 
+1 
+Engineering Physics 
+H. K. Malik and A. K. Singh 
+McGraw Hill Education 
+2nd (2017) 
+
+
+--- PAGE 18 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       18      
+2 
+Engineering Physics 
+S. Sharma and J. Sharma 
+Pearson India 
+1st (2018) 
+ 
+ 
+ 
+
+
+--- PAGE 19 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       19      
+*Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+HSMC-201 
+Design Thinking 
+HSMC 
+3 
+2 
+0 
+0 
+50 
+100 
+150 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Articulate the fundamentals of the Design Thinking Framework for problem solving. 
+CO2 
+Understand the needs and challenges of different stakeholders in the given problem domain. 
+CO3 
+Apply design thinking framework and strategies to develop innovative solutions for complex business 
+problems. 
+CO4 
+Evaluate the financial viability of the proposed solution (product/service). 
+CO5 
+Work in a team to develop, validate and test the solution. 
+ 
+Detailed Syllabus 
+Section-A 
+Unit 1: Design Thinking: Introduction of Design Thinking; Framework: 5 Phase Design i.e. Empathize, Define, Ideate, 
+Prototype, and Test; Case Study, Design Thinking in the organization. 
+(6 Hrs) 
+Unit 2: Empathize Phase: Discover design problems; Overview of the empathize phase; Define project stakeholders; 
+Methods within empathize phase. Define Phase: Frame the design problems, Overview of the define phase, Methods 
+within Define phase. 
+(8 Hrs) 
+Unit 3: Ideate Phase: Come up with multiple solutions, Overview of the Ideate phase, Methods within the Ideate phase. 
+(5 Hrs) 
+Section-B 
+Unit 4: Project Proposal: Project Identification - Developing Business Idea, Preparing Feasibility Report; Project 
+Formulation - Feasibility Analysis Techno - Economic Analysis, Financial Analysis, Profitability Analysis; Significance 
+of a business plan, components of a business plan. 
+(8 Hrs) 
+Unit 5: Prototype phase: Design the solutions, Overview of the Prototype phase, Methods within Prototype phase. Test 
+phase: Validate the solutions, overview of the Test phase, methods within test phase. 
+(8 Hrs) 
+Text Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Designing for growth: A design thinking tool 
+kit for managers 
+Jeanne Liedtka and Tim 
+Ogilvie 
+Columbia 
+University 
+Press 
+1st (2011) 
+2 
+The design thinking playbook: Mindful digital 
+transformation of teams, products, services, 
+businesses and ecosystems 
+Michael Lewrick, 
+Patrick Link, Larry 
+Leifer 
+ 
+Wiley 
+1st (2018) 
+Reference Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Presumptive design: Design provocations for 
+innovation 
+Leo Frishberg and 
+Charles Lambdin 
+Morgan 
+Kaufmann 
+1st (2016) 
+
+
+--- PAGE 20 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       20      
+2 
+Systems thinking: Managing chaos and 
+complexity: A platform for designing business 
+architecture., Chapter Seven: Design Thinking 
+Jamshid Gharajedaghi 
+Morgan 
+Kaufmann 
+3rd (2011) 
+ 
+ 
+
+
+--- PAGE 21 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       21      
+Course 
+Code 
+Course Name 
+Course 
+Type 
+ 
+Cd 
+ 
+L 
+ 
+T 
+ 
+P 
+Marks 
+Sessional 
+Final Exam Total 
+COM-211 
+Data Structures using C Lab 
+PCC 
+2 
+0 
+0 
+4 
+50 
+0 
+50 
+COURSE OUTCOMES 
+At the end of the course the student will be able to: - 
+CO1 
+Implement lists, stacks, queues and trees using arrays in C. 
+CO2 
+Create the different types of linked lists and perform its operations using C. 
+CO3 
+Create tree data structure and perform its operations using C. 
+CO4 
+Identify the data structure to develop programs for real world applications. 
+CO5 
+Assess the applicability of given data structure for a particular use-case scenario. 
+  
+List of Activities for Data Structures Using C Lab 
+S. No. Activities 
+1 
+Implement a List using Array and develop functions to perform insertion, deletion and linear search 
+operations. 
+2 
+Implement a Stack using Array and develop functions to perform push and pop operations. 
+3 
+Write a program to check if a given expression is correctly parenthesized using Stacks. 
+4 
+Write a program to evaluate postfix, prefix and infix expressions using Stacks. 
+5 
+Write a program to convert an infix expression to its corresponding postfix and prefix expressions and vice-
+versa. 
+6 
+Implement a Queue using Array and develop functions to perform enqueue and dequeue operations. 
+7 
+Implement a Singly Linked List and develop functions to perform insertion, deletion and linear search 
+operations. 
+8 
+Implement a Doubly Linked List and develop functions to perform insertion, deletion and linear search 
+operations. 
+9 
+Implement a Circular Linked List and develop functions to perform insertion, deletion and linear search 
+operations. 
+10 
+Implement a Stack using Linked List and develop functions to perform push and pop operations. 
+11 
+Implement a Queue using Linked List and develop functions to perform enqueue and dequeue operations. 
+12 
+Implement a Priority Queue using Linked List and develop functions to perform enqueue and dequeue 
+operations. 
+13 
+Implement a Binary Tree using Array and develop functions to perform traversal, searching, insertion and 
+deletion operations. 
+14 
+Implement a Binary Search Tree using Array and develop functions to perform traversal, searching, insertion 
+and deletion operations. 
+15 
+Implement a Binary Tree using Linked List and develop functions to perform traversal, searching, insertion 
+and deletion operations. 
+16 
+Implement a Binary Search Tree using Linked List and develop functions to perform traversal, searching, 
+insertion and deletion operations. 
+ 
+ 
+
+
+--- PAGE 22 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       22      
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+BSC-212 
+Engineering Physics Lab 
+BSC 
+1 
+0 
+0 
+2 
+50 
+0 
+50 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 
+Apply the concept of magnetic field to understand the working of electric vibrators and Faraday’s laws. 
+CO2 
+Relate the phase variation between current and voltage through inductor, capacitor and resistor in LCR series 
+and parallel circuits. 
+CO3 
+Measure and analyze the working of diodes and transistors in different configurations. 
+CO4 
+Measure and analyze the intensity variation of light due to interference, diffraction and polarization. 
+CO5 
+Examine the basic operation of laser, solar cell and its application i.e Planck’s constant. 
+List of Activities for Engineering Physics Lab 
+S. No. Activities 
+1 
+To measure the frequency of A.C. mains using an electrical vibrator. 
+2 
+To analyze the variation of EMF with respect to velocity of magnet to verify Faraday’s laws. 
+3 
+To measure the impedance of LCR circuit 
+4 
+To verify and plot the V-I characteristics of a PN junction diode. 
+5 
+To observe the common base/ common emitter characteristics of PNP/NPN transistors. 
+6 
+To verify Zener diode characteristics 
+7 
+To determine the dispersive power of a given prism using a spectrometer. 
+8 
+To compute the wavelength of monochromatic light using Newton's rings apparatus. 
+9 
+To determine the wavelength of sodium light using a plane transmission grating 
+10 
+To determine the specific rotation of sugar/glucose using Laurent's Half shade polarimeter. 
+11 
+To evaluate the value of Planck’s constant using a photo-cell. 
+12 
+To examine the characteristics of a Solar cell. 
+13 
+To determine the wavelength of a He-Ne laser. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- PAGE 23 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       23      
+ 
+Course 
+Code 
+Course Name 
+Course 
+Type 
+Cd 
+L 
+T 
+P 
+Marks 
+Sessional 
+Final Exam 
+Total 
+COM-212 Business Process Automation 
+with RPA Lab 
+ESC 
+2 
+0 
+0 
+4 
+50 
+0 
+50 
+Course Outcomes 
+At the end of the course the student will be able to 
+CO1 Develop RPA bots for performing simple business processes using UiPath Studio. 
+CO2 Design RPA bots to automate data collection from multiple web sources. 
+CO3 Develop competencies in designing RPA bots for manipulating data across documents. 
+CO4 Manage the developed UiPath RPA robots using UiPath Orchestrator. 
+CO5 Troubleshoot problems in existing RPA bots. 
+ 
+List of Activities for Business Process Automation Lab 
+S. No. Activity Name 
+1 
+Familiarity with UiPath Studio Academic Alliance Edition: 
+Configure UiPath Academic Alliance Edition. 
+Design a bot that prints “Hello World” on the screen. 
+Design a bot to generate mathematical tables. 
+2 
+Designing basic RPA bots: 
+Design a bot to display messages using Sequence and Flowchart activities. 
+Design a bot to display the sum of two variables by taking two variables as input and produce the output. 
+3 
+Working with Microsoft Excel: 
+Design a bot to open a Microsoft Excel sheet and read data into a datatable. 
+Design a bot to compare two columns in an excel sheet. The output should display 'Match/Not Match' 
+against the corresponding cell in the sheet. 
+4 
+Working with Desktop Automation: 
+Design a bot to create a text file, write “Hello World” into it and save it at the desired location using the 
+'Recorder' feature. 
+Design a bot for automating disk clean-up processes. 
+5 
+Working with Websites: 
+Design a bot to scrape data from a website and store it in a Microsoft Excel sheet. 
+Design a bot to fill a webform from the data stored in a Microsoft Excel sheet. 
+6 
+Working with Documents: 
+Design a bot to read a true PDF file and fill the webform. 
+Design a bot to read a word file and then create a list of unique words in an excel sheet. 
+7 
+Working with Images: 
+Design a bot to read a scanned image of an invoice and store the extracted data in a .CSV file. 
+Design a bot to perform Optical Character Recognition (OCR) on a saved image using OCR activities. 
+8 
+Working with Emails: 
+Design a bot to read unread emails from inbox. 
+Design a bot to send email with attachments to multiple receivers. 
+9 
+Handling Exceptions: 
+Apply exception handling to previously developed automations. 
+10 
+Working with Orchestrator: 
+Configure UiPath Orchestrator and setup tenant, machine, environment and robots. 
+Design a bot to create a Queue in Orchestrator and store the subject of the email in .CSV. 
+Configure Orchestrator to run a process as per a given schedule. 
+11 
+Mini Project (choose one): 
+RPA bot to send notifications to students when their attendance falls below 75%. 
+RPA bot to extract and collate job openings from multiple job portals. 
+RPA bot to extract and display news from Google News. 
+12 
+Deploy Mini Project using Orchestrator. 
+ 
+
+
+--- PAGE 24 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       24      
+ 
+Course 
+Code 
+ 
+Course Name 
+ 
+Course 
+Type 
+ 
+Cd 
+ 
+L 
+ 
+T 
+ 
+P 
+Marks 
+Sessional 
+Final 
+Exam 
+Total 
+NCC-201 Environment and Sustainability 
+NCC 
+0 
+2 
+0 
+0 
+- 
+- 
+S/NS* 
+*Note: S=Satisfactory, NS=Not Satisfactory 
+Course Outcomes 
+At the end of the course the student will be able to : 
+CO1 Describe the relationship between Humans, Environment and Sustainability. 
+CO2 Articulate different environmental risks and issues and potential interventions to tackle them. 
+CO3 Appraise sustainable energy systems through case-studies and real-world examples. 
+CO4 Articulate Sustainable Infrastructure Development plan. 
+CO5 Appreciate global sustainability best practices in diverse domains. 
+ 
+Detailed Syllabus 
+Section-A 
+Unit 1: Introduction to Sustainability: Humanity and the Environment: What is Sustainability? The IPAT Equation, 
+Human Consumption Patterns and the “Rebound” Effect, Challenges for Sustainability. 
+Climate and Global Change: Climate Processes; External and Internal Controls, Milankovitch Cycles and the Climate of 
+the Quaternary, Modern Climate Change, Climate Projections. 
+(3 Hrs) 
+Unit 2: Biosphere: Introduction, Biogeochemical Cycles and the Flow of Energy in the Earth System. Biodiversity, 
+Species Loss, and Ecosystem Function. Soil and Sustainability. 
+Physical Resources: Water, Pollution, and Minerals. Water Cycle and Fresh Water Supply. Water Pollution. Mineral 
+Resources: Formation, Mining, Environmental Impact. 
+(4 Hrs) 
+Unit 3: Environmental and Resource Economics: Tragedy of the Commons. Environmental Valuation. Evaluating 
+Projects and Policies. Solutions: Property Rights, Regulations, and Incentive Policies. 
+Modern Environmental Management: Systems of Waste Management. Case Study: Electronic Waste and Extended 
+Producer Responsibility. Government and Laws on the Environment. Risk Assessment Methodology for Conventional 
+and Alternative Sustainability Options. 
+(4 Hrs) 
+Section-B 
+Unit 4: Sustainable Energy Systems: Environmental Challenges in Energy, Carbon Dioxide, Air, Water and Land Use. 
+Energy Sources and Carriers. Electricity. Energy Uses. Applications of Phase Change Materials for Sustainable Energy. 
+Problem-Solving, Metrics, and Tools for Sustainability. 
+(6 Hrs) 
+Unit 5: Sustainable Infrastructure: The Sustainable City. Sustainability and Buildings. Sustainable Energy Practices: 
+Climate Action Planning. Sustainable Transportation: Accessibility, Mobility, and Derived Demand. Sustainable 
+Stormwater Management. 
+(4 Hrs) 
+Text Books 
+S. No. Name of the Books 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Sustainability: A Comprehensive Foundation 
+Tom Theis and 
+Jonathan Tomkin 
+Open Textbook 
+Library 
+1st (2015) 
+2 
+Energy, Environment, and Sustainability with 
+MindTap 
+Saeed Moaveni 
+Cengage India 
+Private Limited 
+1st (2012) 
+3 
+Improving the Sustainable Development Goals: 
+Strategies and the Governance Challenge (Routledge 
+Focus on Environment and Sustainability) 
+Lars Niklasson 
+Routledge 
+1st (2019) 
+
+
+--- PAGE 25 ---
+ 
+ 
+ 
+ 
+ 
+                             Syllabus for B.E CSE AI&ML and CS Batch 2024
+ 
+                         
+MIET (Autonomous), Jammu                               
+          
+ 
+                                                                       25      
+Reference Book 
+S. No. Name of the Book 
+Author 
+Publisher 
+Edition 
+(Pub. 
+Yr.) 
+1 
+Global Challenges to CSR and Sustainable 
+Development: Root Causes and Evidence from Case 
+Studies (CSR, Sustainability, Ethics and 
+Governance) 
+Stephen Vertigans, 
+Samuel O. Idowu 
+Springer 
+1st (2021) 
+   
+ 

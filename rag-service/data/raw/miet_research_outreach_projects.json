@@ -1,0 +1,158 @@
+{
+  "source": {
+    "title": "MIET Jammu research, innovation, community outreach and institutional projects summary",
+    "institution": "Model Institute of Engineering and Technology (MIET), Jammu",
+    "source_type": "User-provided summary with links",
+    "status": "unverified_summary",
+    "verification_note": "This file is based on the information supplied by the user. Claims, counts, project names, partnerships, and dates have not been independently verified here. Treat it as a reference summary and verify details against official MIET pages before presenting them as definitive facts.",
+    "references": [
+      {
+        "label": "MIET official website",
+        "url": "https://mietjmu.in/"
+      },
+      {
+        "label": "AICTE VAANI grant announcement",
+        "url": "https://mietjmu.in/aictevaanigrantsanctioned/"
+      },
+      {
+        "label": "MIET outreach programme",
+        "url": "https://mietjmu.in/outreachprogram/"
+      },
+      {
+        "label": "MIET CRIE / research and development",
+        "url": "https://mietjmu.in/research-development-cell/crie_research/"
+      },
+      {
+        "label": "MIET Unity industry linkage",
+        "url": "https://mietjmu.in/unity-industry-linkage/"
+      },
+      {
+        "label": "MIET campus infrastructure map",
+        "url": "https://mietjmu.in/campus-life/infra-maps/"
+      },
+      {
+        "label": "Social media post about AI / project initiatives",
+        "url": "https://www.instagram.com/reel/DQx9OaxEtCm/"
+      },
+      {
+        "label": "Social media post about IIT Jammu collaboration",
+        "url": "https://www.facebook.com/mietjmu99/"
+      }
+    ]
+  },
+  "institutionName": "Model Institute of Engineering and Technology (MIET), Jammu",
+  "overview": {
+    "description": "The supplied summary describes MIET as an autonomous engineering institution in Jammu with an emphasis on hands-on innovation, research, and community development.",
+    "claims": [
+      {
+        "claim": "First private, UGC-approved autonomous engineering college in Jammu and Kashmir",
+        "value": null,
+        "verification_status": "not_independently_verified"
+      },
+      {
+        "claim": "Projects and grants",
+        "value": "64+",
+        "verification_status": "not_independently_verified"
+      },
+      {
+        "claim": "Patents filed",
+        "value": "86",
+        "verification_status": "not_independently_verified"
+      }
+    ]
+  },
+  "communityOutreach": [
+    {
+      "name": "JK GRAM Project",
+      "category": "rural digital inclusion and community outreach",
+      "description": "The supplied summary says student volunteers map rural infrastructure gaps and build micro-websites for villages to support data-driven governance.",
+      "reportedImpact": {
+        "studentVolunteers": "1500+",
+        "villages": "400+"
+      },
+      "verification_status": "not_independently_verified"
+    },
+    {
+      "name": "AICTE VAANI — Exploring Artificial Intelligence through Dogri",
+      "category": "regional-language AI and cultural preservation",
+      "description": "The supplied summary describes NLP work to preserve Dogri language and digitize local heritage.",
+      "verification_status": "not_independently_verified"
+    },
+    {
+      "name": "Institutional Social Responsibility (ISR) outreach",
+      "category": "school and community support",
+      "description": "The supplied summary mentions outreach efforts, including modern learning setups at Government Middle School in Amb Village.",
+      "verification_status": "not_independently_verified"
+    }
+  ],
+  "technicalInnovationProjects": [
+    {
+      "name": "Center for Research, Innovation & Entrepreneurship (CRIE)",
+      "category": "research, incubation and internships",
+      "description": "Described in the supplied summary as an internship-driven incubation center supporting projects in Applied AI, Cyber-Physical Systems and Deep Learning, with industry mentorship.",
+      "verification_status": "not_independently_verified"
+    },
+    {
+      "name": "TAIWS (Ten AI Weapon System)",
+      "category": "AI, surveillance and defense collaboration",
+      "description": "The supplied summary describes a multidisciplinary project developed with the Indian Army and IIT Bombay, using secondary-vision tracking algorithms for border surveillance in rough terrain.",
+      "verification_status": "not_independently_verified"
+    },
+    {
+      "name": "Smart medical screening tools",
+      "category": "health technology and early screening",
+      "description": "The supplied summary says student innovators developed hardware tools intended for low-cost, non-invasive early detection of neurodegenerative disorders in rural diagnostic settings.",
+      "verification_status": "not_independently_verified"
+    },
+    {
+      "name": "Automated agro-sorting systems",
+      "category": "agriculture technology and computer vision",
+      "description": "The supplied summary describes CNN-based computer vision systems to automate agricultural sorting and help farmers improve crop pricing.",
+      "verification_status": "not_independently_verified"
+    }
+  ],
+  "researchInfrastructureAndPartnerships": [
+    {
+      "name": "Unity 3D Development Platform linkage",
+      "category": "AR/VR and simulation",
+      "description": "The supplied summary mentions a Unity 3D development platform linkage for AR/VR simulations.",
+      "verification_status": "not_independently_verified"
+    },
+    {
+      "name": "IBM, Mitsubishi and UiPath-supported centers",
+      "category": "industry-linked technical infrastructure",
+      "description": "The supplied summary lists these organizations in relation to specialized campus centers or developer setups.",
+      "verification_status": "not_independently_verified"
+    },
+    {
+      "name": "IIT Jammu academic and research collaboration",
+      "category": "academic and research partnership",
+      "description": "The supplied summary describes an MoU and joint center with IIT Jammu, with opportunities for specialized minor degrees and access to advanced laboratories.",
+      "verification_status": "not_independently_verified"
+    }
+  ],
+  "suggestedQueryIntents": [
+    "MIET projects",
+    "projects done by MIET Jammu",
+    "MIET research projects",
+    "MIET community outreach",
+    "MIET rural outreach",
+    "JK GRAM project",
+    "AICTE VAANI Dogri AI project",
+    "MIET patents and grants",
+    "MIET innovation center",
+    "MIET industry collaborations",
+    "MIET IIT Jammu collaboration",
+    "MIET CRIE"
+  ],
+  "answeringGuidance": {
+    "useForQuestionsAbout": [
+      "MIET projects",
+      "MIET research",
+      "MIET outreach and community impact",
+      "MIET innovation initiatives",
+      "MIET research infrastructure and partnerships"
+    ],
+    "responseGuidance": "When answering, organize results into community outreach, technical innovation, and research partnerships. Describe these as reported in the supplied summary unless verified against official sources. Do not state the unverified figures as confirmed facts."
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "source": {
+    "document": "Syllabus for B.E. CSE (AI&ML), Batch 2023 onwards (aiml.pdf) plus MIET Board of Studies minutes",
+    "institution": "MIET (Autonomous), Jammu",
+    "coverage": "Semesters 1-6 specific to AI&ML. Semesters 7-8 borrowed from the B.E. CSE 2023 curriculum (uploaded) and BoS Meeting 3.",
+    "verificationNote": "Semesters 1-4 transcribed from the uploaded aiml.pdf. Semesters 5-6 come from MIET BoS Meeting No. 4 (14 Aug 2024), Tables 1 and 2: 'B.Tech CSE (AI&ML) Batch 2022-26 and beyond'. Unit-level content for 5-6 is in Annexure I of that meeting's papers, which is not published online.",
+    "documents": [
+      {
+        "label": "BoS Meeting No. 4, 14 Aug 2024 (AI&ML Sem 5-6)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1768804956.pdf"
+      },
+      {
+        "label": "BoS Meeting No. 3, 09 Sep 2023 (CSE Sem 7-8 scheme, used for AI&ML Sem 7-8)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1768804836.pdf"
+      }
+    ],
+    "status": "official_document_uploaded"
+  },
+  "selectedProgram": "aiml",
+  "programName": "B.E. CSE (AI&ML)",
+  "batch": "2023 onwards",
+  "semesters": [
+    {
+      "semester": 1,
+      "subjects": [
+        {
+          "code": "BSC-101",
+          "name": "Engineering Mathematics-I",
+          "units": []
+        },
+        {
+          "code": "BSC-102",
+          "name": "Engineering Physics",
+          "units": []
+        },
+        {
+          "code": "COM-101",
+          "name": "Introduction to C Programming",
+          "units": []
+        },
+        {
+          "code": "HSMC-101",
+          "name": "Design Thinking",
+          "units": []
+        },
+        {
+          "code": "BSC-112",
+          "name": "Engineering Physics Lab",
+          "units": []
+        },
+        {
+          "code": "COM-111",
+          "name": "C Programming Lab",
+          "units": []
+        },
+        {
+          "code": "NCC-101",
+          "name": "Induction Training",
+          "units": []
+        },
+        {
+          "code": "MCC-102",
+          "name": "Indian Constitution",
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "subjects": [
+        {
+          "code": "BSC-201",
+          "name": "Engineering Mathematics-II",
+          "units": []
+        },
+        {
+          "code": "COM-201",
+          "name": "Data Structures using C",
+          "units": []
+        },
+        {
+          "code": "ESC-201",
+          "name": "Basic Electrical and Electronics Engineering",
+          "units": []
+        },
+        {
+          "code": "HSMC-201",
+          "name": "Technical Communication",
+          "units": []
+        },
+        {
+          "code": "COM-211",
+          "name": "Data Structures using C Lab",
+          "units": []
+        },
+        {
+          "code": "ESC-211",
+          "name": "Basic Electrical and Electronics Engineering Lab",
+          "units": []
+        },
+        {
+          "code": "COM-212",
+          "name": "Business Process Automation with RPA Lab",
+          "units": []
+        },
+        {
+          "code": "NCC-201",
+          "name": "Environment and Sustainability",
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "subjects": [
+        {
+          "code": "COM-301",
+          "name": "Design and Analysis of Algorithms",
+          "units": []
+        },
+        {
+          "code": "COM-302",
+          "name": "Operating Systems",
+          "units": []
+        },
+        {
+          "code": "COM-303",
+          "name": "Python Programming",
+          "units": []
+        },
+        {
+          "code": "BSC-301",
+          "name": "Introduction to Probability and Statistics",
+          "units": []
+        },
+        {
+          "code": "HSMC-301",
+          "name": "Principles of Management",
+          "units": []
+        },
+        {
+          "code": "COM-311",
+          "name": "Python Programming Lab",
+          "units": []
+        },
+        {
+          "code": "COM-312",
+          "name": "Operating Systems Lab",
+          "units": []
+        },
+        {
+          "code": "HSMC-312",
+          "name": "Placement overview and Career Planning",
+          "units": []
+        },
+        {
+          "code": "MNC-XXX",
+          "name": "MOOC",
+          "units": []
+        }
+      ],
+      "additionalRequirement": {
+        "code": "COM-304",
+        "name": "Professional Industrial Training / Internship",
+        "note": "Listed before Semester 3 in the PDF; it is completed during summer semester breaks and its credits/marks are added to the Semester 3 marksheet."
+      }
+    },
+    {
+      "semester": 4,
+      "subjects": [
+        {
+          "code": "COM-401",
+          "name": "Modern Computer Architecture",
+          "units": []
+        },
+        {
+          "code": "COM-402",
+          "name": "Database System",
+          "units": []
+        },
+        {
+          "code": "COM-403",
+          "name": "Object oriented programming using Java",
+          "units": []
+        },
+        {
+          "code": "BSC-401",
+          "name": "Discrete Mathematics",
+          "units": []
+        },
+        {
+          "code": "COM-411",
+          "name": "Object Oriented Programming using Java Lab",
+          "units": []
+        },
+        {
+          "code": "COM-412",
+          "name": "Database System Lab",
+          "units": []
+        },
+        {
+          "code": "HSMC-412",
+          "name": "Corporate Etiquette and Personality Development",
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "status": "verified_scheme",
+      "applicableBatch": "2022-26 and beyond (per BoS Meeting 4)",
+      "totalCredits": 24,
+      "totalMarks": 900,
+      "verificationNote": "BoS Meeting 4 (14 Aug 2024), Table 1. The 2023 minutes mention a specialization MOOC (5 credits) running from Sem 3 to Sem 6, but the Sem 5 table has no specialization row, so confirm with the department.",
+      "subjects": [
+        {
+          "code": "COM-501",
+          "name": "Introduction to Data Science",
+          "units": [],
+          "type": "PCC",
+          "credits": 4,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150
+        },
+        {
+          "code": "COM-502",
+          "name": "Computer Networks",
+          "units": [],
+          "type": "PCC",
+          "credits": 4,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150
+        },
+        {
+          "code": "COM-503",
+          "name": "Theory of Computation",
+          "units": [],
+          "type": "PCC",
+          "credits": 4,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150
+        },
+        {
+          "code": "COM-505",
+          "name": "Professional Industrial Training / Internship",
+          "units": [],
+          "type": "Summer Internship",
+          "credits": 3,
+          "finalExam": 100,
+          "marks": 100
+        },
+        {
+          "code": "COM-504",
+          "name": "Core Elective",
+          "units": [],
+          "type": "PEC",
+          "credits": 3,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150,
+          "note": "Delivered through SWAYAM/NPTEL."
+        },
+        {
+          "code": "COM-506",
+          "name": "Seminar",
+          "units": [],
+          "type": "PCC",
+          "credits": 2,
+          "finalExam": 100,
+          "marks": 100
+        },
+        {
+          "code": "COM-511",
+          "name": "Introduction to Data Science Lab",
+          "units": [],
+          "type": "PCC",
+          "credits": 2,
+          "sessional": 50,
+          "marks": 50
+        },
+        {
+          "code": "COM-512",
+          "name": "Computer Networks Lab",
+          "units": [],
+          "type": "PCC",
+          "credits": 2,
+          "sessional": 50,
+          "marks": 50
+        },
+        {
+          "code": "NCC-501",
+          "name": "Placement Preparation-I",
+          "units": [],
+          "type": "Audit (NCC)",
+          "credits": 0,
+          "marks": null,
+          "grading": "Satisfactory / Not Satisfactory"
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "status": "verified_scheme",
+      "applicableBatch": "2022-26 and beyond (per BoS Meeting 4)",
+      "totalCredits": 21,
+      "totalMarks": 750,
+      "verificationNote": "BoS Meeting 4 (14 Aug 2024), Table 2. Same specialization-MOOC caveat as Semester 5.",
+      "subjects": [
+        {
+          "code": "COM-601",
+          "name": "Cloud Computing",
+          "units": [],
+          "type": "PCC",
+          "credits": 4,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150
+        },
+        {
+          "code": "COM-602",
+          "name": "Computer Vision with AI",
+          "units": [],
+          "type": "PCC",
+          "credits": 4,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150
+        },
+        {
+          "code": "COM-603",
+          "name": "Software Engineering",
+          "units": [],
+          "type": "PCC",
+          "credits": 3,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150
+        },
+        {
+          "code": "COM-604",
+          "name": "Compiler Design",
+          "units": [],
+          "type": "PCC",
+          "credits": 4,
+          "sessional": 50,
+          "finalExam": 100,
+          "marks": 150
+        },
+        {
+          "code": "OEC-601",
+          "name": "Open Elective",
+          "units": [],
+          "type": "OEC",
+          "credits": 2,
+          "finalExam": 50,
+          "marks": 50,
+          "note": "Delivered through SWAYAM/NPTEL."
+        },
+        {
+          "code": "COM-611",
+          "name": "Cloud Computing Lab",
+          "units": [],
+          "type": "PCC",
+          "credits": 2,
+          "sessional": 50,
+          "marks": 50
+        },
+        {
+          "code": "COM-612",
+          "name": "Computer Vision with AI Lab",
+          "units": [],
+          "type": "PCC",
+          "credits": 2,
+          "sessional": 50,
+          "marks": 50
+        },
+        {
+          "code": "NCC-601",
+          "name": "Placement Preparation-II",
+          "units": [],
+          "type": "Audit (NCC)",
+          "credits": 0,
+          "marks": null,
+          "grading": "Satisfactory / Not Satisfactory"
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "status": "borrowed_from_cse_scheme",
+      "verificationNote": "No AI&ML-specific Semester 7 table is published. Taken from the B.E. CSE 2023 curriculum PDF you uploaded; credits and marks from MIET BoS Meeting 3 (09 Sep 2023), Table 1. Confirm with the AI&ML department that the same scheme applies. The UI-compatible 'subjects' list mirrors Scheme-1; alternate Scheme-2 is preserved under 'schemes'.",
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "totalCredits": 21,
+          "totalMarks": 1050,
+          "subjects": [
+            {
+              "code": "COM-704",
+              "name": "Professional Industrial Training / Internship",
+              "units": [],
+              "type": "Summer Internship",
+              "credits": 4,
+              "marks": 150,
+              "note": "Completed in summer breaks; credits/marks added to the Sem 7 marksheet."
+            },
+            {
+              "code": "COM-701",
+              "name": "Professional Elective 1",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Cloud Computing and Services",
+                "High Performance Computing",
+                "Soft Computing"
+              ]
+            },
+            {
+              "code": "COM-702",
+              "name": "Professional Elective 2",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Object-Oriented Analysis and Design",
+                "Software Testing and Automation",
+                "Applied Data Science"
+              ]
+            },
+            {
+              "code": "COM-703",
+              "name": "Professional Elective 3 (SWAYAM/NPTEL/other MOOC)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "OEC-701",
+              "name": "Open Elective",
+              "units": [],
+              "type": "OEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Strategic Management",
+                "Marketing Management",
+                "Managerial Economics"
+              ]
+            },
+            {
+              "code": "COM-705",
+              "name": "Seminar",
+              "units": [],
+              "type": "PEC",
+              "credits": 2,
+              "marks": 100
+            },
+            {
+              "code": "COM-711",
+              "name": "Minor Project",
+              "units": [],
+              "type": "PROJ",
+              "credits": 3,
+              "marks": 250
+            },
+            {
+              "code": "NCC-701",
+              "name": "Essence of Indian Knowledge and Tradition",
+              "units": [],
+              "type": "Audit (NCC)",
+              "credits": 0,
+              "marks": null,
+              "grading": "Satisfactory / Not Satisfactory"
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "totalCredits": 21,
+          "totalMarks": 1050,
+          "subjects": [
+            {
+              "code": "PII-701",
+              "name": "Industry Internship-I",
+              "units": [],
+              "type": "Professional Industry Internship",
+              "credits": 15,
+              "marks": 850
+            },
+            {
+              "code": "COM-703",
+              "name": "Professional Elective 3 (MOOC)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "COM-706",
+              "name": "Professional Elective 4 (MOOC)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            }
+          ]
+        }
+      ],
+      "defaultScheme": "Scheme-1",
+      "subjects": [
+        {
+          "code": "COM-704",
+          "name": "Professional Industrial Training / Internship",
+          "units": [],
+          "type": "Summer Internship",
+          "credits": 4,
+          "marks": 150,
+          "note": "Completed in summer breaks; credits/marks added to the Sem 7 marksheet."
+        },
+        {
+          "code": "COM-701",
+          "name": "Professional Elective 1",
+          "units": [],
+          "type": "PEC",
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Cloud Computing and Services",
+            "High Performance Computing",
+            "Soft Computing"
+          ]
+        },
+        {
+          "code": "COM-702",
+          "name": "Professional Elective 2",
+          "units": [],
+          "type": "PEC",
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Object-Oriented Analysis and Design",
+            "Software Testing and Automation",
+            "Applied Data Science"
+          ]
+        },
+        {
+          "code": "COM-703",
+          "name": "Professional Elective 3 (SWAYAM/NPTEL/other MOOC)",
+          "units": [],
+          "type": "MCC",
+          "credits": 3,
+          "marks": 100
+        },
+        {
+          "code": "OEC-701",
+          "name": "Open Elective",
+          "units": [],
+          "type": "OEC",
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Strategic Management",
+            "Marketing Management",
+            "Managerial Economics"
+          ]
+        },
+        {
+          "code": "COM-705",
+          "name": "Seminar",
+          "units": [],
+          "type": "PEC",
+          "credits": 2,
+          "marks": 100
+        },
+        {
+          "code": "COM-711",
+          "name": "Minor Project",
+          "units": [],
+          "type": "PROJ",
+          "credits": 3,
+          "marks": 250
+        },
+        {
+          "code": "NCC-701",
+          "name": "Essence of Indian Knowledge and Tradition",
+          "units": [],
+          "type": "Audit (NCC)",
+          "credits": 0,
+          "marks": null,
+          "grading": "Satisfactory / Not Satisfactory"
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "status": "borrowed_from_cse_scheme",
+      "verificationNote": "Same caveat as Semester 7. Credits and marks from MIET BoS Meeting 3 (09 Sep 2023), Table 2. Elective lists are from the same meeting; the 2026 minutes revised them for Cyber Security, so AI&ML electives may differ. The UI-compatible 'subjects' list mirrors Scheme-1; alternate Scheme-2 is preserved under 'schemes'.",
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "totalCredits": 15,
+          "totalMarks": 900,
+          "subjects": [
+            {
+              "code": "COM-801",
+              "name": "Professional Elective 1",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Advanced Machine Learning",
+                "Generative AI",
+                "Knowledge Representation and Reasoning"
+              ]
+            },
+            {
+              "code": "COM-802",
+              "name": "Professional Elective 2",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "UAVs and Drone Technology",
+                "Smart City Technologies",
+                "Foundations of Internet of Things and Industry 4.0"
+              ]
+            },
+            {
+              "code": "COM-803",
+              "name": "Professional Elective 3 (SWAYAM/NPTEL/other MOOC)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "COM-811",
+              "name": "Major Project",
+              "units": [],
+              "type": "PROJ",
+              "credits": 6,
+              "marks": 500
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "totalCredits": 15,
+          "totalMarks": 900,
+          "subjects": [
+            {
+              "code": "PII-801",
+              "name": "Industry Internship-II",
+              "units": [],
+              "type": "Professional Industry Internship",
+              "credits": 15,
+              "marks": 900
+            }
+          ]
+        }
+      ],
+      "defaultScheme": "Scheme-1",
+      "subjects": [
+        {
+          "code": "COM-801",
+          "name": "Professional Elective 1",
+          "units": [],
+          "type": "PEC",
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "Advanced Machine Learning",
+            "Generative AI",
+            "Knowledge Representation and Reasoning"
+          ]
+        },
+        {
+          "code": "COM-802",
+          "name": "Professional Elective 2",
+          "units": [],
+          "type": "PEC",
+          "credits": 3,
+          "marks": 150,
+          "options": [
+            "UAVs and Drone Technology",
+            "Smart City Technologies",
+            "Foundations of Internet of Things and Industry 4.0"
+          ]
+        },
+        {
+          "code": "COM-803",
+          "name": "Professional Elective 3 (SWAYAM/NPTEL/other MOOC)",
+          "units": [],
+          "type": "MCC",
+          "credits": 3,
+          "marks": 100
+        },
+        {
+          "code": "COM-811",
+          "name": "Major Project",
+          "units": [],
+          "type": "PROJ",
+          "credits": 6,
+          "marks": 500
+        }
+      ]
+    }
+  ],
+  "availability": {
+    "availableSemesters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "unverifiedSemesters": [],
+    "borrowedSemesters": [
+      7,
+      8
+    ],
+    "note": "Semesters 7-8 use the general CSE scheme because no AI&ML-specific table is published. Confirm with the department."
+  }
+}

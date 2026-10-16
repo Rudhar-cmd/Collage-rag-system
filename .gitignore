@@ -1,0 +1,37 @@
+
+# Dependencies and virtual environments
+node_modules/
+.venv/
+rag-service/.venv/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# ChromaDB and generated vector databases
+rag-service/chroma_db*/
+rag-service/**/chroma_db*/
+
+# Generated crawl data
+rag-service/data/miet_crawl/downloaded_pdfs/
+rag-service/data/miet_crawl/recovered_pdfs/
+rag-service/data/miet_crawl/recovered_text/
+rag-service/data/miet_crawl/ocr_text/
+rag-service/data/miet_crawl/text/
+rag-service/data/miet_crawl/pages.jsonl
+rag-service/data/miet_crawl/manifest.json*
+rag-service/data/miet_crawl/pdf_text_mapping.json
+rag-service/data/miet_crawl_backup_*/
+
+# Temporary, backup, and system files
+*.bak
+*.backup
+*.tmp
+.DS_Store
+# Logs
+*.log
+
+# Backup source files
+*.backup.js
+*.backupbackend/routes/syllabusRoutes.backup.js

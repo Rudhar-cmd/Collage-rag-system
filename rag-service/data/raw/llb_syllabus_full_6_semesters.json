@@ -1,0 +1,941 @@
+{
+  "source": {
+    "document": "Syllabus for LLB (Hons.), 1st & 2nd Semester",
+    "uploadedFile": "Curriculum new LLB Hons. 1st & 2nd semester Batch -2023 (2).pdf",
+    "institution": "MIET (Autonomous), Jammu",
+    "batch": "2023 onwards",
+    "sourcePages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "status": "official_document_uploaded",
+    "verificationNotes": [
+      "This catalogue covers only Semesters 1 and 2 because the uploaded PDF contains those semesters only.",
+      "The Semester 2 overview table calls course LLB-202 Family Law-I, while the detailed syllabus section labels it Family Law-II. This discrepancy is preserved for verification.",
+      "The source uses legacy Indian Penal Code (IPC) section references in Law of Crimes-I. Verify current statutory applicability before using this syllabus for legal advice.",
+      "The University of Jammu publishes a separate revised three-year LL.B. syllabus for Semesters I–VI. Do not automatically merge that syllabus into this MIET LLB (Hons.) catalogue without confirming that it is the same programme and applicable scheme."
+    ],
+    "coverage": "Six-semester structure; detailed syllabus currently available only for Semesters 1 and 2"
+  },
+  "selectedProgram": "llb",
+  "programName": "LLB (Hons.)",
+  "batch": "2023 onwards",
+  "semesters": [
+    {
+      "semester": 1,
+      "subjects": [
+        {
+          "code": "LLB-101",
+          "name": "Indian Legal System",
+          "detailedSyllabusTitle": "Indian Legal System & Legal Methods",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction to Legal Methods and Law",
+              "topics": [
+                "Meaning and concept of law",
+                "Justice and morality",
+                "Definitions of law",
+                "Functions of law",
+                "Advantages and disadvantages of law"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Classification of Law",
+              "topics": [
+                "Public and private law",
+                "Municipal and international law",
+                "Civil law and criminal law",
+                "Substantive and procedural law",
+                "Physical and scientific law"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Sources of Law",
+              "topics": [
+                "Meaning and definition of source",
+                "Primary and secondary resources",
+                "Customs, precedents and legislation",
+                "Juristic writings: justice, equity and good conscience",
+                "Stare decisis, res judicata, ratio decidendi and obiter dicta"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Basic Principles of Indian Legal System",
+              "topics": [
+                "Constitution as the law of the land",
+                "Rule of law",
+                "Separation of powers",
+                "Basic Structure Doctrine",
+                "Salient features of the Indian Constitution"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Judicial System in India",
+              "topics": [
+                "Hierarchy of courts in India",
+                "Court jurisdiction: territorial, pecuniary and subject matter",
+                "Tribunals",
+                "Alternative dispute resolution: arbitration, negotiation, mediation and conciliation",
+                "Lok Adalat and Nyaya through Panchayati Raj Institutions"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-102",
+          "name": "Constitutional Law-I",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction",
+              "topics": [
+                "Constitution and constitutionalism: meaning and significance",
+                "Preamble of the Indian Constitution",
+                "Salient features of the Indian Constitution",
+                "Union and its territories (Articles 1–4)",
+                "Citizenship (Articles 5–11)"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Concept of State and Fundamental Rights",
+              "topics": [
+                "Fundamental Rights: concept, origin and development",
+                "State: concept and meaning (Article 12)",
+                "Meaning of law and laws in force (Article 13)",
+                "Pre- and post-Constitutional laws (Article 13)",
+                "Doctrine of ultra vires, severability, eclipse and waiver"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Fundamental Rights-I (Articles 14–22)",
+              "topics": [
+                "Right to equality (Articles 14–18)",
+                "Right to freedom and reasonable restrictions (Article 19)",
+                "Ex-post facto laws, double jeopardy and self-incrimination (Article 20)",
+                "Right to life and personal liberty (Article 21)",
+                "Protection against arrest and preventive detention (Article 22)"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Fundamental Rights-II (Articles 23–32)",
+              "topics": [
+                "Right against exploitation (Articles 23–24)",
+                "Right to freedom of religion (Articles 25–28)",
+                "Cultural and educational rights (Articles 29–30)",
+                "Right to constitutional remedies (Articles 32 and 226)",
+                "Writs: concept, jurisdiction and types"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Directive Principles of State Policy and Fundamental Duties",
+              "topics": [
+                "Directive Principles of State Policy: nature and significance",
+                "Relationship and distinction between Fundamental Rights and DPSPs",
+                "Classification of DPSPs",
+                "Fundamental Duties: nature and significance",
+                "Relationship between DPSPs and Fundamental Duties"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-103",
+          "name": "Law of Contract-I",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "General Principles of Contract",
+              "topics": [
+                "Basic concepts: definition, nature, characteristics and types of contracts; agreement and standard-form contract",
+                "Proposal/offer: definition, essentials and types",
+                "Acceptance: definition, nature, essentials, legal rules, communication and revocation",
+                "Freedom of contract",
+                "Capacity to contract"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Consent (Sections 15–19)",
+              "topics": [
+                "Free consent: meaning and importance",
+                "Coercion, undue influence, fraud and misrepresentation",
+                "Effects of coercion, undue influence, fraud and misrepresentation on contracts",
+                "Mistake of law",
+                "Mistake of fact"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Consideration",
+              "topics": [
+                "Consideration: Sections 2(d), 23, 24 and 25",
+                "Void, voidable and valid agreements: definitions",
+                "Agreements in restraint of marriage, trade and legal proceedings; uncertainty and wagering agreements",
+                "Contingent contracts (Sections 31–36)",
+                "Quasi-contract"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Performance of Contract",
+              "topics": [
+                "Performance of contracts (Sections 37–61)",
+                "Persons who must perform and obligations of parties",
+                "Time, place and manner of performance",
+                "Performance of reciprocal and alternative promises",
+                "Rules for appropriation of payment"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Discharge and Remedies (Sections 62–75)",
+              "topics": [
+                "Modes of discharge of contract",
+                "Breach of contract",
+                "Anticipatory breach of contract",
+                "Consequences of breach of contract",
+                "Remedies for breach of contract"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-104",
+          "name": "Law of Torts including MV & CP Act",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction and Principles of Liability in Torts",
+              "topics": [
+                "Nature, meaning and definitions of tort",
+                "General conditions of tortious liability and negating tortious liability",
+                "Distinction between tort, contract and crime",
+                "Injuria sine damnum and damnum sine injuria",
+                "Liability principles: fault, wrongful intent, negligence and liability without fault"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Defences in Action for Tort",
+              "topics": [
+                "Justification in tort",
+                "Volenti non fit injuria",
+                "Necessity, plaintiff’s default, act of God and inevitable accident",
+                "Private defence, statutory authority, judicial and quasi-judicial acts",
+                "Parental and quasi-parental authority; waiver"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Torts against Persons and Torts Affecting Property",
+              "topics": [
+                "Assault, battery, false imprisonment and malicious prosecution",
+                "Defamation: libel, slander and e-defamation",
+                "Trespass to land",
+                "Nuisance: essentials and types",
+                "Negligence: standards and duty of care, carelessness, contributory negligence and res ipsa loquitur"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Strict and Vicarious Liability",
+              "topics": [
+                "Vicarious liability: basis, scope and justification",
+                "Special relationships: master and servant; control test",
+                "Independent contractor and servant; principal and agent; sovereign immunity",
+                "Strict liability: rule in Rylands v. Fletcher and harm caused by dangerous industries",
+                "Absolute liability: rule in M.C. Mehta v. Union of India"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Consumer Protection and Motor Vehicle Laws",
+              "topics": [
+                "Consumer Protection Act, 2019: objectives, definitions and salient features",
+                "Rights and duties of consumer",
+                "Redressal mechanism",
+                "Motor Vehicles Act, 1988: objectives and salient features",
+                "Motor Vehicles (Amendment) Act, 2019: important features"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-105",
+          "name": "Environmental Law",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Environmental Protection: International and National Perspective",
+              "topics": [
+                "Introduction",
+                "Meaning of environment",
+                "Environmental pollution: meaning and issues",
+                "Sustainable development: meaning and scope",
+                "Precautionary principle, polluter-pays principle and public-trust doctrine"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Constitutional Guidelines",
+              "topics": [
+                "Right to wholesome environment: evolution and application",
+                "Relevant constitutional provisions: Articles 14, 19(1)(g), 21, 48-A and 51-A(g)",
+                "Environmental protection through public-interest litigation",
+                "Public nuisance",
+                "Emergence of environmental legislation"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Prevention and Control of Water, Air, Noise and Land Pollution",
+              "topics": [
+                "Water (Prevention and Control of Pollution) Act, 1974; pollution control boards, control areas, sampling and consent procedure",
+                "Air (Prevention and Control of Pollution) Act, 1981; pollution control boards, control areas and consent procedure",
+                "Citizen-suit provision",
+                "Noise Pollution Control Order, 2000",
+                "Land pollution"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "General Environmental Legislations and Protection of Forests and Wildlife",
+              "topics": [
+                "Environment (Protection) Act, 1986; definitions, Central Government powers and functions",
+                "Notifications under Section 6 and hazardous-substance regulation",
+                "Forest Act, 1927 and categories of forests",
+                "Forest (Conservation) Act, 1980 and forest conservation vis-à-vis tribal rights",
+                "Wild Life (Protection) Act, 1972: authorities, hunting, specified plants, protected areas and trade prohibition"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Tribunals",
+              "topics": [
+                "National Green Tribunal: constitution",
+                "National Green Tribunal: functions and powers"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-106",
+          "name": "Corporate Etiquettes and Personality Development",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Activities",
+              "title": "Course activities listed in the syllabus",
+              "topics": [
+                "Business manners: handshake, gifts, visiting cards, humour and office behaviour",
+                "Power dressing, wardrobe etiquette and grooming",
+                "Body language, poise and eye contact",
+                "Preparing effective presentations with modern tools",
+                "Art of entertaining and being a gracious host",
+                "Self-grooming, personal hygiene, gestures and postures",
+                "Language lab: vocabulary, punctuation, verbal/non-verbal communication, confidence, assertive communication, persuasion and asking questions",
+                "Handling difficult situations professionally",
+                "Personal SWOT analysis",
+                "Gender sensitization",
+                "Empathy and active listening",
+                "Getting to know colleagues",
+                "Apologizing appropriately"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-107",
+          "name": "Legal Database Lab",
+          "category": "Generic Core Lab",
+          "units": [
+            {
+              "unit": "Activities",
+              "title": "Legal Database Lab activities",
+              "topics": [
+                "Introduction to legal materials",
+                "Primary and secondary sources of law",
+                "Overview of statutes, bills, case laws, journals, commentaries, digests, manuals and dictionaries",
+                "Use of online databases and e-resources for legislation, articles and case laws",
+                "Navigate legal databases including Legal Eagle, Manupatra, SCC Online and journals",
+                "Case analysis",
+                "Essentials of good legal writing",
+                "Organization of research work",
+                "Citation patterns, footnotes, endnotes and bibliography",
+                "Approach to research publication"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-108",
+          "name": "Student Induction Training",
+          "category": "NCC",
+          "units": [
+            {
+              "unit": "Activities",
+              "title": "Induction training activities",
+              "topics": [
+                "Institution orientation",
+                "Address by Director",
+                "ICT tools: official email, Google Drive, Google Classroom and Google Meet",
+                "Entrepreneur simulation (JKEDI)",
+                "Personality development workshop",
+                "Hands-on ERP session",
+                "Project showcasing: AI, computer vision and RPA",
+                "E-learning resources and MOOCs",
+                "PI 360 training",
+                "Student clubs",
+                "Library orientation",
+                "Extra-curricular activities",
+                "Orientation to NSS and cultural committees",
+                "Department/branch familiarization",
+                "Mentor-mentee programme orientation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "subjects": [
+        {
+          "code": "LLB-201",
+          "name": "Constitutional Law-II",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Executive and Legislature under Indian Constitution",
+              "topics": [
+                "President and Vice President",
+                "Council of Ministers: election, powers and functions; Governor: appointment, powers and functions",
+                "State Government and Cabinet; power to make laws",
+                "Union and State Legislatures: composition, powers, functions and privileges",
+                "Bills, joint sitting, Money Bills and budget"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Judiciary under Constitution",
+              "topics": [
+                "Supreme Court: establishment, composition, appointment of judges, powers and jurisdiction",
+                "Special Leave Petition and precedents",
+                "High Courts: establishment and composition",
+                "Appointment and transfer of judges; powers and jurisdiction",
+                "Subordinate judiciary, judicial independence and accountability; writ jurisdiction"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Centre-State Relations",
+              "topics": [
+                "Legislative and administrative relations",
+                "Financial relations",
+                "Cooperation and coordination between Centre and States",
+                "Judicial interpretation of Centre-State relations",
+                "Doctrines evolved by judiciary"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Liability of State in Torts and Contracts (as titled in source)",
+              "topics": [
+                "Freedom of interstate trade",
+                "Commerce and intercourse",
+                "Services under the State",
+                "All India Services",
+                "Public Service Commissions"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Elections, Emergency and Amendment",
+              "topics": [
+                "Election Commission: composition, powers and functions",
+                "Superintendence of elections, anti-defection law and Representation of the People Act, 1951",
+                "National, State and Financial Emergency",
+                "Impact of emergency on federalism and Fundamental Rights",
+                "Amendment of the Indian Constitution: power and procedure"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-202",
+          "name": "Family Law-I / Family Law-II (source discrepancy)",
+          "overviewName": "Family Law-I",
+          "detailedSyllabusTitle": "Family Law-II",
+          "category": "Generic Core",
+          "verificationNote": "Semester 2 overview table lists Family Law-I; the detailed syllabus page labels the course Family Law-II. The units below are transcribed from the detailed syllabus section.",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction to Hindu and Muslim Law",
+              "topics": [
+                "Concept and importance of Family Law in India",
+                "Origin and sources of Hindu Law",
+                "Origin and sources of Muslim Law",
+                "Schools of Hindu Law: Mitakshara and Dayabhaga",
+                "Schools of Muslim Law: Sunni, Shia and other schools"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Laws regarding Marriage under Hindu and Muslim Law",
+              "topics": [
+                "Evolution and concept of the institution of marriage",
+                "Definition, object and nature of Nikah",
+                "Capacity and essentials of marriage",
+                "Validity and voidability of marriage",
+                "Recent trends in marriage; Hindu Marriage Act, 1955 and Amendment Act, 1976"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Dissolution of Marriage and Matrimonial Relief",
+              "topics": [
+                "Theories of divorce",
+                "Grounds of divorce under Hindu and Muslim Law",
+                "Divorce by mutual consent under Hindu and Muslim Law",
+                "Customary divorce under Hindu Law",
+                "Restitution of conjugal rights under Hindu and Muslim Law"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Maintenance under Hindu and Muslim Law",
+              "topics": [
+                "Meaning and types of maintenance",
+                "Hindu Adoption and Maintenance Act, 1956",
+                "Muslim Women (Protection of Rights on Divorce) Act, 1986",
+                "Maintenance under Section 125 of the Code of Criminal Procedure, 1973 (as named in source)",
+                "Maintenance for children"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Laws of Adoption and Guardianship under Hindu and Muslim Law",
+              "topics": [
+                "Hindu Adoption and Maintenance Act, 1956",
+                "Capability, necessary conditions and effects of adoption",
+                "Guardianship under Hindu and Muslim Law",
+                "Welfare of the child",
+                "Secular concept of adoption under Juvenile Justice Act, 2015"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-203",
+          "name": "Public International Law",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction to International Law",
+              "topics": [
+                "Definition and nature of international law",
+                "Sources of international law",
+                "Origin and basis of international law",
+                "Relationship between international and municipal law",
+                "Nationality"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "State",
+              "topics": [
+                "States as subjects of international law",
+                "Recognition of states",
+                "Acquiring and losing state territory",
+                "State responsibility",
+                "Law of the sea: territorial waters, contiguous zone, high seas, continental shelf and EEZ"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Extra-Territorial Protections",
+              "topics": [
+                "Extradition",
+                "Asylum",
+                "Intervention",
+                "Diplomatic envoys",
+                "Consuls and other representatives"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Dispute Resolution",
+              "topics": [
+                "Peaceful settlement of disputes",
+                "Arbitration",
+                "Negotiation",
+                "Mediation (source OCR appears as 'Meditation')",
+                "Economic blockade"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "International Organisations",
+              "topics": [
+                "United Nations: objectives, principles and membership",
+                "Security Council and General Assembly: composition, functions and powers; ECOSOC",
+                "International Labour Organization",
+                "World Trade Organization: purpose and functions",
+                "International Court of Justice"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-204",
+          "name": "Special Contract-II",
+          "category": "Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Indemnity and Guarantee",
+              "topics": [
+                "Contract of indemnity and guarantee: definition and nature (Sections 124 and 126)",
+                "Rights of indemnity holder and guarantor (Sections 125 and 127–129)",
+                "Revocation of guarantee (Sections 130–131)",
+                "Rights of surety (Sections 133–141)",
+                "Liability of guarantor (Sections 142–147)"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Bailment and Pledge",
+              "topics": [
+                "Bailment and pledge: definition and nature (Sections 148 and 172)",
+                "Duties of bailor and bailee (Sections 150–157)",
+                "Rights of bailor, bailee, pawnor and pawnee (sections as cited in source)",
+                "Finder of goods as a bailee (Sections 168–169)",
+                "Pawnee’s right of sale (source cites Section 172)"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Agency (source labels this Unit-II)",
+              "topics": [
+                "Meaning of agent and principal (Sections 182–184)",
+                "Creation of agency (Sections 186–187)",
+                "Ratification of agency (Sections 196–200)",
+                "Rights of agent (Sections 217–225)",
+                "Termination of agency (Sections 201 and 205–207)"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "The Sale of Goods Act, 1930",
+              "topics": [
+                "Meaning and essentials of contract of sale and goods (Sections 4 and 6–8)",
+                "Essentials of contract of sale (Section 5)",
+                "Conditions and warranties (Sections 12–17)",
+                "Doctrine of caveat emptor",
+                "Rights of unpaid seller (Sections 45–62)"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Specific Relief Act, 1963",
+              "topics": [
+                "Recovering possession of property (Sections 5–8)",
+                "Specific performance of contracts (Sections 9–24)",
+                "Rectification and rescission of instruments (Sections 26–30)",
+                "Cancellation of contracts (Sections 31–33)",
+                "Declaratory decrees and preventive relief/injunctions (Sections 34–44)"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-205",
+          "name": "Civil Procedure Code",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction",
+              "topics": [
+                "Historical perspective and introduction to Civil Procedure Code",
+                "Decree, judgement, order, foreign court/judgement, mesne profits, affidavit, suit, plaint and written statement",
+                "Res sub judice, res judicata, restitution, caveat and inherent powers of courts",
+                "Execution of judgement and decree",
+                "Institution of suit (Section 26, Order IV)"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Initial Steps in a Suit",
+              "topics": [
+                "Jurisdiction and place of suing",
+                "Institution of suit",
+                "Pleadings: meaning, object, general rules and amendment",
+                "Plaint and written statement",
+                "Appearance and non-appearance of parties"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Interim Orders",
+              "topics": [
+                "Commissions",
+                "Receiver",
+                "Temporary injunctions",
+                "Summary procedure",
+                "Suits by indigent persons"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Appeal, Reference, Review and Revision",
+              "topics": [
+                "Appeals from original decree",
+                "Appeals from appellate decrees",
+                "General provisions relating to appeals",
+                "Reference to High Court",
+                "Review and revision"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Limitation Act, 1963",
+              "topics": [
+                "Historical background of the Limitation Act",
+                "Limitation of suits, appeals and applications (Sections 3–5)",
+                "Computation of limitation (Sections 12–24)",
+                "Acquisition of ownership by possession (Sections 25–27)",
+                "Period of limitation"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-206",
+          "name": "Law of Crimes-I",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction to Substantive Criminal Law",
+              "topics": [
+                "Concept of crime",
+                "Distinction between crime and other wrongs",
+                "Strict liability to mens rea",
+                "Punishments (sections cited in source: 53–55A, 63–65 and 73–75)",
+                "Elements of crime: actus reus and mens rea"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "General Exceptions (Sections 76–106, as cited in source)",
+              "topics": [
+                "Mistake as defence (Sections 76 and 79)",
+                "Judicial and executive acts (Sections 77 and 78)",
+                "Necessity and infancy (Sections 81 and 82)",
+                "Insanity and intoxication (Sections 84–86)",
+                "Private defence of body and property (Sections 96–106)"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Inchoate Forms of Crime",
+              "topics": [
+                "Abetment (Sections 107–108)",
+                "Common intention (Section 34)",
+                "Criminal conspiracy (Sections 120A and 120B)",
+                "Attempt to commit offence (Section 511)",
+                "Common object (Section 149)"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Offences Relating to Human Body",
+              "topics": [
+                "Homicide and murder (Sections 299 and 300)",
+                "Kidnapping and abduction (Sections 359–362)",
+                "Causing death by negligence and dowry death (Sections 304-A and 304-B)",
+                "Hurt and grievous hurt (Sections 319–320)",
+                "Cruelty by husband and relatives (Section 498-A)"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Offences against State and Property",
+              "topics": [
+                "Offences against the State and sedition (sections cited in source: 121 and 124)",
+                "Theft, extortion, robbery and dacoity",
+                "Criminal misappropriation and criminal breach of trust",
+                "Cheating",
+                "Mischief and criminal trespass"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-207",
+          "name": "Legal Research & Writing",
+          "category": "Generic Core",
+          "units": [
+            {
+              "unit": "Unit I",
+              "title": "Introduction to Legal Research",
+              "topics": [
+                "Definition and meaning of research",
+                "Objectives and significance",
+                "Importance of research",
+                "Types of research",
+                "Salient features of legal research"
+              ]
+            },
+            {
+              "unit": "Unit II",
+              "title": "Types of Legal Research",
+              "topics": [
+                "Descriptive and analytical legal research",
+                "Applied and pure legal research",
+                "Quantitative and qualitative legal research",
+                "Doctrinal and non-doctrinal research",
+                "Socio-legal research"
+              ]
+            },
+            {
+              "unit": "Unit III",
+              "title": "Research Design",
+              "topics": [
+                "Sources of legal material",
+                "Formulating a research problem",
+                "Review of literature",
+                "Framework of research design",
+                "Data collection"
+              ]
+            },
+            {
+              "unit": "Unit IV",
+              "title": "Academic Report Writing",
+              "topics": [
+                "Structuring",
+                "Content of report",
+                "Steps for drafting report",
+                "Uniform style of citation",
+                "Footnotes, references, bibliography, indexes and appendices"
+              ]
+            },
+            {
+              "unit": "Unit V",
+              "title": "Legal Maxims",
+              "topics": [
+                "Common legal abbreviations",
+                "Latin and other foreign phrases used in legal writing",
+                "Meaning and importance of legal maxims",
+                "Origin and application of legal maxims",
+                "Relevance of legal maxims today"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LLB-208",
+          "name": "MOOC",
+          "category": "NCC / MOOC",
+          "units": [
+            {
+              "unit": "Guidelines",
+              "title": "MOOC selection and assessment",
+              "topics": [
+                "Select a 4–6 week MOOC from SWAYAM, NPTEL or another reputed platform",
+                "Obtain approval from the departmental committee",
+                "The selected course should not duplicate regular department courses",
+                "Teacher in-charge supervises the course",
+                "Assessment through a presentation/project and course-completion certificate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "subjects": [],
+      "status": "pending_official_syllabus",
+      "verificationNote": "Semester 3 is not included in the uploaded MIET LLB (Hons.) Semester 1–2 PDF. Add subjects and unit details only after obtaining the applicable official MIET syllabus for this programme and batch."
+    },
+    {
+      "semester": 4,
+      "subjects": [],
+      "status": "pending_official_syllabus",
+      "verificationNote": "Semester 4 is not included in the uploaded MIET LLB (Hons.) Semester 1–2 PDF. Add subjects and unit details only after obtaining the applicable official MIET syllabus for this programme and batch."
+    },
+    {
+      "semester": 5,
+      "subjects": [],
+      "status": "pending_official_syllabus",
+      "verificationNote": "Semester 5 is not included in the uploaded MIET LLB (Hons.) Semester 1–2 PDF. Add subjects and unit details only after obtaining the applicable official MIET syllabus for this programme and batch."
+    },
+    {
+      "semester": 6,
+      "subjects": [],
+      "status": "pending_official_syllabus",
+      "verificationNote": "Semester 6 is not included in the uploaded MIET LLB (Hons.) Semester 1–2 PDF. Add subjects and unit details only after obtaining the applicable official MIET syllabus for this programme and batch."
+    }
+  ],
+  "availability": {
+    "availableSemesters": [
+      1,
+      2
+    ],
+    "pendingSemesters": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "totalSemesters": 6,
+    "note": "The JSON represents all six semester slots, but only Semesters 1 and 2 contain course data from the uploaded MIET PDF. Semesters 3–6 are intentionally empty pending the correct official source.",
+    "reference": "https://jammuuniversity.ac.in/law/syllabus"
+  }
+}

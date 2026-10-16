@@ -1,0 +1,621 @@
+{
+  "source": {
+    "status": "Transcribed from the BBA semester screenshots provided in the conversation.",
+    "note": "These entries reflect visible subject/category names only. Subject codes, credits, detailed units, and official document/version were not visible in the screenshots."
+  },
+  "selectedProgram": "bba",
+  "programName": "Bachelor of Business Administration",
+  "batch": null,
+  "availability": {
+    "status": "screenshot_transcribed",
+    "note": "Subject names are transcribed from screenshots; confirm against the official MIET curriculum before treating as authoritative."
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Principles of Management",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Business Mathematics & Statistics",
+          "category": "Non Credit Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Web Technologies",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Web Technologies Lab",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Introduction to Design Thinking",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Environmental Sustainability",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Cultural Competence and Global Awareness",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Time Management and Productivity",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Corporate Etiquette and Professionalism",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Introduction to Leadership Development",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Foundations of IT",
+          "category": "Skill Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Introduction to Digital Marketing",
+          "category": "Skill Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Fundamentals of Business Communication",
+          "category": "Skill Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Sports & Fitness",
+          "category": "Value Added Course",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Data Structure Using C",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Data Structure Lab",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Robotic Process Automation",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Social Innovation and Entrepreneurship",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Introduction to Behavioral Economics",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Ethics and Social Responsibility in Business",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Negotiation and Conflict Resolution",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Personal Branding and Image Management",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Emotional Intelligence in Business",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Office Productivity Tools",
+          "category": "Skill Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "E-commerce",
+          "category": "Skill Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Entrepreneurship Development and Small Business Management",
+          "category": "Skill Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Universal Human Values",
+          "category": "Value Added Course",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Introduction to Python Programming",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Computer Organization",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Python Programming Lab",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Management: Design Thinking for Managers",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Economics: Indian Economy",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Law: Consumer Protection Act",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Information Technology: Cloud Computing",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Community Engagement",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Design for Sustainability",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Psychology for Managers",
+          "category": "Multidisciplinary Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Indian Constitution",
+          "category": "Value Added Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Cross Cultural Management Skills",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Personal Finance and Wealth Management",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Public Speaking and Presentation Skills",
+          "category": "Ability Enhancement Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Placement Overview and Career Planning",
+          "category": "Non Credit Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Artificial Intelligence / Cyber Security / Cloud Computing / Data Analytics",
+          "category": "Specialization Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Summer Internship - I",
+          "category": "Internship",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Relational Database Management",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Introduction to Data Science",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Internet of Things",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Cloud Computing",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Database Lab",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Internet of Things Lab",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Indian Knowledge System",
+          "category": "Value Added Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Placement Preparation-I",
+          "category": "Non Credit Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Artificial Intelligence / Cyber Security / Cloud Computing / Data Analytics",
+          "category": "Specialization Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Summer Internship - I",
+          "category": "Internship",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Entrepreneurship and Innovation",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Business Economics",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Financial Management",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Human Resource Management",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Placement Preparation",
+          "category": "Additional",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Income Tax I (Commerce)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Principles of Rural Economics (Economics)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Law of Torts, including Motor Vehicles",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (IT)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Internship - II",
+          "category": "Internship",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Project Management",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Service Marketing",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "International Business",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Operations Management",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Income Tax II (Commerce)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Health Economics (Economics)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Special Contracts (Law)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (IT)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Business Research Methods",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "FinTech",
+          "category": "Core Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Integrated Marketing Communication",
+          "category": "Core Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Business Analytics",
+          "category": "Core Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Introduction to SPSS Software",
+          "category": "Skill Enhancement Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (Commerce)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (Economics)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (Law)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (IT)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Internship - III",
+          "category": "Internship",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Insurance and Risk Management",
+          "category": "Major",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Financial Derivatives",
+          "category": "Core Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "HR Analytics",
+          "category": "Core Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Business Intelligence & Applications",
+          "category": "Core Elective",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (Commerce)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (Economics)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (Law)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (IT)",
+          "category": "Minor",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Capstone Project",
+          "category": "Project",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "MOOC (Research-based course aligned with specialization)",
+          "category": "Research Track",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Dissertation Project (independently guided research)",
+          "category": "Research Track",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    }
+  ]
+}

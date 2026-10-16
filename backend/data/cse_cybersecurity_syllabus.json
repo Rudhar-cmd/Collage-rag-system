@@ -1,0 +1,540 @@
+{
+  "source": {
+    "institution": "MIET (Autonomous), Jammu",
+    "documents": [
+      {
+        "title": "Minutes of the 4th Board of Studies Meeting, 14 August 2024",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1737194035.pdf",
+        "supports": "Cyber Security Semesters 3-4 (Batch 2023-27 and beyond) and shared Semesters 1-2 for AI&ML/Cyber Security Batch 2024-28 and beyond"
+      },
+      {
+        "title": "Syllabus for B.E. AIML & Cyber Security Batch 2024 onwards",
+        "url": "https://mietjmu.in/Syllabus/Syllabus%20CSE%20AIML%20%26%20CS%201st-2nd%20semesters%202024%20.pdf",
+        "supports": "Shared Semesters 1-2 subject catalogue for Batch 2024 onwards"
+      },
+      {
+        "title": "Minutes of the 6th Board of Studies Meeting, 04 June 2026",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1785916026.pdf",
+        "supports": "Cyber Security Semesters 7-8 (Batches 2023-27, 2024-28, 2025-29), Scheme 1 and Scheme 2"
+      }
+    ],
+    "uploadedFileNote": "The uploaded cybersecuirty.pdf is the general B.E. CSE Batch 2023 syllabus and is not used as a Cyber Security-specific curriculum source.",
+    "status": "official_catalogue_transcribed_from_MIET_documents",
+    "detailNote": "This JSON contains semester subject catalogues only. Detailed unit outlines should be extracted from the applicable official annexures before being added."
+  },
+  "selectedProgram": "cybersecurity",
+  "programName": "B.E. CSE (Cyber Security)",
+  "semesters": [
+    {
+      "semester": 1,
+      "batch": "2024-28 onwards",
+      "subjects": [
+        {
+          "code": "BSC-101",
+          "name": "Engineering Mathematics-I",
+          "units": []
+        },
+        {
+          "code": "ESC-101",
+          "name": "Basic Electrical and Electronics Engineering",
+          "units": []
+        },
+        {
+          "code": "COM-101",
+          "name": "Introduction to C Programming",
+          "units": []
+        },
+        {
+          "code": "HSMC-101",
+          "name": "Technical Communication",
+          "units": []
+        },
+        {
+          "code": "ESC-111",
+          "name": "Basic Electrical and Electronics Engineering Lab",
+          "units": []
+        },
+        {
+          "code": "COM-111",
+          "name": "C Programming Lab",
+          "units": []
+        },
+        {
+          "code": "NCC-101",
+          "name": "Induction Training",
+          "units": []
+        },
+        {
+          "code": "MCC-102",
+          "name": "Indian Constitution",
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "batch": "2024-28 onwards",
+      "subjects": [
+        {
+          "code": "BSC-201",
+          "name": "Engineering Mathematics-II",
+          "units": []
+        },
+        {
+          "code": "COM-201",
+          "name": "Data Structures using C",
+          "units": []
+        },
+        {
+          "code": "BSC-202",
+          "name": "Engineering Physics",
+          "units": []
+        },
+        {
+          "code": "HSMC-201",
+          "name": "Design Thinking",
+          "units": []
+        },
+        {
+          "code": "COM-211",
+          "name": "Data Structures using C Lab",
+          "units": []
+        },
+        {
+          "code": "BSC-212",
+          "name": "Engineering Physics Lab",
+          "units": []
+        },
+        {
+          "code": "COM-212",
+          "name": "Business Process Automation with RPA Lab",
+          "units": []
+        },
+        {
+          "code": "NCC-201",
+          "name": "Environment and Sustainability",
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "batch": "2023-27 onwards",
+      "subjects": [
+        {
+          "code": "COM-301",
+          "name": "Computer Organization and Architecture",
+          "units": []
+        },
+        {
+          "code": "COM-302",
+          "name": "Operating Systems",
+          "units": []
+        },
+        {
+          "code": "COM-303",
+          "name": "Foundation of Cyber Security",
+          "units": []
+        },
+        {
+          "code": "COM-304",
+          "name": "Core Elective",
+          "units": []
+        },
+        {
+          "code": "COM-305",
+          "name": "Professional Industrial Training/Internship",
+          "units": []
+        },
+        {
+          "code": "BSC-301",
+          "name": "Introduction to Probability and Statistics",
+          "units": []
+        },
+        {
+          "code": "HSMC-301",
+          "name": "Principles of Management",
+          "units": []
+        },
+        {
+          "code": "COM-311",
+          "name": "Cyber Security Foundation Lab",
+          "units": []
+        },
+        {
+          "code": "COM-312",
+          "name": "Operating Systems Lab",
+          "units": []
+        },
+        {
+          "code": "NCC-301",
+          "name": "Placement Overview and Career Planning",
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "batch": "2023-27 onwards",
+      "subjects": [
+        {
+          "code": "COM-401",
+          "name": "Design and Analysis of Algorithms",
+          "units": []
+        },
+        {
+          "code": "COM-402",
+          "name": "Relational Database Management System",
+          "units": []
+        },
+        {
+          "code": "COM-403",
+          "name": "Foundations of Cryptography",
+          "units": []
+        },
+        {
+          "code": "BSC-401",
+          "name": "Discrete Mathematics",
+          "units": []
+        },
+        {
+          "code": "COM-411",
+          "name": "Database Systems Lab",
+          "units": []
+        },
+        {
+          "code": "COM-412",
+          "name": "Network Security Foundation Lab",
+          "units": []
+        },
+        {
+          "code": "OEC-401",
+          "name": "Open Elective",
+          "units": []
+        },
+        {
+          "code": "NCC-401",
+          "name": "Corporate Etiquette and Personality Development",
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "batch": "2023-27 onwards",
+      "status": "pending_official_syllabus",
+      "verificationNote": "No Cyber Security-specific Semester 5 table is published in the BoS minutes on mietjmu.in. The Cyber Security page says specialized tracks (threat intelligence, cyber law, cloud security, cryptography) begin in the 5th semester.",
+      "subjects": [],
+      "provisionalSubjects": {
+        "basis": "Reference only. This is the general B.E. CSE 2023 curriculum (the PDF MIET links from the Cyber Security page), not a Cyber Security-specific table. Cyber Security Sem 3-4 already differ from CSE, so Sem 5-6 probably differ too. Do not show as the Cyber Security syllabus until confirmed.",
+        "subjects": [
+          {
+            "code": "COM-501",
+            "name": "Python Programming-I",
+            "units": []
+          },
+          {
+            "code": "COM-502",
+            "name": "Computer Networks",
+            "units": []
+          },
+          {
+            "code": "COM-503",
+            "name": "Microprocessors",
+            "units": []
+          },
+          {
+            "code": "HSMC-501",
+            "name": "Open Elective 1",
+            "units": []
+          },
+          {
+            "code": "COM-511",
+            "name": "Python Programming Lab",
+            "units": []
+          },
+          {
+            "code": "COM-512",
+            "name": "Computer Networks Lab",
+            "units": []
+          },
+          {
+            "code": "COM-513",
+            "name": "Microprocessor Lab",
+            "units": []
+          },
+          {
+            "code": "HSMC-511",
+            "name": "Placement Preparation-I",
+            "units": []
+          }
+        ]
+      }
+    },
+    {
+      "semester": 6,
+      "batch": "2023-27 onwards",
+      "status": "pending_official_syllabus",
+      "verificationNote": "No Cyber Security-specific Semester 6 table is published in the BoS minutes on mietjmu.in.",
+      "subjects": [],
+      "provisionalSubjects": {
+        "basis": "Reference only. This is the general B.E. CSE 2023 curriculum (the PDF MIET links from the Cyber Security page), not a Cyber Security-specific table. Cyber Security Sem 3-4 already differ from CSE, so Sem 5-6 probably differ too. Do not show as the Cyber Security syllabus until confirmed.",
+        "subjects": [
+          {
+            "code": "COM-601",
+            "name": "Artificial Intelligence with Computer Vision",
+            "units": []
+          },
+          {
+            "code": "COM-602",
+            "name": "Fundamentals of Blockchain Technology",
+            "units": []
+          },
+          {
+            "code": "COM-603",
+            "name": "Software Engineering",
+            "units": []
+          },
+          {
+            "code": "COM-604",
+            "name": "Theory of Computation",
+            "units": []
+          },
+          {
+            "code": "COM-611",
+            "name": "Artificial Intelligence with Computer Vision Lab",
+            "units": []
+          },
+          {
+            "code": "COM-612",
+            "name": "Mini Project Lab",
+            "units": []
+          },
+          {
+            "code": "HSMC-611",
+            "name": "Placement Preparation-II",
+            "units": []
+          },
+          {
+            "code": "NCC-601",
+            "name": "MOOC",
+            "units": []
+          }
+        ]
+      }
+    },
+    {
+      "semester": 7,
+      "batch": "2023-27, 2024-28, 2025-29",
+      "status": "verified_scheme",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 3(a) and 3(b). Endorsed to the Academic Council for approval.",
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "totalCredits": 21,
+          "totalMarks": 1050,
+          "subjects": [
+            {
+              "code": "COM-704",
+              "name": "Professional Industrial Training / Internship",
+              "units": [],
+              "type": "Summer Internship",
+              "credits": 4,
+              "marks": 150
+            },
+            {
+              "code": "COM-701",
+              "name": "Professional Elective 1",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Explainable AI",
+                "Foundation of Cloud IoT Edge ML",
+                "Fundamentals of Blockchain Technology"
+              ]
+            },
+            {
+              "code": "COM-702",
+              "name": "Professional Elective 2",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Agentic Artificial Intelligence",
+                "Introduction to DevOps",
+                "Introduction to Quantum Computing"
+              ]
+            },
+            {
+              "code": "COM-703",
+              "name": "Professional Elective 3 (SWAYAM/NPTEL MOOC / other platform)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "OEC-701",
+              "name": "Open Elective",
+              "units": [],
+              "type": "OEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "Strategic Management",
+                "Marketing Management",
+                "Managerial Economics"
+              ]
+            },
+            {
+              "code": "COM-705",
+              "name": "Seminar",
+              "units": [],
+              "type": "PEC",
+              "credits": 2,
+              "marks": 100
+            },
+            {
+              "code": "COM-711",
+              "name": "Minor Project",
+              "units": [],
+              "type": "PROJ",
+              "credits": 3,
+              "marks": 250
+            },
+            {
+              "code": "NCC-701",
+              "name": "Essence of Indian Knowledge and Tradition",
+              "units": [],
+              "type": "NCC",
+              "credits": 0,
+              "grading": "Satisfactory / Not Satisfactory"
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "totalCredits": 21,
+          "totalMarks": 1050,
+          "subjects": [
+            {
+              "code": "PII-701",
+              "name": "Industry Internship-I",
+              "units": [],
+              "type": "Professional Industry Internship",
+              "credits": 15,
+              "marks": 850
+            },
+            {
+              "code": "COM-703",
+              "name": "Professional Elective 3 (MOOC)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "COM-706",
+              "name": "Professional Elective 4 (MOOC)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "batch": "2023-27, 2024-28, 2025-29",
+      "status": "verified_scheme",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 4(a) and 4(b). Endorsed to the Academic Council for approval.",
+      "schemes": [
+        {
+          "scheme": "Scheme-1",
+          "totalCredits": 15,
+          "totalMarks": 900,
+          "subjects": [
+            {
+              "code": "COM-801",
+              "name": "Professional Elective 1",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "AI for Cyber Security",
+                "Generative Artificial Intelligence (AI)",
+                "Soft Computing"
+              ]
+            },
+            {
+              "code": "COM-802",
+              "name": "Professional Elective 2",
+              "units": [],
+              "type": "PEC",
+              "credits": 3,
+              "marks": 150,
+              "options": [
+                "UAVs and Drone Technology",
+                "Smart City Technologies",
+                "Introduction to IoT and Industry 4.0"
+              ]
+            },
+            {
+              "code": "COM-803",
+              "name": "Professional Elective 3 (SWAYAM/NPTEL MOOC / other platform)",
+              "units": [],
+              "type": "MCC",
+              "credits": 3,
+              "marks": 100
+            },
+            {
+              "code": "COM-811",
+              "name": "Major Project",
+              "units": [],
+              "type": "PROJ",
+              "credits": 6,
+              "marks": 500
+            }
+          ]
+        },
+        {
+          "scheme": "Scheme-2",
+          "totalCredits": 15,
+          "totalMarks": 900,
+          "subjects": [
+            {
+              "code": "PII-801",
+              "name": "Industry Internship-II",
+              "units": [],
+              "type": "Professional Industry Internship",
+              "credits": 15,
+              "marks": 900
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "availability": {
+    "availableSemesters": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8
+    ],
+    "unverifiedSemesters": [
+      5,
+      6
+    ],
+    "batchNote": "Semesters 1-2 are from the shared AI&ML/Cyber Security Batch 2024-28 curriculum. Semesters 3-4 are from the Cyber Security Batch 2023-27 curriculum. Semesters 7-8 apply to batches 2023-27, 2024-28 and 2025-29. Keep batch labels visible and do not imply all semesters are from one identical batch scheme.",
+    "note": "Semesters 5-6 are not published for Cyber Security. A CSE-core reference list is kept under provisionalSubjects, not in subjects."
+  }
+}

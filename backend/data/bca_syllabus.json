@@ -1,0 +1,548 @@
+{
+  "source": {
+    "status": "MIET Jammu official Board of Studies (BoS) minutes; course scheme verified for semesters 1-4 and 7-8. Semesters 5-6 not found.",
+    "institute": "Model Institute of Engineering & Technology (Autonomous), Kot Bhalwal, Jammu",
+    "programmePage": "https://mietjmu.in/bca-hons/",
+    "documents": [
+      {
+        "label": "BoS Meeting No. 3, 09 Sep 2023 (BCA Hons. Sem 1-2, batch 2023-27)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1768804836.pdf"
+      },
+      {
+        "label": "BoS Meeting No. 4, 14 Aug 2024 (BCA Hons. Sem 3-4)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1768804956.pdf"
+      },
+      {
+        "label": "BoS Meeting No. 6, 04 Jun 2026 (BCA Hons. Sem 1-2 for batch 2026-30, Sem 7-8)",
+        "url": "https://pi360.net/mietjammu/institute_data/records/iqac/IQAC_1785916026.pdf"
+      }
+    ],
+    "note": "These are course schemes (code, title, type, credits, marks). Unit-level syllabus is only published on a Canva link from the programme page, which blocks automated access. The 2026-30 and Sem 7-8 schemes were 'endorsed to the Academic Council for approval' on 04 Jun 2026; confirm final approval with the department."
+  },
+  "selectedProgram": "bca",
+  "programName": "Bachelor of Computer Applications (Hons.) AI&ML",
+  "batch": null,
+  "duration": "4 years (NEP 2020, multi-exit: BCA degree after 3 years, Honours in year 4)",
+  "availability": {
+    "status": "partial_verified",
+    "note": "Semesters 1-4, 7 and 8 verified from BoS minutes. Semesters 5 and 6 are not in any BoS minutes accessible on the MIET site. Each semester carries its own applicableBatch because MIET changed the scheme between batches."
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "status": "verified_scheme",
+      "applicableBatch": "2026-30 onwards",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 7. Total 24 credits, 650 marks. The 2023-27 and 2024-28 batches have a different Sem 1 (e.g. Business Communication, Foundations of IT, Web Technologies + Lab).",
+      "subjects": [
+        {
+          "code": "BCAMJ-101",
+          "name": "Programming in C",
+          "type": "Major",
+          "credits": 3,
+          "lecture": 3,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-102",
+          "name": "Computer Fundamentals & Digital Systems",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-103",
+          "name": "Mathematics for Computing",
+          "type": "Minor",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "UGSEC-104",
+          "name": "Office Productivity Tools",
+          "type": "SEC",
+          "credits": 2,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 50
+        },
+        {
+          "code": "UGVAC-105",
+          "name": "Indian Constitution",
+          "type": "Value Added Course",
+          "credits": 2,
+          "lecture": 2,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 50
+        },
+        {
+          "code": "BCAMI-106",
+          "name": "Database Foundations",
+          "type": "Minor",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCASP-107",
+          "name": "Specialization (MOOC)",
+          "type": "MOOC",
+          "credits": 3,
+          "marks": 100,
+          "note": "Choose one track in Sem 1; it cannot be changed later. One course per semester of that track.",
+          "options": [
+            "AI and ML",
+            "Cyber Security",
+            "Full Stack Web Development",
+            "Data Science and Analytics",
+            "Cloud and DevOps"
+          ]
+        },
+        {
+          "code": "BCAMJ-108",
+          "name": "C Programming Lab",
+          "type": "Major",
+          "credits": 2,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 50
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "status": "verified_scheme",
+      "applicableBatch": "2026-30 onwards",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 8. Total 24 credits, 650 marks. Code BCAMJ-203 is printed as-is in the minutes although the course type is Minor. The specialization options table in the minutes reuses the BCASP-107 codes.",
+      "subjects": [
+        {
+          "code": "BCAMJ-201",
+          "name": "Data Structures Using C",
+          "type": "Major",
+          "credits": 3,
+          "lecture": 3,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-202",
+          "name": "Discrete Mathematics for Computing",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-203",
+          "name": "Web Technologies",
+          "type": "Minor",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "UGSEC-204",
+          "name": "Linux & Git Fundamentals",
+          "type": "SEC",
+          "credits": 2,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 50
+        },
+        {
+          "code": "UGVAC-205",
+          "name": "Universal Human Values",
+          "type": "Value Added Course",
+          "credits": 2,
+          "lecture": 2,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 50
+        },
+        {
+          "code": "BCAMI-206",
+          "name": "Java Foundations",
+          "type": "Minor",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCASP-207",
+          "name": "Specialization (MOOC)",
+          "type": "MOOC",
+          "credits": 3,
+          "marks": 100,
+          "note": "Continue the same track chosen in Semester 1.",
+          "options": [
+            "AI and ML",
+            "Cyber Security",
+            "Full Stack Web Development",
+            "Data Science and Analytics",
+            "Cloud and DevOps"
+          ]
+        },
+        {
+          "code": "BCAMJ-208",
+          "name": "Data Structures Lab",
+          "type": "Major",
+          "credits": 2,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 50
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "status": "verified_scheme",
+      "applicableBatch": "2023-27 and beyond (tables in the minutes are labelled 'Batch 2024-28')",
+      "verificationNote": "BoS Meeting 4 (14 Aug 2024), Table 10. Total 22 credits, 650 marks including the summer internship, whose credits and marks are added to this semester's marksheet. Mid-sem 40 + end-sem 60 for theory.",
+      "subjects": [
+        {
+          "code": "UGSEC-305",
+          "name": "Internship (Summer, completed after Sem 2)",
+          "type": "Summer Internship",
+          "credits": 2,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-301",
+          "name": "Introduction to Python Programming",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-302",
+          "name": "Computer Organization",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "UGMDC-303",
+          "name": "Multidisciplinary Elective",
+          "type": "MDC",
+          "credits": 3,
+          "marks": 100,
+          "options": [
+            "Community Engagement",
+            "Design for Sustainability",
+            "Emotional Intelligence in Business"
+          ]
+        },
+        {
+          "code": "UGAEC-304",
+          "name": "Ability Enhancement Elective",
+          "type": "AEC",
+          "credits": 3,
+          "marks": 100,
+          "options": [
+            "Negotiation and Conflict Resolution",
+            "Personal Finance and Wealth Management",
+            "Public Speaking and Presentation Skills"
+          ]
+        },
+        {
+          "code": "BCAMI-306",
+          "name": "Minor (specialization stream)",
+          "type": "Minor",
+          "credits": 4,
+          "marks": 100,
+          "options": [
+            "Artificial Intelligence",
+            "Cyber Security",
+            "Cloud Computing",
+            "Data Analytics"
+          ]
+        },
+        {
+          "code": "BCAMJ-307",
+          "name": "Python Programming Lab",
+          "type": "Major",
+          "credits": 2,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 50
+        },
+        {
+          "code": "NCC-301",
+          "name": "Placement Overview and Career Planning",
+          "type": "Audit (NCC)",
+          "credits": 0,
+          "marks": null,
+          "grading": "Satisfactory / Not Satisfactory"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "status": "verified_scheme",
+      "applicableBatch": "2023-27 and beyond (tables in the minutes are labelled 'Batch 2024-28')",
+      "verificationNote": "BoS Meeting 4 (14 Aug 2024), Table 11. Total 22 credits, 550 marks. NCC-401 is titled 'Placement Preparation-I' in the table and 'Corporate Etiquette and Personality Development' in the highlights.",
+      "subjects": [
+        {
+          "code": "BCAMJ-401",
+          "name": "Relational Database Management",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-402",
+          "name": "Introduction to Data Science",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-403",
+          "name": "Internet of Things",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-404",
+          "name": "Cloud Computing",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMI-405",
+          "name": "Minor (specialization stream)",
+          "type": "Minor",
+          "credits": 4,
+          "marks": 100,
+          "options": [
+            "Artificial Intelligence",
+            "Cyber Security",
+            "Cloud Computing",
+            "Data Analytics"
+          ]
+        },
+        {
+          "code": "BCAMJ-406",
+          "name": "Database Lab",
+          "type": "Major",
+          "credits": 1,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 25
+        },
+        {
+          "code": "BCAMJ-407",
+          "name": "Internet of Things Lab",
+          "type": "Major",
+          "credits": 1,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 25
+        },
+        {
+          "code": "NCC-401",
+          "name": "Placement Preparation-I",
+          "type": "Audit (NCC)",
+          "credits": 0,
+          "marks": null,
+          "grading": "Satisfactory / Not Satisfactory"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "status": "pending_official_syllabus",
+      "verificationNote": "Not found. The BoS minutes available on the MIET website (meetings 3, 4 and 6) do not include BCA Hons. Semester 5. The minutes of the 5th BoS meeting (30 Jun 2025) are mentioned but not linked on mietjmu.in/bos-2/. Searched MIET site, BoS minutes (meetings 3, 4, 6), brochures and programme page again; no course list published. Left empty rather than guessed.",
+      "subjects": []
+    },
+    {
+      "semester": 6,
+      "status": "pending_official_syllabus",
+      "verificationNote": "Not found. Same reason as Semester 5. The programme page lists a 6th-semester Domain Specific Internship, but no course codes or credits are published. Searched MIET site, BoS minutes (meetings 3, 4, 6), brochures and programme page again; no course list published. Left empty rather than guessed.",
+      "subjects": []
+    },
+    {
+      "semester": 7,
+      "status": "verified_scheme",
+      "applicableBatch": "2023-27, 2024-28, 2025-29",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Table 9. Total 20 credits, 500 marks. Specialization course must match the track chosen earlier.",
+      "subjects": [
+        {
+          "code": "BCAMII-701",
+          "name": "Internship (Summer)",
+          "type": "Summer Internship",
+          "credits": 6,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 12,
+          "marks": 150
+        },
+        {
+          "code": "BCAMJ-701",
+          "name": "Research Methodology",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-702",
+          "name": "Core Elective",
+          "type": "Major",
+          "credits": 4,
+          "marks": 100,
+          "options": [
+            "Introduction to Computer Vision",
+            "Industry 4.0",
+            "IoT Applications"
+          ]
+        },
+        {
+          "code": "BCAMI-AI/CS/CC/DA-703",
+          "name": "Specialization (MOOC)",
+          "type": "Minor",
+          "credits": 4,
+          "marks": 100,
+          "options": [
+            "Artificial Intelligence",
+            "Cyber Security",
+            "Cloud Computing",
+            "Data Analytics"
+          ]
+        },
+        {
+          "code": "UGSEC-704",
+          "name": "Data Analytics Lab",
+          "type": "SEC",
+          "credits": 2,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 4,
+          "marks": 50
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "status": "verified_scheme",
+      "applicableBatch": "2023-27, 2024-28, 2025-29",
+      "verificationNote": "BoS Meeting 6 (04 Jun 2026), Tables 10 and 11. Two tracks: Hons. without research and Hons. with research. Each is 20 credits, 500 marks. 'subjects' holds the default Honours (without research) track; the with-research track is in 'alternateTrack'.",
+      "subjects": [
+        {
+          "code": "BCAMJ-801",
+          "name": "Advanced Database Systems",
+          "type": "Major",
+          "credits": 4,
+          "lecture": 4,
+          "tutorial": 0,
+          "practical": 0,
+          "marks": 100
+        },
+        {
+          "code": "BCAMJ-802",
+          "name": "Core Elective",
+          "type": "Major",
+          "credits": 4,
+          "marks": 100,
+          "options": [
+            "Cyber Physical System",
+            "Agentic AI",
+            "Drone Technologies"
+          ]
+        },
+        {
+          "code": "BCAMI-AI/CS/CC/DA-803",
+          "name": "Specialization (MOOC)",
+          "type": "Minor",
+          "credits": 4,
+          "marks": 100,
+          "options": [
+            "Artificial Intelligence",
+            "Cyber Security",
+            "Cloud Computing",
+            "Data Analytics"
+          ]
+        },
+        {
+          "code": "BCAMJ-804",
+          "name": "Capstone Project",
+          "type": "Major",
+          "credits": 8,
+          "lecture": 0,
+          "tutorial": 0,
+          "practical": 8,
+          "marks": 200
+        }
+      ],
+      "trackName": "Honours (without research)",
+      "alternateTrack": {
+        "name": "Honours with Research",
+        "subjects": [
+          {
+            "code": "BCAMJR-801",
+            "name": "MOOC",
+            "type": "Major",
+            "credits": 4,
+            "lecture": 4,
+            "tutorial": 0,
+            "practical": 0,
+            "marks": 100
+          },
+          {
+            "code": "BCAMJR-802",
+            "name": "Research component (title printed only as the code in the minutes)",
+            "type": "Major",
+            "credits": 16,
+            "marks": 400
+          }
+        ]
+      }
+    }
+  ]
+}

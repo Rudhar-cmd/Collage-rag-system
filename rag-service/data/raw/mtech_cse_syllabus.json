@@ -1,0 +1,165 @@
+{
+  "source": {
+    "status": "Transcribed from the postgraduate semester screenshots provided in the conversation.",
+    "note": "The screenshots show Computer Science topics, but the exact programme title, specialization, batch, codes, credits, and detailed unit contents were not visible. Verify the official programme identity before treating this as the definitive M.Tech CSE syllabus."
+  },
+  "selectedProgram": "mtech_cse",
+  "programName": "M.Tech Computer Science (provisional screenshot transcription)",
+  "batch": null,
+  "availability": {
+    "status": "screenshot_transcribed",
+    "note": "Only visible subject/category names are included; no codes, credits, or unit descriptions have been invented."
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Advanced Simulation Tools and Techniques",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Quantum Computing Fundamentals",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Research Methodology and Scholarly Practices",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Seminar: Emerging Domains in Computer Science",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Simulation Techniques and Tools Lab",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective",
+          "category": "Professional Elective Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective Lab",
+          "category": "Professional Elective Course",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Large Language Models",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Advanced Distributed Computing",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Scientific Writing and Communication",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Large Language Models Lab",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Cyber Physical Lab",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective",
+          "category": "Professional Elective Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective Lab",
+          "category": "Professional Elective Course",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Professional Internship",
+          "category": "Summer Internship",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective",
+          "category": "Open Elective Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective Lab",
+          "category": "Open Elective Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective",
+          "category": "Professional Elective Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Professional Elective Lab",
+          "category": "Professional Elective Course",
+          "details_found": false,
+          "units": []
+        },
+        {
+          "name": "Minor Project",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "status": "available",
+      "subjects": [
+        {
+          "name": "Dissertation",
+          "category": "Professional Core Course",
+          "details_found": false,
+          "units": []
+        }
+      ]
+    }
+  ]
+}

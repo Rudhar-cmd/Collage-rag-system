@@ -1,0 +1,944 @@
+{
+  "source": {
+    "title": "MIET B.Tech CSE semester-wise curriculum",
+    "institution": "MIET, Jammu",
+    "program": "B.Tech Computer Science & Engineering (CSE)",
+    "requested_batch": "2023-2027",
+    "source_type": "Semesters 1-2: syllabus extract (AI&ML and CS Batch 2024). Semesters 3-8: screenshot transcription",
+    "official_batch_verification": "Not independently verified against an official batch-specific CSE 2023-27 syllabus PDF",
+    "coverage": [
+      "Semester 1",
+      "Semester 2",
+      "Semester 3",
+      "Semester 4",
+      "Semester 5",
+      "Semester 6",
+      "Semester 7",
+      "Semester 8"
+    ],
+    "verification_note": "Semesters 1-8 transcribe subject names and curriculum categories from user-provided screenshots. They do not contain unit-wise syllabus content, subject codes, credits, or course outcomes. Semesters 1-2 were taken from the B.E. CSE AI&ML and CS Batch 2024 syllabus, not from a CSE 2023-27 document. For CSE 2023-27 the course arrangement differs: Engineering Physics, Physics Lab and Design Thinking are in Semester 1, and Basic Electrical and Electronics Engineering, its lab and Technical Communication are in Semester 2. Verify against the CSE 2023 curriculum before presenting as authoritative.",
+    "notes": [
+      "The syllabus covers all eight semesters (Semesters 1–8). Semesters 1 and 2 contain subjects with unit-wise details, while Semesters 3–8 follow a scheme- and category-based structure. Semesters 7 and 8 include Scheme-1 and Scheme-2 alternatives, which should not be interpreted as simultaneously required without official confirmation. MOOC options shown in the screenshots include Artificial Intelligence and Machine Learning, Cyber Security, IoT, Data Science, and Cloud Computing. Some Semester 1–2 unit texts contain PDF extraction leftovers, such as textbook lists, page headers, and course outcomes from the following course; this content is retained as supplied. No subject codes or unit contents have been inferred for Semesters 3–8."
+    ]
+  },
+  "semesters": [
+    {
+      "semester": 1,
+      "batch": "AI&ML and CS 2024 syllabus",
+      "verification_note": "Semesters 1-2 were taken from the B.E. CSE AI&ML and CS Batch 2024 syllabus, not from a CSE 2023-27 document. For CSE 2023-27 the course arrangement differs: Engineering Physics, Physics Lab and Design Thinking are in Semester 1, and Basic Electrical and Electronics Engineering, its lab and Technical Communication are in Semester 2. Verify against the CSE 2023 curriculum before presenting as authoritative.",
+      "subjects": [
+        {
+          "code": "BSC-101",
+          "name": "Engineering Mathematics-I",
+          "type": "BSC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Differential Calculus I: Leibnitz theorem (without proof), Partial differentiation, Euler’s theorem on homogeneous functions, Asymptotes, Double points, curvature, Curve tracing in Cartesian, polar and parametric forms. (11 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Differential Calculus II: Rolle’s Theorem, Mean value Theorem, Taylor’s and Maclaurin’s series with remainder, indeterminate forms, Taylor series in two variables, Maxima and Minima of functions of two variables, method of Lagrange’s multipliers. (11 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Integral Calculus: Definite integrals with important properties, differentiation under the integral sign, Gamma, Beta and error functions with simple problems, applications of definite integrals to find length, area, volume and surface area of revolutions, transformation of coordinates, double and triple integrals with simple problems. (10 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Matrices- Matrices, vectors: addition and scalar multiplication, matrix multiplication, Linear systems of equations, linear Independence, rank of a matrix, determinants, Cramer’s Rule, inverse of a matrix, Gauss elimination and Gauss-Jordan elimination. (15 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Vector Space, linear dependence of vectors, basis, dimension, Linear transformations, range and kernel of a linear map, rank and nullity, Inverse of a linear transformation, rank nullity theorem, composition of linear maps, Eigen values, eigenvectors, symmetric, skew-symmetric, and orthogonal matrices, Eigen bases. (10 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Engineering Mathematics B.S. Grewal Khanna Publications, New Delhi 44th (2018) 2 Calculus and Analytic Geometry Thomas and Finney Addison Wesley, Narosa. 1st (2010) Reference Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Advanced Engineering Mathematics V. P. Mishra, Jyoti Sharma, Pratibha Mishra Bhavya Books 2nd (2019) 2 Integral Calculus S. Narayan S. Chand, New Delhi 35th (2005) 3 Engineering Mathematics N.P Bali Laxmi Publications 13th (2016) --- PAGE 4 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 4 Course Code Course Name Course Type C d L T P Marks Sessional Final Exam Total"
+            }
+          ],
+          "details_found": true
+        },
+        {
+          "code": "ESC-101",
+          "name": "Basic Electrical and Electronics Engineering",
+          "type": "ESC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Elementary Concepts of DC and AC Circuits: Recent advancements in Electrical Engineering, DC Circuit elements (R, L and C), Voltage and Current sources, Kirchhoff’s Current and Voltage laws, mesh and nodal analysis. Superposition, Maximum power transfer, Thevenin and Norton theorems. (8 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Representation of Sinusoidal Waveforms: Peak and RMS values, Phasor representation, Real power, Reactive power, apparent power, power factor. Analysis of single-phase AC circuits. Classification of Instruments: Operating principle of Measuring Instruments. (8 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Single phase Transformers and Machines: Principle of operation, ideal and practical transformer, equivalent circuit, losses in transformers, transformer testing, regulation and efficiency, Principle of operation of DC and AC machines. (6 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Semiconductor Devices and Applications: Evolution in Electronics (vacuum tubes to nano-electronics), Types and specifications of Resistor, Inductor, Capacitor and Color coding, PN junction and Zener diode characteristics, Types of diodes (Tunnel diode, Schottky diode, LED, photodiode, Varactor diode), Voltage Regulators, Wave Shaping Circuits (rectifiers, filters, clippers and clampers). (8 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Transistors and Biasing Circuits: BJT: Principle and operation of NPN transistor, configuration and characteristics (CB, CE, and CC), types of biasing circuit. Hybrid Parameters Introduction. Two port networks, hybrid model for CE, CC, CB configuration and their analysis using h-parameters, Miller theorem. FET: Principle of Operation and characteristics of JFET, biasing of FET, MOSFET and CMOS. (10 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Basic Electrical Engineering D. P. Kothari and l. J. Nagrath Tata McGrawHill 4th (2019) 2 Integrated Electronics Millman and Halkias Tata McGraw Hill 4th (2015) Reference Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Basic Electrical Engineering A. E. Fitzgerald, David E Higginbotham and Arvin Grabel Tata McGraw Hill 5th (2009) 2 Electronic Devices and Circuit Theory Boylstead Pearson 11th (2015) --- PAGE 5 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 5 3 Electronic Principles Malvino Leach Tata McGraw Hill 7th (2017) --- PAGE 6 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 6 Course Outcomes At the end of the course the student will be able to CO1 Design flowcharts, algorithms and pseudocode for solving problems. CO2 Understand the syntax and semantics of C programs and use them to translate the algorithms into programs. CO3 Decompose a problem into functions and synthesize a complete program using divide and conquer approach. CO4 Debug and test programs to evaluate program correctness. CO5 Implement derived and user-defined data types and files in C programming for a given application."
+            }
+          ],
+          "details_found": true
+        },
+        {
+          "code": "COM-101",
+          "name": "Introduction to C Programming",
+          "type": "ESC",
+          "units": [],
+          "details_found": false
+        },
+        {
+          "code": "HSMC-101",
+          "name": "Technical Communication",
+          "type": "HSMC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Basic Writing Skills: Sentence, Creating Coherence, Use of Phrases and Clauses in Sentences, Organizing Principles of Paragraphs in Documents, Techniques for Writing Precisely. Identifying Common Errors in Writing: Subject–Verb Agreement, Noun–Pronoun Agreement, Misplaced Modifiers, Redundancies, Clichés. The e-English: E- Mail Communication, Internet Abbreviations, Blogging, Challenges of English Language Online. (7 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Technical Writing Skills: Letter Writing, Letter of Application Content, Format, Report Writing – Types, Structures, Data Collection, Content, Form, Writing a Proposal, Recommendations, Instructions, Business Communication. Creative Writing Skills: Free Writing, Biographical Writing, Autobiographical Writing, Process Description, Bar Charts and Flowcharts, Descriptive Writing, Argumentative Writing, Essay Writing, Précis Writing, Paraphrasing, Poster Making. (7 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Reading and Listening: Improving Reading Skills: Skimming and Scanning, Reading and Note-Making, Intensive Reading and Predicting Content, Reading and Interpretation, Reading – Critical Reading, Hints Development. Listening Skills: Listening Comprehension, Difference between Listening and Hearing, Types of Listening, Types of Listening Intensity, Effective Listening, Ways to Improve Listening Skills, Listening and Note-Taking, Barriers to Effective Listening. (7 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Verbal Communication Process of Communication and Effective Speaking: Communication Process, Barriers to Effective Communication, Flow of Organizational Communication, Language as a Tool of Communication, Pronunciation, Intonation, Stress and Rhythm, Introduction to Phonetics, (5 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Non-Verbal Communication: Oral Communication, Communication at Workplace, Public Speaking, Persuasive Speaking, Impromptu Speaking - Extempore, Just a Minute, Debate, Conversations and Dialogues, Conversation over Telephone. Professional Etiquettes Meaning and Type, Seminar on a given topic. (4 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Technical Communication Wiley Editorial Wiley 1st (2019) 2 Technical Communication: Principles and Practice Meenakshi Raman, Sangeeta Sharma Oxford 2nd (2011) --- PAGE 9 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 9 3 Technical Communication: A Reader- Centered Approach Anderson Cengage Learning 6th (2007) --- PAGE 10 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 10 Course Code Course Name Course Type Cd L T P Marks Sessional Final Exam Total"
+            }
+          ],
+          "details_found": true
+        },
+        {
+          "code": "ESC-111",
+          "name": "Basic Electrical and Electronics Engineering Lab",
+          "type": "ESC",
+          "units": [],
+          "details_found": true,
+          "outcomes": [
+            {
+              "code": "CO1",
+              "description": "Apply fundamental concepts to solve simple DC and AC electric circuits."
+            },
+            {
+              "code": "CO2",
+              "description": "Verify the basic characteristics of transformers and electrical machines."
+            },
+            {
+              "code": "CO3",
+              "description": "Design diode and rectifier circuits and analyze their characteristics."
+            },
+            {
+              "code": "CO4",
+              "description": "Design and evaluate various transistor biasing configurations and circuits."
+            },
+            {
+              "code": "CO5",
+              "description": "Design different voltage regulators"
+            }
+          ],
+          "activities": [
+            "Verify Characteristics of passive circuit elements (R, L, C).",
+            "Examine Time and frequency responses of RC, RL and RLC circuits.",
+            "Verify and analyze of network theorems.",
+            "Analyze single-phase transformers.",
+            "Perform the polarity test of the single phase transformer.",
+            "To perform open and short circuit tests on single phase transformers.",
+            "Measure three phase power using two Wattmeter methods.",
+            "Verify and Plot V-I characteristics of p-n junction and Zener diodes.",
+            "Verify and Plot Input and Output characteristics of BJT (CE).",
+            "Implement half wave and full wave rectifiers.",
+            "Design voltage regulator using series pass transistor.",
+            "--- PAGE 11 ---",
+            "Syllabus for B.E CSE AI&ML and CS Batch 2024",
+            "MIET (Autonomous), Jammu",
+            "Course",
+            "Code",
+            "Course Name",
+            "Course",
+            "Type",
+            "Cd",
+            "L",
+            "T",
+            "P",
+            "Marks",
+            "Sessional",
+            "Final Exam",
+            "Total"
+          ]
+        },
+        {
+          "code": "COM-111",
+          "name": "C Programming Lab",
+          "type": "ESC",
+          "units": [],
+          "details_found": true,
+          "outcomes": [
+            {
+              "code": "CO1",
+              "description": "Demonstrate an understanding of the overall syntax and semantics of C programs."
+            },
+            {
+              "code": "CO2",
+              "description": "Break problems into smaller solvable problem statements and integrate to create a complete solution."
+            },
+            {
+              "code": "CO3",
+              "description": "Develop readable, modular and reusable C programs using built-in and user-defined functions."
+            },
+            {
+              "code": "CO4",
+              "description": "Debug and test programs to determine that the program performs as expected."
+            },
+            {
+              "code": "CO5",
+              "description": "Develop programs that perform operations using derived data types and files."
+            }
+          ],
+          "activities": [
+            "Familiarization with the Lab Environment.",
+            "Program to print “Hello World”.",
+            "Program for arithmetic operations like addition, subtraction, multiplication and remainder.",
+            "Program to calculate area and perimeter of circle, square and rectangle.",
+            "Program to find the Euclidean distance between two points in a plane.",
+            "Program to check if a number is even or odd.",
+            "Program to check whether the alphabet is a vowel or consonant.",
+            "Program to calculate area and perimeter of circle, square and rectangle based on user’s choice.",
+            "Program to calculate factorial of a number using a for loop.",
+            "Program to print the Fibonacci sequence using for loop.",
+            "Program to find maximum of n numbers using for loop.",
+            "Program to check if a number is prime or not using a while loop.",
+            "Program to calculate sum of digits of a number using a while loop.",
+            "Program to check if a number is Armstrong or not using a while loop.",
+            "Program to find the maximum element and index in the array.",
+            "Program to sort an array using bubble sort.",
+            "Program to search an element in an array using linear search.",
+            "Program to read and print elements in two dimensional arrays.",
+            "Program to perform matrix multiplication.",
+            "Program to demonstrate the use of various string operations.",
+            "Program to check whether a given string is a palindrome.",
+            "Program to create Simple Calculator using switch case and function for every operation.",
+            "Program to print the Fibonacci sequence using recursion.",
+            "Program to calculate factorial of a number using recursion.",
+            "Program to differentiate pass by value and pass by reference by swapping two numbers using function.",
+            "Program to demonstrate the use of malloc(), calloc(), realloc() and free() functions.",
+            "Program to store the information of student marks using structures and find total marks of individual student.",
+            "Program to store information of a student using union.",
+            "Program to implement an array of structures for student marks for each student and pass it to function for",
+            "various operations.",
+            "Program to read and write in a file.",
+            "Program for reading and writing the student marks data to files.",
+            "Mini Project: Student Information System.",
+            "--- PAGE 12 ---",
+            "Syllabus for B.E CSE AI&ML and CS Batch 2024",
+            "MIET (Autonomous), Jammu",
+            "Course",
+            "Code",
+            "Course Name",
+            "Course",
+            "Type",
+            "Cd",
+            "L",
+            "T",
+            "P",
+            "Marks",
+            "Sessional Final Exam",
+            "Total"
+          ]
+        },
+        {
+          "code": "NCC-101",
+          "name": "Induction Training",
+          "type": "NCC",
+          "units": [],
+          "details_found": true,
+          "outcomes": [
+            {
+              "code": "CO1",
+              "description": "Understand the key initiatives undertaken by the Institute and perceive the benefits of enrolling into the"
+            },
+            {
+              "code": "CO2",
+              "description": "Develop ICT skills through modern tool usage."
+            },
+            {
+              "code": "CO3",
+              "description": "Develop understanding regarding different career paths and options."
+            },
+            {
+              "code": "CO4",
+              "description": "Explore self-learning opportunities through MOOCs, Digital Library and online digital resources."
+            },
+            {
+              "code": "CO5",
+              "description": "Leverage self-development opportunities available on campus."
+            }
+          ],
+          "activities": [
+            "Orientation Session on Institution.",
+            "Address by the Director of the Institution.",
+            "Mantra to Success using ICT Tools at MIET: Deep Dive into Official Email Id, Google Drive, Google",
+            "Classroom and Google Meeting.",
+            "Introduction to Google CS First.",
+            "Personality Development workshop.",
+            "Hands-On session on ERP system.",
+            "Project Showcasing Session: AI, Computer Vision and RPA.",
+            "E-Learning Resources at MIET (MOOC Platforms).",
+            "PI 360 Training session.",
+            "Student Clubs at MIET (Ureka, Literary).",
+            "Orientation session on the Library.",
+            "Extra-Curricular Activities in College.",
+            "Orientation session on Other Committees (NSS and Cultural).",
+            "Familiarization to Dept./Branch.",
+            "Orientation on Mentor Mentee Program.",
+            "--- PAGE 13 ---",
+            "Syllabus for B.E CSE AI&ML and CS Batch 2024",
+            "MIET (Autonomous), Jammu",
+            "Course",
+            "Code",
+            "Course Name",
+            "Course",
+            "Type",
+            "Cd",
+            "L",
+            "T",
+            "P",
+            "Marks",
+            "Sessional",
+            "Final Exam",
+            "Total"
+          ]
+        },
+        {
+          "code": "MCC-102",
+          "name": "Indian Constitution",
+          "type": "MCC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Introduction to Indian Constitution: Historical Background of the Constituent Assembly, Government of India Act of 1935 and Indian Independence Act of 1947, Composition of the Constituent Assembly, Functions of the Constituent Assembly, Various Committees of the Constituent Assembly, Enforcement of the Constitution, Indian Constitution and its Salient Features. (5 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "The role of B R Ambedkar in the making of the Indian Constitution, The Preamble of the Constitution, Fundamental Rights, Fundamental Duties, Directive Principles of State Policy, Gandhian Principles, Liberal Principles, Socialistic Principles. (5 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Indian Federalism: Meaning and Definition of Federalism, Structure and Features of Indian Federalism, Difference between Indian and Federation of other states, Difference between federal and unitary features, Critical Evaluation of the Indian Federal System, Decentralisation of Powers, Centre-State Relations, 73rd Amendment, Panchayath Raj Institutions. (5 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Union Government: Powers of Indian Parliament, Functions of Rajya Sabha, Functions of Lok Sabha, Powers and Functions of the President, Comparison of powers of Indian President with the United States, Powers and Functions of the Prime Minister. (5 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "India's External Relations - Cold War and Post-Cold War era: What is Foreign Policy? Basic Determinants of Foreign Policy, Indian and its Neighbours, India's Extended Neighbourhood in West Asia and South-East Asia, India's relations with the United States and Russia, India and the World Organisations, India in the 21st century. (5 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Working of a Democratic Constitution of India G. Austin New Delhi: Oxford University Press 1st (2003) 2 Introduction to the Constitution of India D. D. Basu Lexis Nexis 24th (2019) Reference Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Contemporary India: Economy, Society, Politics N. Chandhoke and Priyadarshini Pearson Education India 1st (2009) 2 Understanding Contemporary India: Critical Perspectives A. Vanaik and R. Bharghava Orient Blackswan 1st (2010) --- PAGE 14 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 14 SEMESTER 2 Course Code Course Name Course Type Cd L T P Marks Sessional Final Exam Total"
+            }
+          ],
+          "details_found": true
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "batch": "AI&ML and CS 2024 syllabus",
+      "verification_note": "Semesters 1-2 were taken from the B.E. CSE AI&ML and CS Batch 2024 syllabus, not from a CSE 2023-27 document. For CSE 2023-27 the course arrangement differs: Engineering Physics, Physics Lab and Design Thinking are in Semester 1, and Basic Electrical and Electronics Engineering, its lab and Technical Communication are in Semester 2. Verify against the CSE 2023 curriculum before presenting as authoritative.",
+      "subjects": [
+        {
+          "code": "BSC-201",
+          "name": "Engineering Mathematics-II",
+          "type": "BSC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Probability spaces, conditional probability, independence; Discrete random variables, Independent random variables, the multinomial distribution, Poisson approximation to the binomial distribution, infinite sequences of Bernoulli trials, sums of independent random variables; Expectation of Discrete Random Variables, Moments, Variance of a sum, Correlation coefficient, Chebyshev's Inequality. (9 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Continuous random variables and their properties, distribution functions and densities, normal, exponential and gamma densities. Bivariate distributions and their properties, distribution of sums and quotients, conditional densities, Bayes' rule. (12 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Measures of Central tendency: Moments, skewness and Kurtosis - Probability distributions. Binomial, Poisson and Normal - evaluation of statistical parameters for these three distributions, Correlation and regression – Rank correlation (10 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Hypothesis – Introduction, Format and Types; Procedure of Hypothesis Testing; Errors in Hypothesis; Two- tail and One-tail Test of Hypothesis; Tests of Significance for Attributes; Tests of Significance for Variables; Tests of Significance for Small Samples; t-distribution and its application (11 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Difference of means and correlation coefficients, test for ratio of variances - Chi-square test for goodness of fit and independence of attributes (10 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Advanced Engineering Mathematics Erwin Kreyszig Wiley 10th (2015) 2 A First Course in Probability S. Ross Pearson Education India 6th (2002) 3 “Introduction to Probability and Statistics for Engineers and Scientists Sheldon M. Ross Academic Press 5th (2009) Reference Books S.No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Advanced Engineering Mathematics R.K. Jain, S. R. K. Iyenger Narosa Publishing House Pvt. Ltd. 5th (2016) 2 Higher Engineering Mathematics Dr. B. S. Grewal Khanna Publications 43rd (2017) 3 Engineering Mathematics N.P Bali Laxmi publications 13th (2009) --- PAGE 15 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 15 Course Code Course Name Course Type Cd L T P Marks Sessional Final Exam Total"
+            }
+          ],
+          "details_found": true
+        },
+        {
+          "code": "COM-201",
+          "name": "Data Structures using C",
+          "type": "PCC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Introduction to data structures: Binary and Decimal Integers, Real Numbers, Character Strings, Abstract Data Types, Sequences as Value Definitions, Data Types in C, Pointers in C, Data Structures and C, Representation of Arrays, Structures in C. (3 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Stacks: Concept of Stacks, Operation on Stacks, Representing Stacks in C, Implementing the pop Operation, Testing for Exceptional Conditions, Implementing the Push Operation, Multiple stacks, Application of stacks in Infix, Postfix, and Prefix, Recursion. Queues: Concept of Queues, Operation on Queues, Representing Stacks in C, Multiple Queues, Priority Queues, Circular Queues. (10 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Linked Lists: Concept of Linked Lists, Representing Linked Lists in C, Insertion, Deletion and Traversal on Linear Linked Lists, Doubly Linked List, Circular Linked List, Linked List as Data Structure, Header nodes, Implementation of Stacks and Queues using linked list, Dynamic memory management, Garbage Collection. (10 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Trees: Binary trees and its representation using Linked list, Operations on Binary Trees, Traversal Algorithms, Applications, Threaded Binary Trees and its Traversal algorithms, Heterogeneous Binary Trees, List representation using Binary Trees, Optimum Search Trees, AVL trees. Graphs: Representation of Graphs, Traversal methods, Applications Undirected Graphs, Directed Graph and Traversal, Depth First Search, Breadth First Search (18 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Sorting and Searching: Exchange Sort (Bubble, Quicksort) Selection and Tree Sorting Insertion sort, Shell Sort, Address Calculation Sort, Merge and Radix Sort, Sequential Searching, searching an Ordered Table, Index sequential search, Binary search, Interpolation search, Tree searching. (5 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Data Structure using C Langsam, Yedidyah, Moshe J. Augenstein, and Aaron M. Tenenbaum Pearson Education 1st (2019) 2 Data Structures and Program Design in C Robert L. Kruse and Bruce P. Leung Pearson Education 2nd (2006) Reference Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Fundamentals of Data Structures Horowiz E. and Sahni S. Universities Press 2nd (2008) --- PAGE 16 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 16 2 An Introduction to Data Structures with Application Jean-Paul Tremblay and Paul Sorenson McGraw Hill Education 2nd (2017) --- PAGE 17 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 17 Course Code Course Name Course Type Cd L T P Marks Sessional Final Exam Total"
+            }
+          ],
+          "details_found": true
+        },
+        {
+          "code": "BSC-202",
+          "name": "Engineering Physics",
+          "type": "BSC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Mathematical Physics: Concepts of Del Operator; Gradient of scalar, divergence and Curl of vector, Gauss divergence theorem and Stokes theorem (10 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Electromagnetic Theory: Displacement Current, Maxwell’s equations in vacuum and non-conducting medium, Electromagnetic wave propagation in free space (EM wave equations for electric and magnetic fields for free space) and their solutions (plane wave solution), Velocity of electromagnetic waves. (10 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Quantum Mechanics: Inadequacies of Classical Mechanics, de-Broglie’s concept of matter waves, Wave-packet (Wave-group), Phase and Group velocity, Heisenberg’s uncertainty Principle, Experimental illustration of Uncertainty principle using single slit. Wave function: Definition, Interpretation and its significance, Schrodinger’s Wave equation (Steady state and time dependent) for one dimension case, Concept of Operators and expectation Values, Applications of Schrodinger’s equation (Time Independent) to: a) Particle in a One-Dimensional Box of infinite height, b) Single Step Potential Barrier. (16 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Applied Optics: Interference in thin films (by reflection and transmission of light), Theory of Newton’s rings by reflected light, Determination of wavelength and refractive index of monochromatic light by Newton’s rings theory, Fraunhofer and Fresnel’s diffractions, Fraunhofer diffraction due to a single slit, Plane diffraction grating and its theory for secondary maxima and minima, Unpolarised and polarized light, Double refraction phenomenon, Nicol Prism, Mathematical representation of elliptically and circularly polarized light, Quarter and Half wave plates, Numerical problems. (15 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Principal of Laser action, Einstein’s coefficients, Ruby Lasers, Propagation of Light in Optical fibres, Acceptance angle and acceptance cone, Numerical Aperture, Single mode and Multimode fibres, Characteristics and General applications of Lasers and Optical fibres, Numerical problems. (5 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Vector Analysis Murray R. Spiegel McGraw Hill Education 2nd (2017) 2 Fundamentals of Physics Robert Resnick Jearl Walker, David Halliday Wiley 10th (2015) 3 Concepts of Modern Physics Arthur Beiser, Shobhit Mahajan, S. Rai Choudhury McGraw Hill Education 7th (2017) Reference Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Engineering Physics H. K. Malik and A. K. Singh McGraw Hill Education 2nd (2017) --- PAGE 18 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 18 2 Engineering Physics S. Sharma and J. Sharma Pearson India 1st (2018) --- PAGE 19 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 19 *Course Code Course Name Course Type Cd L T P Marks Sessional Final Exam Total"
+            }
+          ],
+          "details_found": true
+        },
+        {
+          "code": "HSMC-201",
+          "name": "Design Thinking",
+          "type": "HSMC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Design Thinking: Introduction of Design Thinking; Framework: 5 Phase Design i.e. Empathize, Define, Ideate, Prototype, and Test; Case Study, Design Thinking in the organization. (6 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Empathize Phase: Discover design problems; Overview of the empathize phase; Define project stakeholders; Methods within empathize phase. Define Phase: Frame the design problems, Overview of the define phase, Methods within Define phase. (8 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Ideate Phase: Come up with multiple solutions, Overview of the Ideate phase, Methods within the Ideate phase. (5 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Project Proposal: Project Identification - Developing Business Idea, Preparing Feasibility Report; Project Formulation - Feasibility Analysis Techno - Economic Analysis, Financial Analysis, Profitability Analysis; Significance of a business plan, components of a business plan. (8 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Prototype phase: Design the solutions, Overview of the Prototype phase, Methods within Prototype phase. Test phase: Validate the solutions, overview of the Test phase, methods within test phase. (8 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Designing for growth: A design thinking tool kit for managers Jeanne Liedtka and Tim Ogilvie Columbia University Press 1st (2011) 2 The design thinking playbook: Mindful digital transformation of teams, products, services, businesses and ecosystems Michael Lewrick, Patrick Link, Larry Leifer Wiley 1st (2018) Reference Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Presumptive design: Design provocations for innovation Leo Frishberg and Charles Lambdin Morgan Kaufmann 1st (2016) --- PAGE 20 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 20 2 Systems thinking: Managing chaos and complexity: A platform for designing business architecture., Chapter Seven: Design Thinking Jamshid Gharajedaghi Morgan Kaufmann 3rd (2011) --- PAGE 21 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 21 Course Code Course Name Course Type Cd L T P Marks Sessional Final Exam Total"
+            }
+          ],
+          "details_found": true
+        },
+        {
+          "code": "COM-211",
+          "name": "Data Structures using C Lab",
+          "type": "PCC",
+          "units": [],
+          "details_found": false
+        },
+        {
+          "code": "BSC-212",
+          "name": "Engineering Physics Lab",
+          "type": "BSC",
+          "units": [],
+          "details_found": false
+        },
+        {
+          "code": "COM-212",
+          "name": "Business Process Automation with RPA Lab",
+          "type": "ESC",
+          "units": [],
+          "details_found": false
+        },
+        {
+          "code": "NCC-201",
+          "name": "Environment and Sustainability",
+          "type": "NCC",
+          "units": [
+            {
+              "unit": 1,
+              "content": "Introduction to Sustainability: Humanity and the Environment: What is Sustainability? The IPAT Equation, Human Consumption Patterns and the “Rebound” Effect, Challenges for Sustainability. Climate and Global Change: Climate Processes; External and Internal Controls, Milankovitch Cycles and the Climate of the Quaternary, Modern Climate Change, Climate Projections. (3 Hrs)"
+            },
+            {
+              "unit": 2,
+              "content": "Biosphere: Introduction, Biogeochemical Cycles and the Flow of Energy in the Earth System. Biodiversity, Species Loss, and Ecosystem Function. Soil and Sustainability. Physical Resources: Water, Pollution, and Minerals. Water Cycle and Fresh Water Supply. Water Pollution. Mineral Resources: Formation, Mining, Environmental Impact. (4 Hrs)"
+            },
+            {
+              "unit": 3,
+              "content": "Environmental and Resource Economics: Tragedy of the Commons. Environmental Valuation. Evaluating Projects and Policies. Solutions: Property Rights, Regulations, and Incentive Policies. Modern Environmental Management: Systems of Waste Management. Case Study: Electronic Waste and Extended Producer Responsibility. Government and Laws on the Environment. Risk Assessment Methodology for Conventional and Alternative Sustainability Options. (4 Hrs)"
+            },
+            {
+              "unit": 4,
+              "content": "Sustainable Energy Systems: Environmental Challenges in Energy, Carbon Dioxide, Air, Water and Land Use. Energy Sources and Carriers. Electricity. Energy Uses. Applications of Phase Change Materials for Sustainable Energy. Problem-Solving, Metrics, and Tools for Sustainability. (6 Hrs)"
+            },
+            {
+              "unit": 5,
+              "content": "Sustainable Infrastructure: The Sustainable City. Sustainability and Buildings. Sustainable Energy Practices: Climate Action Planning. Sustainable Transportation: Accessibility, Mobility, and Derived Demand. Sustainable Stormwater Management. (4 Hrs) Text Books S. No. Name of the Books Author Publisher Edition (Pub. Yr.) 1 Sustainability: A Comprehensive Foundation Tom Theis and Jonathan Tomkin Open Textbook Library 1st (2015) 2 Energy, Environment, and Sustainability with MindTap Saeed Moaveni Cengage India Private Limited 1st (2012) 3 Improving the Sustainable Development Goals: Strategies and the Governance Challenge (Routledge Focus on Environment and Sustainability) Lars Niklasson Routledge 1st (2019) --- PAGE 25 --- Syllabus for B.E CSE AI&ML and CS Batch 2024 MIET (Autonomous), Jammu 25 Reference Book S. No. Name of the Book Author Publisher Edition (Pub. Yr.) 1 Global Challenges to CSR and Sustainable Development: Root Causes and Evidence from Case Studies (CSR, Sustainability, Ethics and Governance) Stephen Vertigans, Samuel O. Idowu Springer 1st (2021)"
+            }
+          ],
+          "details_found": true
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "schemes": [
+        {
+          "name": "Shown curriculum",
+          "categories": [
+            {
+              "name": "Engineering Science Course",
+              "subjects": [
+                {
+                  "name": "Digital Electronics"
+                }
+              ]
+            },
+            {
+              "name": "Basic Science Course",
+              "subjects": [
+                {
+                  "name": "Discrete Mathematics"
+                }
+              ]
+            },
+            {
+              "name": "Professional Core Course",
+              "subjects": [
+                {
+                  "name": "Design and Analysis of Algorithms"
+                },
+                {
+                  "name": "Operating Systems"
+                },
+                {
+                  "name": "Operating Systems Lab"
+                }
+              ]
+            },
+            {
+              "name": "HSMC",
+              "subjects": [
+                {
+                  "name": "Principles of Management"
+                },
+                {
+                  "name": "Placement overview and Career Planning"
+                }
+              ]
+            },
+            {
+              "name": "NCC",
+              "subjects": [
+                {
+                  "name": "MOOC*"
+                }
+              ]
+            },
+            {
+              "name": "MOOC",
+              "subjects": [
+                {
+                  "name": "Artificial Intelligence and Machine Learning"
+                },
+                {
+                  "name": "Cyber Security"
+                },
+                {
+                  "name": "IoT"
+                },
+                {
+                  "name": "Data Science"
+                },
+                {
+                  "name": "Cloud Computing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "schemes": [
+        {
+          "name": "Shown curriculum",
+          "categories": [
+            {
+              "name": "Professional Core Course",
+              "subjects": [
+                {
+                  "name": "Object Oriented Programming using C++"
+                },
+                {
+                  "name": "Relational Database Management System"
+                },
+                {
+                  "name": "Computer Organization and Architecture"
+                },
+                {
+                  "name": "Object Oriented Programming using C++ Lab"
+                },
+                {
+                  "name": "Relational Database Management System Lab"
+                }
+              ]
+            },
+            {
+              "name": "HSMC",
+              "subjects": [
+                {
+                  "name": "Entrepreneurship and Business Strategies"
+                },
+                {
+                  "name": "Corporate Etiquette and Personality Development"
+                }
+              ]
+            },
+            {
+              "name": "MOOC",
+              "subjects": [
+                {
+                  "name": "Artificial Intelligence and Machine Learning"
+                },
+                {
+                  "name": "Cyber Security"
+                },
+                {
+                  "name": "IoT"
+                },
+                {
+                  "name": "Data Science"
+                },
+                {
+                  "name": "Cloud Computing"
+                }
+              ]
+            },
+            {
+              "name": "Summer Internship",
+              "subjects": [
+                {
+                  "name": "Professional Industrial Training / Internship"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "schemes": [
+        {
+          "name": "Shown curriculum",
+          "categories": [
+            {
+              "name": "Professional Core Course",
+              "subjects": [
+                {
+                  "name": "Python Programming-I"
+                },
+                {
+                  "name": "Computer Networks"
+                },
+                {
+                  "name": "Microprocessors"
+                },
+                {
+                  "name": "Python Programming Lab"
+                },
+                {
+                  "name": "Computer Networks Lab"
+                },
+                {
+                  "name": "Microprocessor Lab"
+                }
+              ]
+            },
+            {
+              "name": "Open Elective Course",
+              "subjects": [
+                {
+                  "name": "Open Elective1"
+                }
+              ]
+            },
+            {
+              "name": "HSMC",
+              "subjects": [
+                {
+                  "name": "Placement Preparation-I"
+                }
+              ]
+            },
+            {
+              "name": "MOOC",
+              "subjects": [
+                {
+                  "name": "Artificial Intelligence and Machine Learning"
+                },
+                {
+                  "name": "Cyber Security"
+                },
+                {
+                  "name": "IoT"
+                },
+                {
+                  "name": "Data Science"
+                },
+                {
+                  "name": "Cloud Computing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "schemes": [
+        {
+          "name": "Shown curriculum",
+          "categories": [
+            {
+              "name": "Professional Core Course",
+              "subjects": [
+                {
+                  "name": "Artificial Intelligence with Computer Vision"
+                },
+                {
+                  "name": "Fundamentals of Blockchain Technology"
+                },
+                {
+                  "name": "Software Engineering"
+                },
+                {
+                  "name": "Theory of Computation"
+                },
+                {
+                  "name": "Artificial Intelligence with Computer Vision Lab"
+                },
+                {
+                  "name": "Mini Project Lab"
+                }
+              ]
+            },
+            {
+              "name": "HSMC",
+              "subjects": [
+                {
+                  "name": "Placement Preparation-II"
+                }
+              ]
+            },
+            {
+              "name": "NCC",
+              "subjects": [
+                {
+                  "name": "MOOC"
+                }
+              ]
+            },
+            {
+              "name": "MOOC",
+              "subjects": [
+                {
+                  "name": "Artificial Intelligence and Machine Learning"
+                },
+                {
+                  "name": "Cyber Security"
+                },
+                {
+                  "name": "IoT"
+                },
+                {
+                  "name": "Data Science"
+                },
+                {
+                  "name": "Cloud Computing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 7,
+      "schemes": [
+        {
+          "name": "Scheme-1",
+          "categories": [
+            {
+              "name": "Summer Internship",
+              "subjects": [
+                {
+                  "name": "Professional Industrial Training/ Internship"
+                }
+              ]
+            },
+            {
+              "name": "Professional Elective Course",
+              "subjects": [
+                {
+                  "name": "Professional Elective 1"
+                },
+                {
+                  "name": "Professional Elective 2"
+                },
+                {
+                  "name": "Seminar"
+                }
+              ]
+            },
+            {
+              "name": "MCC",
+              "subjects": [
+                {
+                  "name": "Professional Elective 3* (SWAYAM/NPTEL MOOC/any other Platform)"
+                }
+              ]
+            },
+            {
+              "name": "Open Elective Course",
+              "subjects": [
+                {
+                  "name": "Open Elective"
+                }
+              ]
+            },
+            {
+              "name": "Project Work / Internship",
+              "subjects": [
+                {
+                  "name": "Minor Project"
+                }
+              ]
+            },
+            {
+              "name": "NCC",
+              "subjects": [
+                {
+                  "name": "Essence of Indian Knowledge and Tradition"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scheme-2",
+          "categories": [
+            {
+              "name": "Professional Industry Internship",
+              "subjects": [
+                {
+                  "name": "Industry Internship-I"
+                }
+              ]
+            },
+            {
+              "name": "MCC",
+              "subjects": [
+                {
+                  "name": "Professional Elective 3* (SWAYAM/NPTEL MOOC/any other Platform)"
+                },
+                {
+                  "name": "Professional Elective 4* (SWAYAM/NPTEL MOOC/any other platform)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "semester": 8,
+      "schemes": [
+        {
+          "name": "Scheme-1",
+          "categories": [
+            {
+              "name": "Professional Elective Course",
+              "subjects": [
+                {
+                  "name": "Professional Elective 1"
+                },
+                {
+                  "name": "Professional Elective 2"
+                }
+              ]
+            },
+            {
+              "name": "MCC",
+              "subjects": [
+                {
+                  "name": "Professional Elective 3* (SWAYAM/NPTEL MOOC/Any Other Platform)"
+                }
+              ]
+            },
+            {
+              "name": "Project Work / Internship",
+              "subjects": [
+                {
+                  "name": "Major Project"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scheme-2",
+          "categories": [
+            {
+              "name": "Professional Industry Internship",
+              "subjects": [
+                {
+                  "name": "Industry Internship-II"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
