@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import collegeLogo from "../../college-logo.png";
 
-const API_URL = "http://127.0.0.1:8003";
+import { API_URL, authErrorMessage } from "../api";
 
 export default function Register({ onRegister, onShowLogin }) {
   const [name, setName] = useState("");
@@ -32,8 +32,8 @@ export default function Register({ onRegister, onShowLogin }) {
       const response = await axios.post(
         `${API_URL}/api/auth/register`,
         {
-          name,
-          email,
+          name: name.trim(),
+          email: email.trim(),
           password,
         }
       );
@@ -46,8 +46,7 @@ export default function Register({ onRegister, onShowLogin }) {
       onRegister(user);
     } catch (err) {
       setError(
-        err.response?.data?.error ||
-          "Unable to create account. Please try again."
+        authErrorMessage(err, "Unable to create account. Please try again.")
       );
     } finally {
       setLoading(false);
@@ -70,7 +69,7 @@ export default function Register({ onRegister, onShowLogin }) {
         </p>
 
         {error && (
-          <div className="auth-error">
+          <div className="auth-error" role="alert">
             {error}
           </div>
         )}
@@ -98,6 +97,7 @@ export default function Register({ onRegister, onShowLogin }) {
 
           <input
             type="password"
+            minLength={6}
             placeholder="At least 6 characters"
             value={password}
             onChange={(e) => setPassword(e.target.value)}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import collegeLogo from "../../college-logo.png";
 
-const API_URL = "http://127.0.0.1:8003";
+import { API_URL, authErrorMessage } from "../api";
 
 export default function Login({ onLogin, onShowRegister }) {
   const [email, setEmail] = useState("");
@@ -25,7 +25,7 @@ export default function Login({ onLogin, onShowRegister }) {
       const response = await axios.post(
         `${API_URL}/api/auth/login`,
         {
-          email,
+          email: email.trim(),
           password,
         }
       );
@@ -38,8 +38,7 @@ export default function Login({ onLogin, onShowRegister }) {
       onLogin(user);
     } catch (err) {
       setError(
-        err.response?.data?.error ||
-          "Unable to login. Please try again."
+        authErrorMessage(err, "Unable to sign in. Please try again.")
       );
     } finally {
       setLoading(false);
@@ -62,7 +61,7 @@ export default function Login({ onLogin, onShowRegister }) {
         </p>
 
         {error && (
-          <div className="auth-error">
+          <div className="auth-error" role="alert">
             {error}
           </div>
         )}
