@@ -9,3 +9,4 @@ pypdf==5.1.0
 sentence-transformers==3.3.1
 gunicorn
 langchain-groq
+langchain-huggingface
