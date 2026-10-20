@@ -340,6 +340,8 @@ useEffect(() => {
 
         {
 
+          timeout: 200_000,
+
           headers: {
 
             Authorization: `Bearer ${token}`,
@@ -396,7 +398,9 @@ useEffect(() => {
 
             error.response?.data?.error ||
 
-            "Unable to process your question.",
+            (error.code === "ECONNABORTED"
+              ? "The AI service took too long to respond. Please try again in a moment."
+              : "Unable to reach the AI service. Please try again in a moment."),
 
         },
 
