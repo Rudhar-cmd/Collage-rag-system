@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import collegeLogo from "../../college-logo.png";
 
-const API_URL = "http://127.0.0.1:8003";
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8003";
 
 export default function Login({ onLogin, onShowRegister }) {
   const [email, setEmail] = useState("");
