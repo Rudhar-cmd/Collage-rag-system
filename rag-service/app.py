@@ -27,7 +27,21 @@ def query():
         return jsonify({
             "error": "Question is required"
         }), 400
+    # Handle greetings without searching the PDF database
+    greeting = question.lower().strip(" !.,?")
 
+    if greeting in {
+    "hi", "hello", "hey",
+    "good morning", "good afternoon", "good evening"
+   }:
+     return jsonify({
+        "answer": (
+            "Hi! 👋 I'm your MIET College AI Assistant. "
+            "You can ask me about courses, syllabus, attendance, "
+            "fees, examinations, and other college-related information."
+        ),
+        "sources": []
+    }), 200
     try:
         import time
 

@@ -625,6 +625,16 @@ def detect_information_intent(question):
 def retrieve_documents(question, top_k=3):
     vector_store = get_vector_store()
 
+try:
+       print(
+        "DEBUG: Chroma document count:",
+        vector_store._collection.count(),
+        flush=True
+    )
+except Exception as exc:
+    print("DEBUG: Chroma count error:", exc, flush=True)
+
+
     q = question.lower()
     programme = detect_programme(question)
 
