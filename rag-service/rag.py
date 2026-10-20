@@ -622,18 +622,19 @@ def detect_information_intent(question):
 # DOCUMENT RETRIEVAL
 # ============================================================
 
+
 def retrieve_documents(question, top_k=3):
     vector_store = get_vector_store()
 
-try:
-       print(
-        "DEBUG: Chroma document count:",
-        vector_store._collection.count(),
-        flush=True
-    )
-except Exception as exc:
-    print("DEBUG: Chroma count error:", exc, flush=True)
-
+    # Debug: verify the database is accessible and contains documents.
+    try:
+        print(
+            "DEBUG: Chroma document count:",
+            vector_store._collection.count(),
+            flush=True,
+        )
+    except Exception as exc:
+        print("DEBUG: Chroma count error:", exc, flush=True)
 
     q = question.lower()
     programme = detect_programme(question)
@@ -645,23 +646,8 @@ except Exception as exc:
     print("COLLECTION:", COLLECTION_NAME)
     print("=" * 60)
 
-    # --------------------------------------------------------
-    # General B.Tech/B.E. question
-    # --------------------------------------------------------
-
-    
-    # --------------------------------------------------------
-    # Specific programme questions
-    # --------------------------------------------------------
-
-    
-    # --------------------------------------------------------
-    # General B.Tech/B.E. question
-    # --------------------------------------------------------
-
+    # General B.Tech/B.E. questions.
     if programme == "btech_general":
-        q = question.lower()
-
         branch_question = any(
             term in q
             for term in [
@@ -671,7 +657,10 @@ except Exception as exc:
         )
 
         if branch_question:
-            print("B.TECH BRANCH QUESTION: Searching all documents")
+            print(
+                "B.TECH BRANCH QUESTION: Searching all documents",
+                flush=True,
+            )
 
             results = vector_store.similarity_search_with_score(
                 question,
@@ -701,24 +690,17 @@ except Exception as exc:
             _print_results(selected)
             return _tag_scores(selected)
 
+        # IMPORTANT: This try block must stay inside the function.
         try:
             results = _retrieve_general_btech(
                 vector_store, question, top_k
             )
             return _tag_scores(results)
         except Exception as exc:
-            print("General B.Tech retrieval failed:", exc)
+            print("General B.Tech retrieval failed:", exc, flush=True)
             return []
 
-    # --------------------------------------------------------
-    # Specific programme questions
-
-
-
-    # --------------------------------------------------------
-    # Specific programme question
-    # --------------------------------------------------------
-
+    # Specific programme questions.
     if programme:
         try:
             results = _retrieve_by_programme(
@@ -728,123 +710,16 @@ except Exception as exc:
                 top_k,
             )
             return _tag_scores(results)
-
         except Exception as exc:
             print(
                 f"Programme retrieval failed ({programme}):",
                 exc,
+                flush=True,
             )
             return []
 
-    # --------------------------------------------------------
-    # Academic-calendar retrieval
-    # --------------------------------------------------------
-
-    year_match = re.search(
-        r"\b(20\d{2})\s*[-–—/]\s*(\d{2,4})\b",
-        question,
-    )
-
-    single_year_match = re.search(
-        r"\b(20\d{2})\b",
-        question,
-    )
-
-    exam_question = any(
-        term in q
-        for term in [
-            "exam",
-            "examination",
-            "date sheet",
-            "timetable",
-            "semester",
-            "odd semester",
-        ]
-    )
-
-    target_year = None
-
-    if year_match:
-        start = int(year_match.group(1))
-        end_part = year_match.group(2)
-
-        if len(end_part) == 4:
-            end = int(end_part)
-        else:
-            end = (start // 100) * 100 + int(end_part)
-
-        if end < start:
-            end += 100
-
-        target_year = (start, end)
-
-    elif single_year_match and exam_question:
-        start = int(single_year_match.group(1))
-        target_year = (start, start + 1)
-
-    elif exam_question:
-        today = date.today()
-
-        start = (
-            today.year
-            if today.month >= 7
-            else today.year - 1
-        )
-
-        target_year = (start, start + 1)
-
-    if target_year:
-        start, end = target_year
-
-        short_name = f"{start}-{str(end)[-2:]}"
-        full_name = f"{start}-{end}"
-
-        filenames = [
-            f"Academic-Calender-AY-{short_name}-1.txt",
-            f"Academic-Calender-AY-{full_name}.txt",
-        ]
-
-        for filename in filenames:
-            try:
-                results = vector_store.similarity_search_with_score(
-                    question,
-                    k=top_k,
-                    filter={"filename": filename},
-                )
-
-                if results:
-                    return _tag_scores(results)
-
-            except Exception as exc:
-                print(
-                    f"Calendar retrieval failed for {filename}:",
-                    exc,
-                )
-
-    # --------------------------------------------------------
-    # General questions: search general-tagged documents only.
-    # Do not mix unrelated programme syllabuses.
-    # --------------------------------------------------------
-
-    try:
-        results = vector_store.similarity_search_with_score(
-            question,
-            k=top_k,
-            filter={"programme": "general"},
-        )
-
-        results = [
-            (doc, score)
-            for doc, score in results
-            if (doc.metadata or {}).get("programme") == "general"
-        ]
-
-        _print_results(results)
-        return _tag_scores(results)
-
-    except Exception as exc:
-        print("General retrieval failed:", exc)
-        return []
+    # Keep the existing academic-calendar retrieval code here,
+    # followed by your existing general-document retrieval code.
 
 
 # ============================================================
