@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
-
+from functools import lru_cache
 
 # ============================================================
 # CONFIGURATION
@@ -91,20 +91,32 @@ BTECH_PROGRAMMES = [
 # EMBEDDINGS AND VECTOR DATABASE
 # ============================================================
 
+@lru_cache(maxsize=1)
 def get_embeddings():
-    return HuggingFaceEmbeddings(
+    print("Loading Hugging Face embedding model...", flush=True)
+
+    embeddings = HuggingFaceEmbeddings(
         model_name=EMBEDDING_MODEL,
         model_kwargs={"device": "cpu"},
         encode_kwargs={"normalize_embeddings": True},
     )
 
+    print("Embedding model loaded successfully.", flush=True)
+    return embeddings
 
+
+@lru_cache(maxsize=1)
 def get_vector_store():
-    return Chroma(
+    print("Initializing Chroma vector store...", flush=True)
+
+    vector_store = Chroma(
         collection_name=COLLECTION_NAME,
         persist_directory=CHROMA_PATH,
         embedding_function=get_embeddings(),
     )
+
+    print("Chroma vector store initialized.", flush=True)
+    return vector_store
 
 
 # ============================================================
