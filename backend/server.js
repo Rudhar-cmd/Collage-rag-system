@@ -510,9 +510,6 @@ try {
       );
       console.log("Flask sources:", data.sources);
 
-      if (!response.ok) {
-        return res.status(response.status).json(data);
-      }
 
       const answer = data.answer || "";
       const sources = data.sources || [];
@@ -551,36 +548,50 @@ try {
 
     // Non-syllabus questions use Flask RAG.
     
-  const responseText = await response.text();
-
-  if (!response.ok) {
-    console.error(
-      "Flask error:",
-      response.status,
-      responseText.slice(0, 500)
-    );
-
-    return res.status(502).json({
-      error: "RAG service request failed",
-      status: response.status,
-      details: responseText.slice(0, 300)
+    
+    // Non-syllabus questions use Flask RAG.
+    const response = await fetch(`${FLASK_RAG_URL}/query`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        question: cleanQuestion,
+        top_k
+      })
     });
-  }
-
-  let data;
-
-  try {
-    data = JSON.parse(responseText);
-  } catch {
-    console.error(
-      "Flask returned invalid JSON:",
-      responseText.slice(0, 500)
-    );
-
-    return res.status(502).json({
-      error: "RAG service returned an invalid response"
-    });
-  }
+  
+    const responseText = await response.text();
+  
+    if (!response.ok) {
+      console.error(
+        "Flask error:",
+        response.status,
+        responseText.slice(0, 500)
+      );
+  
+      return res.status(502).json({
+        error: "RAG service request failed",
+        status: response.status,
+        details: responseText.slice(0, 300)
+      });
+    }
+  
+    let data;
+  
+    try {
+      data = JSON.parse(responseText);
+    } catch {
+      console.error(
+        "Flask returned invalid JSON:",
+        responseText.slice(0, 500)
+      );
+  
+      return res.status(502).json({
+        error: "RAG service returned an invalid response"
+      });
+    }
+  
 
 
     const answer = data.answer || "";
