@@ -3,12 +3,12 @@ import os
 import re
 from datetime import date
 from pathlib import Path
+from math import log
 
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
-from langchain_chroma import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from functools import lru_cache
 
 # ============================================================
@@ -17,24 +17,6 @@ from functools import lru_cache
 
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
-
-CHROMA_PATH = Path(
-    os.getenv("CHROMA_PATH", str(BASE_DIR / "chroma_db"))
-)
-
-if not CHROMA_PATH.is_absolute():
-    CHROMA_PATH = (BASE_DIR / CHROMA_PATH).resolve()
-
-CHROMA_PATH = str(CHROMA_PATH)
-
-COLLECTION_NAME = os.getenv(
-    "COLLECTION_NAME", "college_documents"
-)
-
-EMBEDDING_MODEL = os.getenv(
-    "EMBEDDING_MODEL", "all-MiniLM-L6-v2"
-)
-
 
 # ============================================================
 # PROGRAMME CONFIGURATION
@@ -88,35 +70,129 @@ BTECH_PROGRAMMES = [
 
 
 # ============================================================
-# EMBEDDINGS AND VECTOR DATABASE
+# LOW-MEMORY LOCAL RETRIEVAL
 # ============================================================
 
-@lru_cache(maxsize=1)
-def get_embeddings():
-    print("Loading Hugging Face embedding model...", flush=True)
+def _programme_from_filename(filename):
+    name = re.sub(r"[^a-z0-9]+", "", filename.lower())
+    if "mtech" in name:
+        return "mtech"
+    if "bca" in name:
+        return "bca"
+    if "bba" in name:
+        return "bba"
+    if "llb" in name:
+        return "llb"
+    if "cybersecurity" in name:
+        return "btech_cybersecurity"
+    if "aiml" in name:
+        return "btech_aiml"
+    if "ece" in name:
+        return "ece"
+    if "cse" in name:
+        return "btech_cse"
+    return "general"
 
-    embeddings = HuggingFaceEmbeddings(
-        model_name=EMBEDDING_MODEL,
-        model_kwargs={"device": "cpu"},
-        encode_kwargs={"normalize_embeddings": True},
-    )
 
-    print("Embedding model loaded successfully.", flush=True)
-    return embeddings
+class LocalKeywordStore:
+    """Small BM25-style index over checked-in source documents; no Torch."""
+
+    def __init__(self):
+        import json
+        from pypdf import PdfReader
+
+        source_dir = BASE_DIR / "data" / "raw"
+        docs = []
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size=800,
+            chunk_overlap=120,
+            separators=["\n\n", "\n", ". ", " ", ""],
+        )
+        for path in sorted(source_dir.iterdir()):
+            if path.suffix.lower() == ".pdf":
+                pages = [(i + 1, page.extract_text() or "")
+                         for i, page in enumerate(PdfReader(str(path)).pages)]
+            elif path.suffix.lower() == ".json":
+                try:
+                    pages = [(1, json.dumps(
+                        json.loads(path.read_text(encoding="utf-8")),
+                        ensure_ascii=False,
+                    ))]
+                except (OSError, json.JSONDecodeError, UnicodeDecodeError):
+                    continue
+            else:
+                continue
+
+            for page_number, content in pages:
+                base = Document(page_content=content, metadata={
+                    "source": path.name,
+                    "filename": path.name,
+                    "programme": _programme_from_filename(path.name),
+                    "page": page_number,
+                })
+                docs.extend(splitter.split_documents([base]))
+
+        self.docs = docs
+        self.tokens = [self._tokens(doc.page_content) for doc in docs]
+        self.lengths = [len(tokens) for tokens in self.tokens]
+        self.avg_length = sum(self.lengths) / max(len(self.lengths), 1)
+        print(f"Local keyword index ready: {len(docs)} chunks", flush=True)
+
+    @staticmethod
+    def _tokens(text):
+        return re.findall(r"[a-z0-9]+", text.lower())
+
+    @property
+    def _collection(self):
+        class Collection:
+            count = lambda inner: len(self.docs)
+        return Collection()
+
+    def similarity_search_with_score(self, query, k=3, filter=None):
+        from collections import Counter
+        query_tokens = self._tokens(query)
+        if not query_tokens:
+            return []
+        query_terms = set(query_tokens)
+        doc_frequency = Counter(
+            term for term in query_terms
+            for tokens in self.tokens if term in set(tokens)
+        )
+        average_length = max(self.avg_length, 1)
+        ranked = []
+        for doc, tokens, length in zip(self.docs, self.tokens, self.lengths):
+            metadata = doc.metadata or {}
+            if filter and any(
+                (metadata.get(key) not in value.get("$in", []))
+                if isinstance(value, dict) and "$in" in value
+                else metadata.get(key) != value
+                for key, value in filter.items()
+            ):
+                continue
+            counts = Counter(tokens)
+            score = 0.0
+            for term in query_terms:
+                frequency = counts[term]
+                if not frequency:
+                    continue
+                inverse = log(
+                    1 +
+                    (len(self.docs) - doc_frequency[term] + 0.5)
+                    / (doc_frequency[term] + 0.5)
+                )
+                score += inverse * frequency * 2.2 / (
+                    frequency + 1.2 * (0.25 + 0.75 * length / average_length)
+                )
+            if score > 0:
+                ranked.append((doc, -score))
+        ranked.sort(key=lambda item: item[1])
+        return ranked[:k]
 
 
 @lru_cache(maxsize=1)
 def get_vector_store():
-    print("Initializing Chroma vector store...", flush=True)
-
-    vector_store = Chroma(
-        collection_name=COLLECTION_NAME,
-        persist_directory=CHROMA_PATH,
-        embedding_function=get_embeddings(),
-    )
-
-    print("Chroma vector store initialized.", flush=True)
-    return vector_store
+    print("Building low-memory local keyword index...", flush=True)
+    return LocalKeywordStore()
 
 
 # ============================================================
@@ -627,15 +703,15 @@ def retrieve_documents(question, top_k=3):
     """Return a list of documents, including when retrieval finds no matches."""
     vector_store = get_vector_store()
 
-    # Debug: verify the database is accessible and contains documents.
+    # Log the checked-in corpus size to help diagnose missing source data.
     try:
         print(
-            "DEBUG: Chroma document count:",
+            "DEBUG: Local indexed document count:",
             vector_store._collection.count(),
             flush=True,
         )
     except Exception as exc:
-        print("DEBUG: Chroma count error:", exc, flush=True)
+        print("DEBUG: Local index count error:", exc, flush=True)
 
     q = question.lower()
     programme = detect_programme(question)
@@ -643,8 +719,7 @@ def retrieve_documents(question, top_k=3):
     print("=" * 60)
     print("QUESTION:", question)
     print("DETECTED PROGRAMME:", programme)
-    print("CHROMA PATH:", CHROMA_PATH)
-    print("COLLECTION:", COLLECTION_NAME)
+    print("RETRIEVAL: Local keyword index")
     print("=" * 60)
 
     # General B.Tech/B.E. questions.
