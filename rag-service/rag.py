@@ -1106,6 +1106,7 @@ Answer the student's question now.
     )
 
     api_start = time.perf_counter()
+    print("Calling Groq answer API...", flush=True)
     response = llm.invoke(prompt)
 
     print(
