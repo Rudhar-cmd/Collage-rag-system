@@ -103,9 +103,16 @@ function loadAllSemesters() {
   const early = readJson(FILES.early);
   const later = readJson(FILES.later);
 
+  // The later file also contains early-semester entries, but its normalizer
+  // reads only the scheme/category format used in Semesters 3-8. Keep the
+  // detailed subject arrays from the early file for Semesters 1-2.
   const semesters = [
-    ...normalizeEarlySemesters(early),
-    ...normalizeLaterSemesters(later),
+    ...normalizeEarlySemesters(early).filter(
+      (semester) => Number(semester.semester) <= 2
+    ),
+    ...normalizeLaterSemesters(later).filter(
+      (semester) => Number(semester.semester) >= 3
+    ),
   ];
 
   semesters.sort(

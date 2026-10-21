@@ -447,11 +447,11 @@ def detect_programme(question):
 # ============================================================
 
 def _tag_scores(results):
-    """Attach the vector-store score to each retrieved document."""
+    """Attach vector-store scores; normalize an empty adapter result."""
 
     docs = []
 
-    for doc, score in results:
+    for doc, score in results or []:
         doc.metadata = dict(doc.metadata or {})
         doc.metadata["score"] = float(score)
         docs.append(doc)
@@ -624,6 +624,7 @@ def detect_information_intent(question):
 
 
 def retrieve_documents(question, top_k=3):
+    """Return a list of documents, including when retrieval finds no matches."""
     vector_store = get_vector_store()
 
     # Debug: verify the database is accessible and contains documents.
@@ -665,7 +666,7 @@ def retrieve_documents(question, top_k=3):
             results = vector_store.similarity_search_with_score(
                 question,
                 k=max(top_k * 5, 15),
-            )
+            ) or []
 
             branch_terms = [
                 "civil engineering",
@@ -718,6 +719,97 @@ def retrieve_documents(question, top_k=3):
             )
             return []
 
+    # Academic-calendar retrieval
+    year_match = re.search(
+        r"\b(20\d{2})\s*[-–—/]\s*(\d{2,4})\b",
+        question,
+    )
+
+    single_year_match = re.search(r"\b(20\d{2})\b", question)
+
+    exam_question = any(
+        term in q
+        for term in [
+            "exam", "examination", "date sheet",
+            "timetable", "semester", "odd semester",
+        ]
+    )
+
+    target_year = None
+
+    if year_match:
+        start = int(year_match.group(1))
+        end_part = year_match.group(2)
+        end = (
+            int(end_part)
+            if len(end_part) == 4
+            else (start // 100) * 100 + int(end_part)
+        )
+
+        if end < start:
+            end += 100
+
+        target_year = (start, end)
+
+    elif single_year_match and exam_question:
+        start = int(single_year_match.group(1))
+        target_year = (start, start + 1)
+
+    elif exam_question:
+        today = date.today()
+        start = today.year if today.month >= 7 else today.year - 1
+        target_year = (start, start + 1)
+
+    if target_year:
+        start, end = target_year
+        short_name = f"{start}-{str(end)[-2:]}"
+        full_name = f"{start}-{end}"
+
+        filenames = [
+            f"Academic-Calender-AY-{short_name}-1.txt",
+            f"Academic-Calender-AY-{full_name}.txt",
+        ]
+
+        for filename in filenames:
+            try:
+                results = vector_store.similarity_search_with_score(
+                    question,
+                    k=top_k,
+                    filter={"filename": filename},
+                )
+
+                if results:
+                    return _tag_scores(results)
+
+            except Exception as exc:
+                print(
+                    f"Calendar retrieval failed for {filename}:",
+                    exc,
+                    flush=True,
+                )
+
+    # General college questions: search general-tagged documents.
+    try:
+        results = vector_store.similarity_search_with_score(
+            question,
+            k=top_k,
+            filter={"programme": "general"},
+        )
+
+        results = [
+            (doc, score)
+            for doc, score in results
+            if (doc.metadata or {}).get("programme") == "general"
+        ]
+
+        _print_results(results)
+        return _tag_scores(results)
+
+    except Exception as exc:
+        print("General retrieval failed:", exc, flush=True)
+        return []
+
+
     # Keep the existing academic-calendar retrieval code here,
     # followed by your existing general-document retrieval code.
 
@@ -752,6 +844,10 @@ def get_llm():
 # ============================================================
 
 def generate_answer(question, documents):
+    # Retrieval can be empty; normalize adapter-level None to the documented
+    # list contract before filtering or building prompt context.
+    documents = documents or []
+
     syllabus_answer = get_syllabus_answer(question)
 
     if syllabus_answer is not None:

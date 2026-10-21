@@ -21,7 +21,10 @@ def query():
     data = request.get_json(silent=True) or {}
 
     question = data.get("question", "").strip()
-    top_k = int(data.get("top_k", 3))
+    try:
+        top_k = max(1, min(int(data.get("top_k", 3)), 20))
+    except (TypeError, ValueError):
+        return jsonify({"error": "top_k must be an integer"}), 400
 
     if not question:
         return jsonify({
@@ -47,7 +50,11 @@ def query():
 
         start = time.perf_counter()
 
-        documents = retrieve_documents(question, top_k)
+        # Keep the retrieval contract stable even if a vector-store adapter
+        # unexpectedly returns None for an empty result set.
+        documents = retrieve_documents(question, top_k) or []
+        if not isinstance(documents, (list, tuple)):
+            raise TypeError("retrieve_documents must return a list of documents")
         retrieval_time = time.perf_counter() - start
 
         answer_start = time.perf_counter()
@@ -65,10 +72,11 @@ def query():
         sources = []
 
         for doc in documents:
+            metadata = getattr(doc, "metadata", None) or {}
             sources.append({
-                "source": doc.metadata.get("source", "Unknown"),
-                "page": doc.metadata.get("page", "Unknown"),
-                "score": doc.metadata.get("score")
+                "source": metadata.get("source", "Unknown"),
+                "page": metadata.get("page", "Unknown"),
+                "score": metadata.get("score")
             })
 
         return jsonify({
