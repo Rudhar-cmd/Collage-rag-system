@@ -567,6 +567,12 @@ def _retrieve_by_programme(
 
     print("FILTERING BY PROGRAMME:", programme)
 
+    # CSE syllabus chunks have historically been indexed with this tag.
+    accepted_tags = {programme}
+    if programme == "cse":
+        accepted_tags.add("btech_cse")
+    programme_filter = {"programme": {"$in": sorted(accepted_tags)}}
+
     q = question.lower()
 
     # For questions specifically about Major Project, search more broadly
@@ -585,13 +591,13 @@ def _retrieve_by_programme(
             results = vector_store.similarity_search_with_score(
                 search_query,
                 k=max(top_k, 8),
-                filter={"programme": programme},
+                filter=programme_filter,
             )
 
             for doc, score in results:
                 metadata = doc.metadata or {}
 
-                if metadata.get("programme") != programme:
+                if metadata.get("programme") not in accepted_tags:
                     continue
 
                 key = (
@@ -618,13 +624,13 @@ def _retrieve_by_programme(
         results = vector_store.similarity_search_with_score(
             question,
             k=top_k,
-            filter={"programme": programme},
+            filter=programme_filter,
         )
 
     results = [
         (doc, score)
         for doc, score in results
-        if (doc.metadata or {}).get("programme") == programme
+        if (doc.metadata or {}).get("programme") in accepted_tags
     ]
 
     print("FILTERED RESULTS:", len(results))
@@ -939,9 +945,12 @@ def generate_answer(question, documents):
 
     if programme and programme != "btech_general":
         if intent not in {"fees", "placements", "staff"}:
+            accepted_tags = {programme}
+            if programme == "cse":
+                accepted_tags.add("btech_cse")
             documents = [
                 doc for doc in documents
-                if (doc.metadata or {}).get("programme") == programme
+                if (doc.metadata or {}).get("programme") in accepted_tags
             ]
 
 
