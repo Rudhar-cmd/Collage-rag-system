@@ -39,7 +39,8 @@ async function requestRag(question, top_k) {
   const response = await sendQuestion();
   const isRenderColdStart =
     response.status === 502 &&
-    response.headers.get("x-render-routing") === "no-deploy";
+    (response.headers.get("x-render-routing") === "no-deploy" ||
+      response.headers.get("content-type")?.includes("text/html"));
 
   if (!isRenderColdStart) {
     return response;
