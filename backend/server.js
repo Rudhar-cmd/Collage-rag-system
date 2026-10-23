@@ -27,10 +27,8 @@ const FLASK_RAG_URL =
   process.env.FLASK_RAG_URL || "http://127.0.0.1:5001";
 
 async function requestRag(question, top_k) {
-  const retryDelaysMs = [25_000, 30_000];
-
-  for (let attempt = 0; ; attempt += 1) {
-    const response = await fetch(`${FLASK_RAG_URL}/query`, {
+  const sendQuestion = () =>
+    fetch(`${FLASK_RAG_URL}/query`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -38,21 +36,42 @@ async function requestRag(question, top_k) {
       body: JSON.stringify({ question, top_k })
     });
 
-    const isRenderColdStart =
-      response.status === 502 &&
-      response.headers.get("x-render-routing") === "no-deploy";
+  const response = await sendQuestion();
+  const isRenderColdStart =
+    response.status === 502 &&
+    response.headers.get("x-render-routing") === "no-deploy";
 
-    if (!isRenderColdStart || attempt >= retryDelaysMs.length) {
-      return response;
-    }
-
-    const delayMs = retryDelaysMs[attempt];
-    console.warn(
-      `RAG service is starting on Render; retrying in ${delayMs / 1000}s ` +
-      `(attempt ${attempt + 2}/${retryDelaysMs.length + 1}).`
-    );
-    await new Promise((resolve) => setTimeout(resolve, delayMs));
+  if (!isRenderColdStart) {
+    return response;
   }
+
+  console.warn("RAG service is starting on Render; polling its health endpoint.");
+  const startupDeadline = Date.now() + 90_000;
+
+  while (Date.now() < startupDeadline) {
+    await new Promise((resolve) => setTimeout(resolve, 5_000));
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8_000);
+
+    try {
+      const health = await fetch(`${FLASK_RAG_URL}/health`, {
+        signal: controller.signal
+      });
+
+      if (health.ok) {
+        console.log("RAG service is healthy; retrying the question once.");
+        return sendQuestion();
+      }
+    } catch (error) {
+      console.warn("RAG startup health check did not connect:", error.message);
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+
+  console.error("RAG service did not become healthy within 90 seconds.");
+  return response;
 }
 
 // --------------------------------------------------
