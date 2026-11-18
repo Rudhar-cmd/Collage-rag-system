@@ -36,6 +36,56 @@ import "./App.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8003";
 
+function SidebarIcon({ name }) {
+  const icons = {
+    dashboard: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+      </svg>
+    ),
+    documents: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 3.5h8l4 4v13H6z" />
+        <path d="M14 3.5v4h4M9 12h6M9 16h6" />
+      </svg>
+    ),
+    rules: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 3.5h14v17H5z" />
+        <path d="M8.5 8h7M8.5 12h7M8.5 16h4" />
+      </svg>
+    ),
+    services: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="8" r="3.5" />
+        <path d="M5.5 20v-2.5A6.5 6.5 0 0 1 12 11a6.5 6.5 0 0 1 6.5 6.5V20z" />
+      </svg>
+    ),
+    classes: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <path d="M3 9h18M8 4v16M16 9v11" />
+      </svg>
+    ),
+    syllabus: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11.5H8.5A3.5 3.5 0 0 0 5 23z" />
+        <path d="M5 4.5v14.7M8.5 9.5H16M8.5 13.5H16" />
+      </svg>
+    ),
+    career: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 20 20 4M11 4h9v9" />
+      </svg>
+    )
+  };
+
+  return <span className="sidebar-svg-icon">{icons[name]}</span>;
+}
+
 const suggestions = [
 
   {
@@ -1048,7 +1098,7 @@ async function openSyllabus() {
               setQuestion("");
             }}
           >
-            <span className="sidebar-icon">⌂</span>
+            <span className="sidebar-icon"><SidebarIcon name="dashboard" /></span>
             My Dashboard
           </button>
         </div>
@@ -1067,7 +1117,7 @@ async function openSyllabus() {
 
             <span className="sidebar-icon">
 
-              ◈
+              <SidebarIcon name="documents" />
 
             </span>
 
@@ -1079,7 +1129,7 @@ async function openSyllabus() {
 
             <span className="sidebar-icon">
 
-              ✓
+              <SidebarIcon name="rules" />
 
             </span>
 
@@ -1091,7 +1141,7 @@ async function openSyllabus() {
 
             <span className="sidebar-icon">
 
-              ▣
+              <SidebarIcon name="services" />
 
             </span>
 
@@ -1114,7 +1164,7 @@ async function openSyllabus() {
               setQuestion("");
             }}
           >
-            <span className="sidebar-icon">▦</span>
+            <span className="sidebar-icon"><SidebarIcon name="classes" /></span>
             Classes
           </button>
 
@@ -1134,7 +1184,7 @@ async function openSyllabus() {
 
             <span className="sidebar-icon">
 
-              ▤
+              <SidebarIcon name="syllabus" />
 
             </span>
 
@@ -1178,7 +1228,7 @@ async function openSyllabus() {
 
           >
 
-            <span className="sidebar-icon">↗</span>
+            <span className="sidebar-icon"><SidebarIcon name="career" /></span>
 
             Placement &amp; Career
 
