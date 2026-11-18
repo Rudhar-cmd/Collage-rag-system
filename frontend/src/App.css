@@ -882,13 +882,14 @@ button.sidebar-item:hover {
     background: transparent;
 }
 
-/* remark-gfm tables: scroll sideways instead of breaking the layout */
+/* Keep generated Markdown tables readable and evenly proportioned. */
 .message-text table {
-    display: block;
+    display: table;
+    width: 100%;
     max-width: 100%;
     margin: 0.9em 0;
-    overflow-x: auto;
     border-collapse: collapse;
+    table-layout: fixed;
     font-size: var(--fs-sm);
 }
 
@@ -898,6 +899,25 @@ button.sidebar-item:hover {
     border: 1px solid var(--border);
     text-align: left;
     vertical-align: top;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+}
+
+.message-text th:nth-child(1),
+.message-text td:nth-child(1) {
+    width: 22%;
+}
+
+.message-text th:nth-child(2),
+.message-text td:nth-child(2) {
+    width: 58%;
+}
+
+.message-text th:nth-child(3),
+.message-text td:nth-child(3) {
+    width: 20%;
 }
 
 .message-text th {
