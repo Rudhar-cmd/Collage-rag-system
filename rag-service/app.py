@@ -110,7 +110,6 @@ def query():
             if turn["role"] == "user"
         ][-2:]
 
-        conversation_text = " ".join([*prior_turn_text, question]).lower()
         current_text = question.lower()
         is_timetable_question = bool(
             re.search(
@@ -121,20 +120,28 @@ def query():
             )
         )
         if not is_timetable_question:
-            is_timetable_question = bool(
-                re.search(
-                    r"\b(?:timetable|time table|class(?:es)?|schedule|periods?|"
-                    r"course(?: name)?|subject|monday|tuesday|wednesday|"
-                    r"thursday|friday)\b",
-                    conversation_text,
-                )
-            )
-        if not is_timetable_question:
-            is_timetable_question = bool(
+            current_semester_reference = bool(
                 re.search(
                     r"\b(?:1st|3rd|5th|7th|first|third|fifth|seventh)"
                     r"\s*(?:semester|sem\.?)\b",
                     current_text,
+                )
+            )
+            prior_text = " ".join(prior_turn_text).lower()
+            prior_had_timetable = bool(
+                re.search(
+                    r"\b(?:timetable|time table|class(?:es)?|schedule|periods?)\b",
+                    prior_text,
+                )
+            )
+            is_timetable_question = (
+                prior_had_timetable
+                and (
+                    current_semester_reference
+                    or bool(re.search(
+                        r"\b(?:course|subject|period|slot|class|room|section)\b",
+                        current_text,
+                    ))
                 )
             )
         profile_context = ""

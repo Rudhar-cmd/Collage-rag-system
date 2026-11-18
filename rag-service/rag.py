@@ -893,6 +893,29 @@ def retrieve_documents(question, top_k=3):
 
     q = question.lower()
     programme = detect_programme(question)
+    intent = detect_information_intent(question)
+
+    # Fees are cross-programme information. Never let a CSE, AIML,
+    # Cyber Security, or general B.Tech tag replace the admissions source.
+    if intent == "fees":
+        print(
+            "FEES QUESTION: Searching admissions and fee documents only",
+            flush=True,
+        )
+        results = vector_store.similarity_search_with_score(
+            question,
+            k=max(top_k * 3, 12),
+            filter={"source": "admissions_fees_scholarships.pdf"},
+        ) or []
+        results = [
+            (doc, score)
+            for doc, score in results
+            if (doc.metadata or {}).get("source")
+            == "admissions_fees_scholarships.pdf"
+        ]
+        selected = results[:top_k]
+        _print_results(selected)
+        return _tag_scores(selected)
 
     print("=" * 60)
     print("QUESTION:", question)
@@ -1211,6 +1234,8 @@ def generate_answer(
 
 
     intent = detect_information_intent(question)
+    if intent == "fees":
+        programme = "btech_general"
 
     if programme and programme != "btech_general":
         if intent not in {"fees", "placements", "staff"}:
