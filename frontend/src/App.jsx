@@ -36,6 +36,21 @@ import "./App.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8003";
 
+function SourceIcon({ size = 16 }) {
+  return (
+    <svg
+      className="source-svg-icon"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+      <path d="M14 3v5h5M9 13h6M9 17h4" />
+    </svg>
+  );
+}
+
 function SidebarIcon({ name }) {
   const icons = {
     dashboard: (
@@ -2392,14 +2407,16 @@ const subjects =
   message.sources?.length > 0 && (
     <div className="sources">
       <div className="sources-title">
-        <span>◈</span>
+        <SourceIcon size={15} />
         Sources
       </div>
 
       <div className="source-list">
         {message.sources.map((source, i) => (
           <div className="source-card" key={i}>
-            <div className="source-icon"></div>
+            <div className="source-icon">
+              <SourceIcon size={18} />
+            </div>
 
             <div className="source-details">
               <div className="source-title">

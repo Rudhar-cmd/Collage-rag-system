@@ -929,6 +929,58 @@ button.sidebar-item:hover {
     color: var(--accent);
 }
 
+.source-svg-icon {
+    flex: 0 0 auto;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.source-card {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+}
+
+.source-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--sunken);
+    color: var(--accent);
+}
+
+.source-details {
+    min-width: 0;
+}
+
+.source-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text);
+    font-size: var(--fs-xs);
+    font-weight: 650;
+}
+
+.source-meta {
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
 .source-list {
     max-width: 620px;
     display: flex;
