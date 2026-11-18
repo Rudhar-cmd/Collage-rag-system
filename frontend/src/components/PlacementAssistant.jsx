@@ -41,6 +41,15 @@ const interviewSkillTerms = [
   { label: "Git", pattern: /\bgit\b/i },
   { label: "Linux", pattern: /\blinux\b/i },
   { label: "Networking", pattern: /\bnetwork(?:ing|s)?\b/i },
+  { label: "Cyber Security", pattern: /\bcyber(?:security| security)?\b|\binformation security\b|\bsecurity analyst\b|\bsoc analyst\b/i },
+  { label: "Network Security", pattern: /\bnetwork security\b|\bfirewall(?:s)?\b|\bids\b|\bips\b|\bvpn\b/i },
+  { label: "SIEM", pattern: /\bsiem\b|\bsplunk\b|\bqradar\b|\bsentinel\b|\belastic security\b/i },
+  { label: "Incident Response", pattern: /\bincident response\b|\bforensic(?:s)?\b|\bthreat hunting\b|\bsoc\b/i },
+  { label: "Vulnerability Assessment", pattern: /\bvulnerabilit(?:y|ies)\b|\bpenetration testing\b|\bpen[- ]?test(?:ing)?\b|\bvapt\b/i },
+  { label: "Identity & Access", pattern: /\biam\b|\bidentity(?: and| &|\/) ?access\b|\bauthorization\b|\bauthentication\b|\bactive directory\b|\bsso\b|\bmfa\b/i },
+  { label: "OWASP", pattern: /\bowasp\b|\bweb application security\b|\bsql injection\b|\bxss\b/i },
+  { label: "Cryptography", pattern: /\bcryptograph(?:y|ic)\b|\bencryption\b|\btls\b|\bssl\b|\bpkI\b/i },
+  { label: "Malware Analysis", pattern: /\bmalware\b|\breverse engineering\b|\bsandboxing\b|\bendpoint security\b/i },
   { label: "Troubleshooting", pattern: /\btroubleshooting\b/i },
   { label: "Machine learning", pattern: /\bmachine learning\b|\bml\b/i },
   { label: "Data analysis", pattern: /\bdata analys(?:is|t)\b|\bdata analytics\b/i },
@@ -72,6 +81,15 @@ const skillQuestionPrompts = {
   Git: "How would you resolve a merge conflict in Git and verify that the final changes are correct?",
   Linux: "A service is running slowly on a Linux machine. Which commands or logs would you inspect first, and why?",
   Networking: "A web application is unreachable from a user's machine. How would you narrow down whether the issue is DNS, network, or application related?",
+  "Cyber Security": "How would you investigate a suspicious login or a possible account compromise? Describe the evidence you would collect and how you would contain it.",
+  "Network Security": "How would you investigate and reduce unauthorized outbound network traffic in an organization?",
+  SIEM: "How would you create and validate a SIEM alert for repeated failed logins followed by success from a new location?",
+  "Incident Response": "A malware alert is triggered on a critical server. Walk through your incident-response priorities.",
+  "Vulnerability Assessment": "How would you safely assess a web application for vulnerabilities and prioritize the findings?",
+  "Identity & Access": "How would you design least-privilege access for new employees, contractors, and administrators?",
+  OWASP: "How would you prevent SQL injection and cross-site scripting in a web application?",
+  Cryptography: "How would you choose and configure encryption for data in transit and data at rest?",
+  "Malware Analysis": "How would you perform a safe initial analysis of a potentially malicious file?",
   Troubleshooting: "A user reports an issue that you cannot reproduce immediately. How would you gather evidence and work toward a fix?",
   "Machine learning": "How would you check whether a machine-learning model is overfitting, and what would you try next?",
   "Data analysis": "How would you check a new dataset for quality issues before using it to answer a business question?",
@@ -145,6 +163,51 @@ const technicalPromptVariants = {
     "When would you use a list, tuple, or dictionary in Python? Explain your choice with a practical example.",
     "How would you diagnose and fix a slow Python function that processes a large collection?",
     "Explain how you would structure a Python class or function to make it testable and easy to maintain."
+  ],
+  "Cyber Security": [
+    "How would you investigate a suspicious login or possible account compromise, from detection through containment?",
+    "Explain the difference between prevention, detection, and response controls for a common cyber attack.",
+    "How would you explain a cyber-security risk and its business impact to a non-technical manager?"
+  ],
+  "Network Security": [
+    "How would you troubleshoot a network security alert using logs, packet data, and endpoint context?",
+    "Explain how segmentation, firewalls, VPNs, and monitoring work together to limit an attack.",
+    "How would you design a secure network connection between an application and a third-party service?"
+  ],
+  SIEM: [
+    "How would you write and tune a SIEM rule for repeated failed login attempts?",
+    "Which fields would you correlate during a suspected account takeover investigation?",
+    "How would you reduce false positives in a high-volume SIEM rule?"
+  ],
+  "Incident Response": [
+    "Walk through your priorities after detecting ransomware on one workstation.",
+    "How would you preserve evidence during an incident without interrupting an organization's critical work?",
+    "What belongs in an incident timeline, and how would you communicate findings to technical and management teams?"
+  ],
+  "Vulnerability Assessment": [
+    "How would you identify, validate, and prioritize vulnerabilities in a web application?",
+    "What is the difference between a vulnerability scan and a penetration test?",
+    "How would you safely retest a vulnerability after remediation?"
+  ],
+  "Identity & Access": [
+    "How would you implement least privilege for employee, contractor, and administrator accounts?",
+    "How would you investigate and contain a compromised privileged account?",
+    "Compare role-based, attribute-based, and just-in-time access control."
+  ],
+  OWASP: [
+    "How would you prevent SQL injection, cross-site scripting, and insecure authentication in a web application?",
+    "Describe how you would test for and remediate broken access control.",
+    "How would you secure API inputs and authorization checks in a backend service?"
+  ],
+  Cryptography: [
+    "How would you protect sensitive data in transit and at rest?",
+    "Explain the difference between encryption, hashing, and digital signatures.",
+    "How would you manage and rotate keys without exposing them to application logs?"
+  ],
+  "Malware Analysis": [
+    "How would you safely perform an initial analysis of an unknown executable?",
+    "Which indicators would you extract from a suspected malicious file?",
+    "How would you contain an endpoint while preserving useful forensic evidence?"
   ]
 };
 
@@ -186,9 +249,18 @@ function createInterviewPractice(opportunity, description, seed = 0) {
   const responsibilities = sentences.filter((sentence) =>
     /\b(responsible|develop|build|design|implement|maintain|analy[sz]e|support|test|deploy|collaborat|deliver|manage|create|work with|experience with|required|proficien(?:t|cy))\b/i.test(sentence)
   );
-  const skills = interviewSkillTerms
+  const descriptionSkills = interviewSkillTerms
     .filter((skill) => skill.pattern.test(description))
-    .slice(0, 6);
+    .map((skill) => skill.label);
+  const roleText = `${opportunity.role || ""} ${opportunity.companyName || ""}`;
+  const roleSkills = interviewSkillTerms
+    .filter((skill) => skill.pattern.test(roleText))
+    .map((skill) => skill.label);
+  const skills = interviewSkillTerms
+    .filter((skill) =>
+      descriptionSkills.includes(skill.label) || roleSkills.includes(skill.label)
+    )
+    .slice(0, 10);
   const practiceSeed = seed ^ hashPracticeInput(`${opportunity.id}|${description}`);
   const random = createSeededRandom(practiceSeed);
   const shuffledResponsibilities = shuffleWithSeed(responsibilities, practiceSeed);
