@@ -178,6 +178,7 @@ function getOpportunityStatus(opportunity) {
 function OpportunityCard({ opportunity, expanded, onToggle, onPrepare, onReviewResume }) {
   const status = getOpportunityStatus(opportunity);
   const statusLabel = status === "active" ? "OPEN" : status === "upcoming" ? "UPCOMING" : "CLOSED";
+  const pi360Url = "https://pi360.net/mietjammu/";
 
   return (
     <article className="placement-opportunity-card">
@@ -216,6 +217,15 @@ function OpportunityCard({ opportunity, expanded, onToggle, onPrepare, onReviewR
           <button type="button" className="placement-text-button" onClick={onToggle}>
             {expanded ? "Hide details" : "View details"}
           </button>
+          <a
+            className="placement-external-link"
+            href={pi360Url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Apply for ${opportunity.role} at ${opportunity.companyName} on PI360`}
+          >
+            {status === "closed" ? "View on PI360" : "Apply on PI360"} <span aria-hidden="true">↗</span>
+          </a>
           <button type="button" className="placement-primary-button" onClick={onPrepare}>
             Prepare for interview
           </button>
@@ -541,7 +551,17 @@ export default function PlacementAssistant({ apiUrl, onUnauthorized }) {
               <h2>Explore opportunities</h2>
               <p>Browse PI360 listings by company, role, opportunity type, and date range.</p>
             </div>
-            <span className="placement-result-count">{filteredOpportunities.length} {filteredOpportunities.length === 1 ? "role" : "roles"}</span>
+            <div className="placement-listing-heading-actions">
+              <a
+                className="placement-external-link"
+                href="https://pi360.net/mietjammu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply on PI360 <span aria-hidden="true">↗</span>
+              </a>
+              <span className="placement-result-count">{filteredOpportunities.length} {filteredOpportunities.length === 1 ? "role" : "roles"}</span>
+            </div>
           </div>
           <div className="placement-filters">
             <label className="placement-search">
