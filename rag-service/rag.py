@@ -902,6 +902,7 @@ def retrieve_documents(question, top_k=3):
 
     # General B.Tech/B.E. questions.
     if programme == "btech_general":
+        intent = detect_information_intent(question)
         branch_question = any(
             term in q
             for term in [
@@ -909,6 +910,27 @@ def retrieve_documents(question, top_k=3):
                 "how many", "list every", "list all",
             ]
         )
+
+        if intent == "fees":
+            print(
+                "GENERAL B.TECH FEES QUESTION: Searching general college documents",
+                flush=True,
+            )
+            results = vector_store.similarity_search_with_score(
+                question,
+                k=max(top_k * 3, 12),
+                filter={
+                    "source": "admissions_fees_scholarships.pdf",
+                },
+            ) or []
+            results = [
+                (doc, score)
+                for doc, score in results
+                if (doc.metadata or {}).get("source")
+                == "admissions_fees_scholarships.pdf"
+            ]
+            _print_results(results[:top_k])
+            return _tag_scores(results[:top_k])
 
         if branch_question:
             print(
@@ -1210,6 +1232,7 @@ def generate_answer(
     
     elif programme == "btech_general":
         q = question.lower()
+        intent = detect_information_intent(question)
 
         branch_question = any(
             term in q
@@ -1226,6 +1249,12 @@ def generate_answer(
                 if (doc.metadata or {}).get("programme")
                 in {"timetable_common", "timetable_shared"}
                 or (doc.metadata or {}).get("programme") in BTECH_PROGRAMMES
+            ]
+        elif intent == "fees":
+            documents = [
+                doc for doc in documents
+                if (doc.metadata or {}).get("source")
+                == "admissions_fees_scholarships.pdf"
             ]
         elif not branch_question:
             documents = [
@@ -1331,11 +1360,12 @@ def generate_answer(
     elif programme == "btech_general":
         programme_rule = (
             "The student asked a general B.Tech/B.E. question. "
-            "Use only retrieved B.Tech branch documents. Identify "
-            "the branch and source supporting each claim. Do not "
-            "claim a subject is taught across all branches unless "
-            "the sources establish that. Never use M.Tech, BCA, "
-            "BBA, LLB, or unrelated facts."
+            "For fees or admissions questions, use only the "
+            "admissions_fees_scholarships.pdf document. Do not use "
+            "syllabus documents as evidence for fees. If the PDF does "
+            "not contain a rupee amount or an official fee schedule, "
+            "say that it is not published in the available source and "
+            "direct the student to the official admissions office."
         )
 
     elif programme:
