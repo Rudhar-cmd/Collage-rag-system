@@ -509,9 +509,9 @@ app.post("/api/query", authMiddleware, async (req, res) => {
       error: "Question is required."
     });
   }
-  if (!Array.isArray(history) || history.length > 8) {
+  if (!Array.isArray(history)) {
     return res.status(400).json({
-      error: "Conversation history must contain no more than 8 turns."
+      error: "Conversation history must be a list."
     });
   }
 
@@ -534,27 +534,18 @@ app.post("/api/query", authMiddleware, async (req, res) => {
     }
   }
 
-  const validHistory = history.map((turn) => {
-    if (
-      !turn ||
-      !["user", "assistant"].includes(turn.role) ||
-      typeof turn.content !== "string" ||
-      !turn.content.trim() ||
-      turn.content.length > 2000
-    ) {
-      return null;
-    }
-
-    return {
+  const validHistory = history
+    .filter((turn) =>
+      turn &&
+      ["user", "assistant"].includes(turn.role) &&
+      typeof turn.content === "string" &&
+      turn.content.trim()
+    )
+    .slice(-8)
+    .map((turn) => ({
       role: turn.role,
-      content: turn.content.trim()
-    };
-  });
-  if (validHistory.includes(null)) {
-    return res.status(400).json({
-      error: "Conversation history contains an invalid turn."
-    });
-  }
+      content: turn.content.trim().slice(0, 2000)
+    }));
 
   const cleanQuestion = question.trim();
 

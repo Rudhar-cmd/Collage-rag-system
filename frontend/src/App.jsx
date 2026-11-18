@@ -444,10 +444,14 @@ useEffect(() => {
       .filter((message) =>
         ["user", "assistant"].includes(message.role) &&
         typeof message.content === "string" &&
-        message.content.trim()
+        message.content.trim() &&
+        message.content.trim().length <= 2000
       )
       .slice(-8)
-      .map(({ role, content }) => ({ role, content }));
+      .map(({ role, content }) => ({
+        role,
+        content: content.trim().slice(0, 2000),
+      }));
 
     setMessages((prev) => [
 

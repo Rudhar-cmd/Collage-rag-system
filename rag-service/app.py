@@ -36,9 +36,9 @@ def query():
         return jsonify({
             "error": "Question is required"
         }), 400
-    if not isinstance(history, list) or len(history) > 8:
+    if not isinstance(history, list):
         return jsonify({
-            "error": "history must be a list of no more than 8 turns"
+            "error": "history must be a list"
         }), 400
 
     if student_profile is not None:
@@ -66,17 +66,19 @@ def query():
                 "error": "student_profile has an invalid semester or branch"
             }), 400
 
-    for turn in history:
+    history = [
+        {
+            "role": turn["role"],
+            "content": turn["content"].strip()[:2000],
+        }
+        for turn in history
         if (
-            not isinstance(turn, dict)
-            or turn.get("role") not in {"user", "assistant"}
-            or not isinstance(turn.get("content"), str)
-            or not turn["content"].strip()
-            or len(turn["content"]) > 2000
-        ):
-            return jsonify({
-                "error": "history contains an invalid turn"
-            }), 400
+            isinstance(turn, dict)
+            and turn.get("role") in {"user", "assistant"}
+            and isinstance(turn.get("content"), str)
+            and turn["content"].strip()
+        )
+    ][-8:]
 
     # Handle greetings without searching the PDF database
     greeting = question.lower().strip(" !.,?")
