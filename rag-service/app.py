@@ -100,29 +100,56 @@ def query():
 
         # Keep the retrieval contract stable even if a vector-store adapter
         # unexpectedly returns None for an empty result set.
+        prior_turn_text = [
+            turn["content"]
+            for turn in history
+        ][-4:]
         prior_questions = [
             turn["content"]
             for turn in history
             if turn["role"] == "user"
         ][-2:]
 
+        conversation_text = " ".join([*prior_turn_text, question]).lower()
+        current_text = question.lower()
         is_timetable_question = bool(
             re.search(
-                r"\b(?:timetable|time table|class(?:es)?|schedule|periods?)\b",
-                question.lower(),
+                r"\b(?:timetable|time table|class(?:es)?|schedule|periods?|"
+                r"course(?: name)?|subject|9\s*[:.]?\s*35|monday|tuesday|"
+                r"wednesday|thursday|friday)\b",
+                current_text,
             )
         )
+        if not is_timetable_question:
+            is_timetable_question = bool(
+                re.search(
+                    r"\b(?:timetable|time table|class(?:es)?|schedule|periods?|"
+                    r"course(?: name)?|subject|monday|tuesday|wednesday|"
+                    r"thursday|friday)\b",
+                    conversation_text,
+                )
+            )
+        if not is_timetable_question:
+            is_timetable_question = bool(
+                re.search(
+                    r"\b(?:1st|3rd|5th|7th|first|third|fifth|seventh)"
+                    r"\s*(?:semester|sem\.?)\b",
+                    current_text,
+                )
+            )
         profile_context = ""
         if student_profile and is_timetable_question:
+            profile_lookup_text = " ".join([*prior_turn_text, question])
             has_semester = bool(
                 re.search(
                     r"\b(?:semester|sem\.?)\s*(?:1|3|5|7)(?:st|rd|th)?\b"
                     r"|\b(?:1|3|5|7)(?:st|rd|th)?\s+semester\b"
+                    r"|\b(?:1|3|5|7)(?:st|rd|th)?\s*(?:semester|sem\.?)\b"
                     r"|\b(?:first|third|fifth|seventh)\s+(?:semester|sem\.?)\b",
-                    question.lower(),
+                    profile_lookup_text.lower(),
                 )
             )
-            has_branch = detect_programme(question) is not None
+            has_branch = detect_programme(profile_lookup_text) is not None
             branch_names = {
                 "cse": "CSE",
                 "aiml": "AIML",
@@ -166,6 +193,7 @@ def query():
             student_profile=(
                 student_profile if is_timetable_question else None
             ),
+            timetable_hint=is_timetable_question,
         )
         generation_time = time.perf_counter() - answer_start
  

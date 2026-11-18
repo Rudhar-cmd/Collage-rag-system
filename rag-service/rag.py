@@ -1101,6 +1101,7 @@ def generate_answer(
     documents,
     history=None,
     student_profile=None,
+    timetable_hint=False,
 ):
     # Retrieval can be empty; normalize adapter-level None to the documented
     # list contract before filtering or building prompt context.
@@ -1145,7 +1146,7 @@ def generate_answer(
     if syllabus_answer is not None:
         return syllabus_answer
 
-    is_timetable_question = bool(
+    is_timetable_question = timetable_hint or bool(
         re.search(
             r"\b(?:timetable|time table|class(?:es)?|schedule|periods?)\b",
             question.lower(),
@@ -1162,6 +1163,25 @@ def generate_answer(
         }
         programme = profile_programmes[student_profile["branch"]]
         answer_profile = student_profile
+
+    if is_timetable_question:
+        conversation_text = " ".join([
+            *(turn.get("content", "") for turn in history if isinstance(turn, dict)),
+            question,
+        ])
+        timetable_semester = _timetable_semester(conversation_text)
+        if timetable_semester is None and student_profile:
+            timetable_semester = student_profile.get("semester")
+        if timetable_semester:
+            allowed_sources = _timetable_sources(
+                timetable_semester,
+                programme,
+            )
+            if allowed_sources:
+                documents = [
+                    doc for doc in documents
+                    if (doc.metadata or {}).get("source") in allowed_sources
+                ]
 
     # --------------------------------------------------------
     # Validate document metadata before using any context.

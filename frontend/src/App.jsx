@@ -2412,22 +2412,10 @@ const subjects =
                   : "Document reference"}
               </div>
 
-              {source.score !== undefined && source.score !== null && (
-                <div className="source-meta source-distance-text">
-                  Distance: {Number.isFinite(Number(source.score))
-                    ? Number(source.score).toFixed(3)
-                    : source.score}
-                </div>
-              )}
             </div>
           </div>
         ))}
       </div>
-
-      <p className="source-explanation">
-        Lower distance generally indicates a closer vector match.
-        This is a retrieval metric, not the probability that the answer is correct.
-      </p>
     </div>
   )}
 
