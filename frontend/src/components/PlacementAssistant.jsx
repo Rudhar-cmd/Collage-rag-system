@@ -95,10 +95,90 @@ const aptitudeQuestions = [
   {
     prompt: "Find the next number: 2, 6, 12, 20, 30, __.",
     answer: "42. The differences are 4, 6, 8, 10, so the next difference is 12."
+  },
+  {
+    prompt: "A train travels 120 km in 2 hours. At the same speed, how long will it take to travel 300 km?",
+    answer: "The speed is 60 km/h, so 300 km will take 5 hours."
+  },
+  {
+    prompt: "If the ratio of two numbers is 4:7 and their sum is 66, what are the numbers?",
+    answer: "There are 11 equal parts. The numbers are 4 × 6 = 24 and 7 × 6 = 42."
+  },
+  {
+    prompt: "What is 18% of 250?",
+    answer: "18 × 250 ÷ 100 = 45."
+  },
+  {
+    prompt: "A work is completed by 12 people in 8 days. How many days would 16 people take?",
+    answer: "Total work is 12 × 8 = 96 person-days. 96 ÷ 16 = 6 days."
+  },
+  {
+    prompt: "Find the next number: 3, 7, 15, 31, __.",
+    answer: "63. Each number is twice the previous number plus 1."
+  },
+  {
+    prompt: "A 25-minute test has 20 questions. How many minutes are available per question?",
+    answer: "25 ÷ 20 = 1.25 minutes, or 1 minute 15 seconds per question."
+  },
+  {
+    prompt: "If a shopkeeper buys an item for ₹450 and sells it for ₹540, what is the profit percentage?",
+    answer: "Profit is ₹90. The profit percentage is 90 ÷ 450 × 100 = 20%."
+  },
+  {
+    prompt: "A clock shows 3:30. What is the smaller angle between the hour and minute hands?",
+    answer: "At 3:30, the hour hand is 105 degrees and the minute hand is 180 degrees, so the angle is 75 degrees."
   }
 ];
 
-function createInterviewPractice(opportunity, description) {
+const technicalPromptVariants = {
+  JavaScript: [
+    "How does JavaScript handle asynchronous work? Explain the event loop and give an example using a promise or async/await.",
+    "Walk through how you would debug a JavaScript feature that fails only in the browser.",
+    "How would you design an asynchronous JavaScript function that handles loading, errors, and repeated requests?"
+  ],
+  TypeScript: [
+    "How do TypeScript types help prevent bugs? Give an example of a type or interface you would use in an application.",
+    "When would you use a union, generic, or interface in TypeScript? Describe a practical use case.",
+    "How would you migrate a JavaScript module to TypeScript while reducing type errors safely?"
+  ],
+  Python: [
+    "When would you use a list, tuple, or dictionary in Python? Explain your choice with a practical example.",
+    "How would you diagnose and fix a slow Python function that processes a large collection?",
+    "Explain how you would structure a Python class or function to make it testable and easy to maintain."
+  ]
+};
+
+function createSeededRandom(seed) {
+  let value = seed >>> 0;
+  return () => {
+    value += 0x6d2b79f5;
+    let result = value;
+    result = Math.imul(result ^ (result >>> 15), result | 1);
+    result ^= result + Math.imul(result ^ (result >>> 7), result | 61);
+    return ((result ^ (result >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffleWithSeed(items, seed) {
+  const shuffled = [...items];
+  const random = createSeededRandom(seed);
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
+  }
+  return shuffled;
+}
+
+function hashPracticeInput(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function createInterviewPractice(opportunity, description, seed = 0) {
   const sentences = description
     .split(/(?<=[.!?])\s+|\n+/)
     .map((sentence) => sentence.replace(/^[\s•*\-\d.)]+/, "").trim())
@@ -109,46 +189,69 @@ function createInterviewPractice(opportunity, description) {
   const skills = interviewSkillTerms
     .filter((skill) => skill.pattern.test(description))
     .slice(0, 6);
+  const practiceSeed = seed ^ hashPracticeInput(`${opportunity.id}|${description}`);
+  const random = createSeededRandom(practiceSeed);
+  const shuffledResponsibilities = shuffleWithSeed(responsibilities, practiceSeed);
 
   const technical = skills.map((skill) => ({
     topic: skill.label,
-    prompt: skillQuestionPrompts[skill.label] ||
+    prompt: (technicalPromptVariants[skill.label] || [skillQuestionPrompts[skill.label]])
+      [Math.floor(random() * (technicalPromptVariants[skill.label]?.length || 1))] ||
       `How would you use ${skill.label} to solve a problem in this role? Describe your approach and how you would check that it worked.`
   }));
-  responsibilities.slice(0, 3).forEach((responsibility) => {
+  shuffledResponsibilities.slice(0, 3).forEach((responsibility) => {
+    const responsibilityPrompts = [
+      "How would you approach this work? Walk through your first steps, how you would collaborate, and how you would check the result.",
+      "What evidence would you collect before changing or implementing this responsibility?",
+      "Describe how you would complete this work in a team while managing deadlines and risks."
+    ];
     technical.push({
       topic: "Role responsibility",
       excerpt: responsibility,
-      prompt: "How would you approach this work? Walk through your first steps, how you would collaborate, and how you would check the result."
+      prompt: responsibilityPrompts[Math.floor(random() * responsibilityPrompts.length)]
     });
   });
 
-  const hr = [
+  const hrPool = [
     {
-      prompt: `What interests you about the ${opportunity.role} role at ${opportunity.companyName}?`,
-      guidance: "Connect your genuine interests and experience to the role. Avoid relying on claims that aren’t in the official posting."
+      prompt: `Why does the ${opportunity.role} role at ${opportunity.companyName} interest you, and how does it fit your goals?`,
+      guidance: "Give a genuine reason, then connect one or two skills or experiences to the role."
     },
     {
-      prompt: "Tell me about a time you worked with others to solve a difficult problem. What was your contribution?",
+      prompt: "Describe a time you worked with a group to solve a difficult problem. What was your contribution?",
       guidance: "Use a concise situation, task, action, and result structure; be specific about your own actions."
+    },
+    {
+      prompt: "Tell me about a mistake or setback you handled. What did you learn and change?",
+      guidance: "Choose an honest example, focus on your response, and explain the practical improvement you made."
+    },
+    {
+      prompt: "How would you prioritize competing deadlines in a new role?",
+      guidance: "Explain how you assess urgency and impact, communicate expectations, and adjust your plan."
+    },
+    {
+      prompt: "Give an example of how you handled feedback that challenged your approach.",
+      guidance: "Describe the feedback, your response, and the measurable or observable result."
     },
     {
       prompt: "What is one skill you are currently improving, and what are you doing to improve it?",
       guidance: "Choose a real development area and describe a concrete step you have taken."
     }
   ];
+  const hr = shuffleWithSeed(hrPool, practiceSeed).slice(0, 3);
   if (responsibilities.length > 0) {
     hr.push({
       prompt: `Which experience best prepares you for this responsibility: “${responsibilities[0]}”`,
       guidance: "Choose a real example and explain what you did, what you learned, and what you would bring to this role."
     });
   }
+  const aptitude = shuffleWithSeed(aptitudeQuestions, practiceSeed).slice(0, 3);
 
   return {
     role: opportunity.role,
     company: opportunity.companyName,
     technical,
-    aptitude: aptitudeQuestions,
+    aptitude,
     hr
   };
 }
@@ -253,6 +356,7 @@ export default function PlacementAssistant({ apiUrl, onUnauthorized }) {
   const [prepConfirmedOfficial, setPrepConfirmedOfficial] = useState(false);
   const [practiceSet, setPracticeSet] = useState(null);
   const [prepError, setPrepError] = useState("");
+  const [practiceSeed, setPracticeSeed] = useState(0);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -362,7 +466,13 @@ export default function PlacementAssistant({ apiUrl, onUnauthorized }) {
       return;
     }
 
-    setPracticeSet(createInterviewPractice(opportunity, prepDescription.trim()));
+    const nextSeed = practiceSeed + 1;
+    setPracticeSeed(nextSeed);
+    setPracticeSet(createInterviewPractice(
+      opportunity,
+      prepDescription.trim(),
+      (Date.now() ^ (nextSeed * 2654435761)) >>> 0
+    ));
   }
 
   return (
