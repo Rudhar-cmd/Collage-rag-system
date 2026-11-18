@@ -1,7 +1,8 @@
 import traceback
+import re
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from rag import retrieve_documents, generate_answer
+from rag import detect_programme, retrieve_documents, generate_answer
 
 app = Flask(__name__)
 CORS(app)
@@ -20,7 +21,12 @@ def query():
     print("FLASK /query ROUTE HIT", flush=True)
     data = request.get_json(silent=True) or {}
 
-    question = data.get("question", "").strip()
+    question = data.get("question", "")
+    if not isinstance(question, str):
+        return jsonify({"error": "question must be a string"}), 400
+    question = question.strip()
+    history = data.get("history", [])
+    student_profile = data.get("student_profile")
     try:
         top_k = max(1, min(int(data.get("top_k", 3)), 20))
     except (TypeError, ValueError):
@@ -30,6 +36,48 @@ def query():
         return jsonify({
             "error": "Question is required"
         }), 400
+    if not isinstance(history, list) or len(history) > 8:
+        return jsonify({
+            "error": "history must be a list of no more than 8 turns"
+        }), 400
+
+    if student_profile is not None:
+        if not isinstance(student_profile, dict):
+            return jsonify({
+                "error": "student_profile must be an object"
+            }), 400
+
+        semester = student_profile.get("semester")
+        branch = student_profile.get("branch")
+        valid_profile = (
+            isinstance(semester, str)
+            and isinstance(branch, str)
+            and semester in {"1", "3", "5", "7"}
+            and (
+                (semester == "1" and branch == "general")
+                or (
+                    semester in {"3", "5", "7"}
+                    and branch in {"cse", "aiml", "cybersecurity"}
+                )
+            )
+        )
+        if not valid_profile:
+            return jsonify({
+                "error": "student_profile has an invalid semester or branch"
+            }), 400
+
+    for turn in history:
+        if (
+            not isinstance(turn, dict)
+            or turn.get("role") not in {"user", "assistant"}
+            or not isinstance(turn.get("content"), str)
+            or not turn["content"].strip()
+            or len(turn["content"]) > 2000
+        ):
+            return jsonify({
+                "error": "history contains an invalid turn"
+            }), 400
+
     # Handle greetings without searching the PDF database
     greeting = question.lower().strip(" !.,?")
 
@@ -52,13 +100,73 @@ def query():
 
         # Keep the retrieval contract stable even if a vector-store adapter
         # unexpectedly returns None for an empty result set.
-        documents = retrieve_documents(question, top_k) or []
+        prior_questions = [
+            turn["content"]
+            for turn in history
+            if turn["role"] == "user"
+        ][-2:]
+
+        is_timetable_question = bool(
+            re.search(
+                r"\b(?:timetable|time table|class(?:es)?|schedule|periods?)\b",
+                question.lower(),
+            )
+        )
+        profile_context = ""
+        if student_profile and is_timetable_question:
+            has_semester = bool(
+                re.search(
+                    r"\b(?:semester|sem\.?)\s*(?:1|3|5|7)(?:st|rd|th)?\b"
+                    r"|\b(?:1|3|5|7)(?:st|rd|th)?\s+semester\b"
+                    r"|\b(?:first|third|fifth|seventh)\s+(?:semester|sem\.?)\b",
+                    question.lower(),
+                )
+            )
+            has_branch = detect_programme(question) is not None
+            branch_names = {
+                "cse": "CSE",
+                "aiml": "AIML",
+                "cybersecurity": "Cyber Security",
+                "general": "B.E. first-year common",
+            }
+            profile_terms = []
+            if not has_semester:
+                profile_terms.append(f"semester {student_profile['semester']}")
+            if not has_branch:
+                profile_terms.append(branch_names[student_profile["branch"]])
+            if profile_terms:
+                profile_context = "B.Tech " + " ".join(profile_terms) + " time table"
+
+        weekday_tokens = {
+            "monday": "mon",
+            "tuesday": "tue",
+            "wednesday": "wed",
+            "thursday": "thu",
+            "friday": "fri",
+        }
+        weekday_context = " ".join(
+            abbreviation
+            for day, abbreviation in weekday_tokens.items()
+            if is_timetable_question
+            and re.search(rf"\b{day}\b", question.lower())
+        )
+        retrieval_question = " ".join(
+            [*prior_questions, question, profile_context, weekday_context]
+        )
+        documents = retrieve_documents(retrieval_question, top_k) or []
         if not isinstance(documents, (list, tuple)):
             raise TypeError("retrieve_documents must return a list of documents")
         retrieval_time = time.perf_counter() - start
 
         answer_start = time.perf_counter()
-        answer = generate_answer(question, documents)
+        answer = generate_answer(
+            question,
+            documents,
+            history,
+            student_profile=(
+                student_profile if is_timetable_question else None
+            ),
+        )
         generation_time = time.perf_counter() - answer_start
  
         print(

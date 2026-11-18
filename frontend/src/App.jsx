@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 
 import axios from "axios";
 
@@ -23,6 +23,14 @@ import historyIcon from "../history.png";
 import ReactMarkdown from "react-markdown";
 
 import remarkGfm from "remark-gfm";
+
+import PlacementAssistant from "./components/PlacementAssistant";
+
+import Classes from "./components/Classes";
+
+import Dashboard from "./components/Dashboard";
+
+import { getTimetableId } from "./components/timetableData";
 
 import "./App.css";
 
@@ -114,6 +122,19 @@ export default function App() {
 
   const [showHistory, setShowHistory] = useState(false);
 
+  const [showDashboard, setShowDashboard] = useState(false);
+
+  const [showPlacement, setShowPlacement] = useState(false);
+
+  const [showClasses, setShowClasses] = useState(false);
+
+  const [studentProfile, setStudentProfile] = useState({
+    semester: "",
+    branch: "",
+  });
+
+  const [classTimetableId, setClassTimetableId] = useState("semester-7");
+
   const [loading, setLoading] = useState(false);
 
   // Syllabus
@@ -169,6 +190,38 @@ export default function App() {
     }
 
   }, []);
+
+  useEffect(() => {
+    if (!user?.email) {
+      setStudentProfile({ semester: "", branch: "" });
+      return;
+    }
+
+    try {
+      const savedProfile = localStorage.getItem(
+        `studentProfile:${user.email.toLowerCase()}`,
+      );
+      const parsedProfile = savedProfile ? JSON.parse(savedProfile) : null;
+      const validProfile =
+        parsedProfile &&
+        ["1", "3", "5", "7"].includes(parsedProfile.semester) &&
+        ["", "general", "cse", "aiml", "cybersecurity"].includes(
+          parsedProfile.branch,
+        ) &&
+        (parsedProfile.semester === "1"
+          ? parsedProfile.branch === "general"
+          : parsedProfile.branch !== "general");
+
+      setStudentProfile(
+        validProfile
+          ? parsedProfile
+          : { semester: "", branch: "" },
+      );
+    } catch (error) {
+      console.error("Unable to load student profile:", error);
+      setStudentProfile({ semester: "", branch: "" });
+    }
+  }, [user?.email]);
 
   // Save theme
 
@@ -254,7 +307,7 @@ useEffect(() => {
 
   }
 
-  function logout() {
+  const logout = useCallback(() => {
 
     localStorage.removeItem("token");
 
@@ -270,6 +323,12 @@ useEffect(() => {
 
     setShowHistory(false);
 
+    setShowDashboard(false);
+
+    setShowPlacement(false);
+
+    setShowClasses(false);
+
     setShowSyllabus(false);
 
     setSelectedSubject(null);
@@ -278,7 +337,7 @@ useEffect(() => {
 
     setSyllabusError("");
 
-  }
+  }, []);
 
   // --------------------------------------------------
 
@@ -308,7 +367,22 @@ useEffect(() => {
 
     setShowHistory(false);
 
+    setShowDashboard(false);
+
+    setShowPlacement(false);
+
+    setShowClasses(false);
+
     setShowSyllabus(false);
+
+    const conversationHistory = messages
+      .filter((message) =>
+        ["user", "assistant"].includes(message.role) &&
+        typeof message.content === "string" &&
+        message.content.trim()
+      )
+      .slice(-8)
+      .map(({ role, content }) => ({ role, content }));
 
     setMessages((prev) => [
 
@@ -327,7 +401,6 @@ useEffect(() => {
     try {
 
       const response = await axios.post(
-
         `${API_URL}/api/query`,
 
         {
@@ -335,6 +408,12 @@ useEffect(() => {
           question: cleanQuestion,
 
           top_k: 3,
+
+          history: conversationHistory,
+
+          ...(getTimetableId(studentProfile)
+            ? { student_profile: studentProfile }
+            : {}),
 
         },
 
@@ -349,7 +428,7 @@ useEffect(() => {
         }
 
       );
-
+      console.log("CHATBOT API RESPONSE:", response.data);
       setMessages((prev) => [
 
         ...prev,
@@ -432,6 +511,12 @@ useEffect(() => {
 
     setShowHistory(false);
 
+    setShowDashboard(false);
+
+    setShowPlacement(false);
+
+    setShowClasses(false);
+
     setShowSyllabus(false);
 
     setSelectedSubject(null);
@@ -469,6 +554,12 @@ useEffect(() => {
     setQuestion("");
 
     setShowHistory(false);
+
+    setShowDashboard(false);
+
+    setShowPlacement(false);
+
+    setShowClasses(false);
 
     setShowSyllabus(false);
 
@@ -516,7 +607,13 @@ useEffect(() => {
 
       setShowSyllabus(false);
 
+      setShowClasses(false);
+
       setShowHistory(true);
+
+      setShowDashboard(false);
+
+      setShowPlacement(false);
 
     } catch (error) {
 
@@ -567,6 +664,12 @@ async function openSyllabus() {
   setShowSyllabus(true);
 
   setShowHistory(false);
+
+  setShowDashboard(false);
+
+  setShowPlacement(false);
+
+  setShowClasses(false);
 
   setQuestion("");
 
@@ -743,6 +846,21 @@ async function openSyllabus() {
 
   }
 
+  function handleStudentProfileChange(profile) {
+    setStudentProfile(profile);
+
+    if (!user?.email) return;
+
+    try {
+      localStorage.setItem(
+        `studentProfile:${user.email.toLowerCase()}`,
+        JSON.stringify(profile),
+      );
+    } catch (error) {
+      console.error("Unable to save student profile:", error);
+    }
+  }
+
   // --------------------------------------------------
 
   // LOGIN / REGISTER SCREEN
@@ -881,6 +999,12 @@ async function openSyllabus() {
 
               setShowHistory(true);
 
+              setShowDashboard(false);
+
+              setShowPlacement(false);
+
+              setShowClasses(false);
+
               setShowSyllabus(false);
 
               loadHistory();
@@ -907,6 +1031,26 @@ async function openSyllabus() {
 
           </button>
 
+        </div>
+
+        <div className="sidebar-section">
+          <div className="sidebar-label">STUDENT SPACE</div>
+          <button
+            className={`sidebar-item ${
+              showDashboard ? "active" : ""
+            }`}
+            onClick={() => {
+              setShowDashboard(true);
+              setShowHistory(false);
+              setShowPlacement(false);
+              setShowClasses(false);
+              setShowSyllabus(false);
+              setQuestion("");
+            }}
+          >
+            <span className="sidebar-icon">⌂</span>
+            My Dashboard
+          </button>
         </div>
 
         {/* KNOWLEDGE BASE NAVIGATION */}
@@ -952,8 +1096,27 @@ async function openSyllabus() {
             </span>
 
             Student Services
-
           </div>
+
+          <button
+            className={`sidebar-item ${
+              showClasses ? "active" : ""
+            }`}
+            onClick={() => {
+              setShowClasses(true);
+              setShowHistory(false);
+              setShowDashboard(false);
+              setShowPlacement(false);
+              setShowSyllabus(false);
+              setClassTimetableId(
+                getTimetableId(studentProfile) || "semester-7",
+              );
+              setQuestion("");
+            }}
+          >
+            <span className="sidebar-icon">▦</span>
+            Classes
+          </button>
 
           {/* NEW SYLLABUS BUTTON */}
 
@@ -976,6 +1139,48 @@ async function openSyllabus() {
             </span>
 
             Syllabus
+
+          </button>
+
+        </div>
+
+        <div className="sidebar-section">
+
+          <div className="sidebar-label">
+
+            CAREER CENTER
+
+          </div>
+
+          <button
+
+            className={`sidebar-item ${
+
+              showPlacement ? "active" : ""
+
+            }`}
+
+            onClick={() => {
+
+              setShowPlacement(true);
+
+              setShowHistory(false);
+
+              setShowDashboard(false);
+
+              setShowClasses(false);
+
+              setShowSyllabus(false);
+
+              setQuestion("");
+
+            }}
+
+          >
+
+            <span className="sidebar-icon">↗</span>
+
+            Placement &amp; Career
 
           </button>
 
@@ -1075,8 +1280,13 @@ async function openSyllabus() {
 
             <span>
 
-              {showSyllabus
-
+              {showPlacement
+                ? "Placement & Career Assistant"
+                : showDashboard
+                ? "My Dashboard"
+                : showClasses
+                ? "Class Timetables"
+                : showSyllabus
                 ? "Syllabus Browser"
 
                 : showHistory
@@ -1137,7 +1347,7 @@ async function openSyllabus() {
 
         </header>
 
-        {/* CONVERSATION / HISTORY / SYLLABUS */}
+        {/* CONVERSATION / HISTORY / SYLLABUS / PLACEMENT */}
 
         <div
 
@@ -1146,6 +1356,12 @@ async function openSyllabus() {
             messages.length === 0 &&
 
             !showHistory &&
+
+            !showDashboard &&
+
+            !showPlacement &&
+
+            !showClasses &&
 
             !showSyllabus
 
@@ -1163,7 +1379,36 @@ async function openSyllabus() {
 
           ========================= */}
 
-          {showSyllabus ? (
+          {showPlacement ? (
+
+            <PlacementAssistant
+
+              apiUrl={API_URL}
+
+              onUnauthorized={logout}
+
+            />
+
+          ) : showDashboard ? (
+            <Dashboard
+              user={user}
+              profile={studentProfile}
+              onProfileChange={handleStudentProfileChange}
+              onAskQuestion={askQuestion}
+              onOpenTimetable={(timetableId) => {
+                setClassTimetableId(timetableId);
+                setShowDashboard(false);
+                setShowClasses(true);
+                setShowHistory(false);
+                setShowPlacement(false);
+                setShowSyllabus(false);
+              }}
+            />
+          ) : showClasses ? (
+
+            <Classes initialTimetableId={classTimetableId} />
+
+          ) : showSyllabus ? (
 
           <div className="syllabus-page">
 
@@ -1395,7 +1640,21 @@ async function openSyllabus() {
 
                   const activeData = syllabusProgramData;
 
-                  const semesters = activeData?.semesters || [];
+                  
+const semesters = activeData?.semesters || [];
+
+// Keep only one entry for each semester number.
+const uniqueSemesters = [
+  ...new Map(
+    semesters.map((semester) => [
+      Number(semester.semester),
+      semester,
+    ])
+  ).values(),
+].sort(
+  (a, b) => Number(a.semester) - Number(b.semester)
+);
+
 
                   return (
 
@@ -1451,7 +1710,7 @@ async function openSyllabus() {
 
                           <div className="semester-selector">
 
-                            {semesters.map((semester) => (
+                          {uniqueSemesters.map((semester) => (
 
                               <button
 
@@ -1493,10 +1752,8 @@ async function openSyllabus() {
 
                             (() => {
 
-                              const currentSemester = semesters.find(
-
+                              const currentSemester = uniqueSemesters.find(
                                 (semester) => Number(semester.semester) === Number(selectedSemester)
-
                               );
 
 const regularSubjects = currentSemester?.subjects || [];
@@ -2196,7 +2453,7 @@ const subjects =
 
         {/* CHAT COMPOSER: HIDDEN ON HISTORY AND SYLLABUS */}
 
-        {!showHistory && !showSyllabus && (
+        {!showHistory && !showDashboard && !showSyllabus && !showPlacement && !showClasses && (
 
           <div className="composer-area">
 
@@ -2211,6 +2468,12 @@ const subjects =
               <textarea
 
                 value={question}
+
+                spellCheck
+
+                autoCorrect="on"
+
+                autoCapitalize="sentences"
 
                 onChange={(e) =>
 
@@ -2261,6 +2524,8 @@ const subjects =
             </form>
 
             <div className="composer-note">
+
+              Spelling suggestions are enabled; obvious typos may be clarified in replies.
 
               College AI can make mistakes. Check
 

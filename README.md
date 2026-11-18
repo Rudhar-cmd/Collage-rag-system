@@ -73,6 +73,18 @@ npm run dev
 Open the URL printed by Vite, normally:
 http://localhost:5173
 
+## Classes and personalized timetable questions
+
+The Classes page displays the timetable PDFs from `frontend/public/timetables`.
+Matching copies in `rag-service/data/raw` make them searchable by the chatbot.
+The RAG service builds its local keyword index at runtime, so restart Flask
+after adding or replacing a source document.
+
+Students can select a semester and branch in **My Dashboard**. That profile is
+saved in the current browser for the signed-in account and is used only to
+resolve timetable questions that do not already specify a semester or branch.
+Chat answers include the retrieved timetable PDF and page as citations.
+
 ## API
 
 POST /api/query

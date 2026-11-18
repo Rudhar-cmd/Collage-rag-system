@@ -12,6 +12,7 @@ import chatRoutes from "./routes/chatRoutes.js";
 import authMiddleware from "./middleware/authMiddleware.js";
 import Chat from "./models/Chat.js";
 import syllabusRoutes from "./routes/syllabusRoutes.js";
+import placementRoutes from "./routes/placementRoutes.js";
 
 dotenv.config();
 
@@ -26,14 +27,19 @@ const PORT = process.env.PORT || 8003;
 const FLASK_RAG_URL =
   process.env.FLASK_RAG_URL || "http://127.0.0.1:5001";
 
-async function requestRag(question, top_k) {
+async function requestRag(question, top_k, history = [], student_profile) {
   const sendQuestion = () =>
     fetch(`${FLASK_RAG_URL}/query`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ question, top_k })
+      body: JSON.stringify({
+        question,
+        top_k,
+        history,
+        ...(student_profile ? { student_profile } : {})
+      })
     });
 
   const response = await sendQuestion();
@@ -85,6 +91,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/chats", chatRoutes);
 app.use("/api/syllabus", syllabusRoutes);
+app.use("/api/placements", placementRoutes);
 
 // --------------------------------------------------
 // MongoDB connection
@@ -490,11 +497,62 @@ app.get("/api/health", async (_req, res) => {
 // --------------------------------------------------
 
 app.post("/api/query", authMiddleware, async (req, res) => {
-  const { question, top_k = 3 } = req.body;
+  const {
+    question,
+    top_k = 3,
+    history = [],
+    student_profile
+  } = req.body;
 
   if (typeof question !== "string" || !question.trim()) {
     return res.status(400).json({
       error: "Question is required."
+    });
+  }
+  if (!Array.isArray(history) || history.length > 8) {
+    return res.status(400).json({
+      error: "Conversation history must contain no more than 8 turns."
+    });
+  }
+
+  if (student_profile !== undefined) {
+    const { semester, branch } = student_profile || {};
+    const validProfile =
+      typeof semester === "string" &&
+      typeof branch === "string" &&
+      (
+        (semester === "1" && branch === "general") ||
+        (
+          ["3", "5", "7"].includes(semester) &&
+          ["cse", "aiml", "cybersecurity"].includes(branch)
+        )
+      );
+    if (!validProfile) {
+      return res.status(400).json({
+        error: "Student profile has an invalid semester or branch."
+      });
+    }
+  }
+
+  const validHistory = history.map((turn) => {
+    if (
+      !turn ||
+      !["user", "assistant"].includes(turn.role) ||
+      typeof turn.content !== "string" ||
+      !turn.content.trim() ||
+      turn.content.length > 2000
+    ) {
+      return null;
+    }
+
+    return {
+      role: turn.role,
+      content: turn.content.trim()
+    };
+  });
+  if (validHistory.includes(null)) {
+    return res.status(400).json({
+      error: "Conversation history contains an invalid turn."
     });
   }
 
@@ -511,7 +569,12 @@ app.post("/api/query", authMiddleware, async (req, res) => {
       console.log("Syllabus question:", cleanQuestion);
       console.log("Flask URL:", FLASK_RAG_URL);
 
-      const response = await requestRag(cleanQuestion, top_k);
+      const response = await requestRag(
+        cleanQuestion,
+        top_k,
+        validHistory,
+        student_profile
+      );
 
       const responseText = await response.text();
 
@@ -590,7 +653,12 @@ try {
     
     
     // Non-syllabus questions use Flask RAG.
-    const response = await requestRag(cleanQuestion, top_k);
+    const response = await requestRag(
+      cleanQuestion,
+      top_k,
+      validHistory,
+      student_profile
+    );
   
     const responseText = await response.text();
   

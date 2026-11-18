@@ -1,0 +1,196 @@
+.classes-page {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 38px clamp(20px, 5vw, 64px) 48px;
+}
+
+.classes-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 26px;
+}
+
+.classes-eyebrow {
+    color: var(--accent);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.classes-header h1 {
+    margin: 8px 0 4px;
+    font-family: var(--font-display);
+    font-size: var(--fs-2xl);
+    line-height: 1.15;
+}
+
+.classes-header p,
+.timetable-viewer-header p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.classes-filter {
+    display: grid;
+    gap: 6px;
+    color: var(--text-soft);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.classes-filter select {
+    min-width: 160px;
+    padding: 10px 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    color: var(--text);
+}
+
+.classes-layout {
+    display: grid;
+    grid-template-columns: minmax(210px, 280px) minmax(0, 1fr);
+    gap: 18px;
+    min-height: 540px;
+}
+
+.timetable-list {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 8px;
+}
+
+.timetable-option {
+    display: grid;
+    gap: 4px;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.18s var(--ease), background 0.18s var(--ease);
+}
+
+.timetable-option:hover,
+.timetable-option.active {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.timetable-option-semester {
+    color: var(--accent-ink);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.timetable-option-title {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.timetable-option-branches {
+    color: var(--muted);
+    font-size: var(--fs-xs);
+}
+
+.timetable-viewer {
+    display: flex;
+    min-width: 0;
+    min-height: 540px;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+
+.timetable-viewer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.timetable-viewer-header h2 {
+    margin: 0 0 4px;
+    font-size: var(--fs-lg);
+}
+
+.timetable-viewer-header p {
+    font-size: var(--fs-sm);
+}
+
+.timetable-open-link {
+    flex: 0 0 auto;
+    padding: 9px 12px;
+    border-radius: var(--r-sm);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.timetable-open-link:hover {
+    background: var(--accent-hover);
+}
+
+.timetable-pdf {
+    width: 100%;
+    min-height: 0;
+    flex: 1;
+    border: 0;
+    background: var(--sunken);
+}
+
+@media (max-width: 760px) {
+    .classes-page {
+        padding: 26px 18px 36px;
+    }
+
+    .classes-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .classes-filter,
+    .classes-filter select {
+        width: 100%;
+    }
+
+    .classes-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .timetable-list {
+        display: grid;
+        grid-auto-columns: minmax(190px, 1fr);
+        grid-auto-flow: column;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .timetable-viewer {
+        min-height: 60vh;
+    }
+
+    .timetable-pdf {
+        min-height: 55vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .timetable-viewer-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

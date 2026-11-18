@@ -1,0 +1,311 @@
+{
+  "notice": "Opportunity listings transcribed from the PI360 screenshots you shared. Only the company, role, opportunity type, date range, and visible status are included; detailed eligibility and recruitment information was not shown.",
+  "opportunities": [
+    {
+      "id": "twilio-software-engineer-trainee-internship",
+      "companyName": "Twillio",
+      "role": "Software Engineer Trainee",
+      "opportunityType": "Internship",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-20",
+      "status": "closed"
+    },
+    {
+      "id": "nile-technologies-java-full-stack-developer",
+      "companyName": "Nile Technologies Pvt. …",
+      "role": "Java Full Stack Developer",
+      "opportunityType": "Placement",
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-24",
+      "status": "closed"
+    },
+    {
+      "id": "sourceworx-ai-intern",
+      "companyName": "SOURCEWORX AI PRI…",
+      "role": "Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-18",
+      "status": "closed"
+    },
+    {
+      "id": "rubrik-software-engineer",
+      "companyName": "Rubrik",
+      "role": "Software Engineer",
+      "opportunityType": "Internship",
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-19",
+      "status": "closed"
+    },
+    {
+      "id": "accenture-application-support-engineer",
+      "companyName": "Accenture",
+      "role": "Application Support Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-21",
+      "status": "closed"
+    },
+    {
+      "id": "joveo-software-engineering-intern",
+      "companyName": "Joveo",
+      "role": "Software Engineering Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-09-30",
+      "endDate": "2026-10-04",
+      "status": "closed"
+    },
+    {
+      "id": "pwc-ai-engineer-intern",
+      "companyName": "PWC",
+      "role": "AI Engineer Intern",
+      "opportunityType": "Placement",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-30",
+      "status": "closed"
+    },
+    {
+      "id": "coveryou-full-stack-developer",
+      "companyName": "Coveryou",
+      "role": "Full Stack Developer",
+      "opportunityType": "Placement",
+      "startDate": "2026-09-28",
+      "endDate": "2026-09-30",
+      "status": "closed"
+    },
+    {
+      "id": "lg-ad-solutions-software-engineer",
+      "companyName": "LG AD SOLUTIONS",
+      "role": "Software Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-26",
+      "status": "closed"
+    },
+    {
+      "id": "hackcellence-x-embark-intern",
+      "companyName": "HackCellence X Embark",
+      "role": "Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-09-24",
+      "endDate": "2026-10-08",
+      "status": "closed"
+    },
+    {
+      "id": "brand-authority-builders-software-developer",
+      "companyName": "Brand Authority Builders",
+      "role": "Software Developer",
+      "opportunityType": "Internship",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-25",
+      "status": "closed"
+    },
+    {
+      "id": "mountblue-software-development-engineer",
+      "companyName": "MountBlue",
+      "role": "Software Development Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-22",
+      "status": "closed"
+    },
+    {
+      "id": "overit-junior-security-analyst",
+      "companyName": "OverIT Pvt. Ltd.",
+      "role": "Junior Security Analyst",
+      "opportunityType": "Internship",
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-30",
+      "status": "closed"
+    },
+    {
+      "id": "quickhyre-ai-robotics-data-annotator",
+      "companyName": "Quickhyre AI",
+      "role": "AI/ML & Robotics Data Annotator",
+      "opportunityType": "Placement",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-21",
+      "status": "closed"
+    },
+    {
+      "id": "barclays-software-engineer",
+      "companyName": "Barclays",
+      "role": "Software Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-05",
+      "status": "closed"
+    },
+    {
+      "id": "cred-sde-intern",
+      "companyName": "CRED",
+      "role": "SDE INTERN",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-22",
+      "status": "closed"
+    },
+    {
+      "id": "electronic-arts-full-stack-intern",
+      "companyName": "Electronic Arts",
+      "role": "Full Stack Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-07",
+      "status": "closed"
+    },
+    {
+      "id": "quickhyre-ai-software-engineer",
+      "companyName": "Quickhyre AI",
+      "role": "Software Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-16",
+      "status": "closed"
+    },
+    {
+      "id": "hackerrank-software-development-engineer",
+      "companyName": "Hacker Rank",
+      "role": "Software Development Engineer",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-07",
+      "status": "closed"
+    },
+    {
+      "id": "aarsh-ai-technologies-multiple-roles",
+      "companyName": "Aarsh AI Technologies",
+      "role": "Web development cum HR Recruiter trainee; Web Development Cum Sales Engineer; Web Development cum affiliate Marketing Executive",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-07",
+      "status": "closed"
+    },
+    {
+      "id": "quickhyre-ai-sde-intern",
+      "companyName": "Quickhyre AI",
+      "role": "SDE INTERN",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-10",
+      "status": "closed"
+    },
+    {
+      "id": "qualcomm-software-engineer-trainee",
+      "companyName": "Qualcomm India Pvt. …",
+      "role": "Software Engineer Trainee",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-08",
+      "status": "closed"
+    },
+    {
+      "id": "lexsi-ai-agent-engineer-intern",
+      "companyName": "Lexsi.ai",
+      "role": "AI Agent Engineer Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-08",
+      "status": "closed"
+    },
+    {
+      "id": "ibm-associate-software-engineer",
+      "companyName": "IBM",
+      "role": "Associate Software Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-05",
+      "status": "closed"
+    },
+    {
+      "id": "onehouse-software-engineer",
+      "companyName": "Onehouse",
+      "role": "Software Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-16",
+      "status": "closed"
+    },
+    {
+      "id": "stripe-software-engineer-trainee",
+      "companyName": "Stripe",
+      "role": "Software Engineer Trainee",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-15",
+      "status": "closed"
+    },
+    {
+      "id": "quickhyre-ai-data-science-intern",
+      "companyName": "Quickhyre AI",
+      "role": "Data science Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-31",
+      "status": "closed"
+    },
+    {
+      "id": "stripe-software-engineer-intern",
+      "companyName": "Stripe",
+      "role": "Software Engineer, Intern",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-31",
+      "status": "closed"
+    },
+    {
+      "id": "cisco-software-engineer",
+      "companyName": "Cisco",
+      "role": "Software Engineer",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-31",
+      "status": "closed"
+    },
+    {
+      "id": "techmaa-ai-software-developer-intern",
+      "companyName": "Techmaa Ai Pvt Limited",
+      "role": "Software Developer Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-21",
+      "status": "active"
+    },
+    {
+      "id": "kpmg-analyst",
+      "companyName": "KPMG",
+      "role": "Analyst",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-22",
+      "status": "closed"
+    },
+    {
+      "id": "honeywell-software-engineering-intern",
+      "companyName": "Honeywell Technologies",
+      "role": "Software Engineering Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-18",
+      "status": "closed"
+    },
+    {
+      "id": "salesforce-software-engineering-amts",
+      "companyName": "Salesforce",
+      "role": "Software Engineering AMTS",
+      "opportunityType": "Placement",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-24",
+      "status": "closed"
+    },
+    {
+      "id": "bexley-studio-intern",
+      "companyName": "Bexley Studio",
+      "role": "Intern",
+      "opportunityType": "Internship",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-16",
+      "status": "closed"
+    }
+  ]
+}

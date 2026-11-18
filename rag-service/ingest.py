@@ -40,6 +40,12 @@ def normalize_programme(filename):
     name = filename.lower().replace("_", " ").replace("-", " ")
     compact = re.sub(r"[^a-z0-9]+", "", name)
 
+    if "timetable" in compact:
+        if "semester1" in compact or "firstsemester" in compact:
+            return "timetable_common"
+        if "semester3" in compact or "semester7" in compact:
+            return "timetable_shared"
+
     # 1. Detect explicitly named programmes first
     if "mtech" in compact or "masteroftechnology" in compact:
         return "mtech"
